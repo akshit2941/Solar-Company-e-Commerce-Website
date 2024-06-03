@@ -4,6 +4,7 @@ import Button from '@/components/Button';
 import { ServiceNavigator } from '@/components/ServiceNavigator';
 import { FAQ } from '@/components/FAQ';
 import { ClientSection } from '@/components/ClientSection';
+import { NewsComponent } from '@/components/NewsComponent';
 
 const Home = () => {
   return (
@@ -243,8 +244,27 @@ const Home = () => {
         <FAQ />
       </div>
 
-      <div className='mb-64 bg-[#f6f7f9]'>
+      <div className='mb-20 bg-[#f6f7f9]'>
         <ClientSection />
+      </div>
+
+      <div className='mx-64 mb-32'>
+        <div className='flex flex-row justify-between m-auto'>
+          <div className='text-center items-center justify-start'>
+            <h1 className='text-4xl font-semibold text-[#2d3d33]'>Top News</h1>
+          </div>
+          <div className='flex items-center justify-end'>
+            <Button
+              title='Discover More'
+              variant='btn_black'
+            />
+          </div>
+        </div>
+
+        <div>
+          <NewsComponent />
+        </div>
+
       </div>
 
     </div>
