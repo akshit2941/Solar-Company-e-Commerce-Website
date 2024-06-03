@@ -3,6 +3,7 @@ import Navbar from '@/components/Navbar';
 import Button from '@/components/Button';
 import { ServiceNavigator } from '@/components/ServiceNavigator';
 import { FAQ } from '@/components/FAQ';
+import { ClientSection } from '@/components/ClientSection';
 
 const Home = () => {
   return (
@@ -238,10 +239,13 @@ const Home = () => {
         </div>
       </div>
 
-      <div className='mx-64 mb-64'>
+      <div className='mx-64 mb-28'>
         <FAQ />
       </div>
 
+      <div className='mb-64 bg-[#f6f7f9]'>
+        <ClientSection />
+      </div>
 
     </div>
 
