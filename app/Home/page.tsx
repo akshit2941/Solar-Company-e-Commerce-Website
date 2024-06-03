@@ -5,6 +5,7 @@ import { ServiceNavigator } from '@/components/ServiceNavigator';
 import { FAQ } from '@/components/FAQ';
 import { ClientSection } from '@/components/ClientSection';
 import { NewsComponent } from '@/components/NewsComponent';
+import { Footer } from '@/components/Footer';
 
 const Home = () => {
   return (
@@ -193,24 +194,26 @@ const Home = () => {
           {/* Left */}
           <div className='flex-1'>
             <div>
-              <Image
-                src='/project-1.jpg'
-                alt="project Image"
-                width={550}
-                height={200}
-                className='rounded-3xl my-6'
-              />
+              <div className='overflow-hidden rounded-3xl'>
+                <Image
+                  src='/project-1.jpg'
+                  alt="project Image"
+                  width={550}
+                  height={200}
+                  className='rounded-3xl my-6 transform transition duration-300 ease-in-out hover:scale-110'
+                />
+              </div>
               <div>
                 <h1 className='project-head'>Wind Farm</h1>
                 <p className='project-para'>Wind Energy</p>
               </div>
             </div>
             <div>
-              <div className='w-[85%]'>
+              <div className='w-[full]'>
                 <Image
                   src='/project-2.jpg'
                   alt="project Image"
-                  width={400}
+                  width={500}
                   height={200}
                   className='rounded-3xl my-6'
                 />
@@ -260,11 +263,13 @@ const Home = () => {
             />
           </div>
         </div>
-
         <div>
           <NewsComponent />
         </div>
+      </div>
 
+      <div className=''>
+        <Footer />
       </div>
 
     </div>

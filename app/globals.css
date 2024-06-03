@@ -74,6 +74,9 @@
   .project-para {
     @apply mt-2 text-xl font-normal text-[#b15d3d] transition duration-300 ease-in-out hover:text-[#2e3c33];
   }
+  .footer-li {
+    @apply mt-4 px-4 text-2xl hover:text-[#a2672f];
+  }
 }
 
 /* FONTS */
