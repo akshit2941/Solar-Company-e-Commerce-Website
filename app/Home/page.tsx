@@ -3,7 +3,7 @@ import Navbar from '@/components/Navbar';
 import Button from '@/components/Button';
 import { ServiceNavigator } from '@/components/ServiceNavigator';
 import { FAQ } from '@/components/FAQ';
-import { ClientSection } from '@/components/ClientSection';
+import { ClientStories } from '@/components/ClientStories';
 import { NewsComponent } from '@/components/NewsComponent';
 import { Footer } from '@/components/Footer';
 
@@ -13,11 +13,11 @@ const Home = () => {
       <div className="relative h-[90vh] w-full overflow-hidden">
         <Navbar />
         <Image
-          src="/home-bg.jpg"
+          src="/home-bg.svg"
           alt="Background"
           layout="fill"
           objectFit="cover"
-          className="absolute top-0 left-0 w-full h-full z-0 rounded-b-3xl"
+          className="absolute top-0 left-0 w-full h-full z-0 rounded-b-3xl bg-[#2f3c35]"
         />
 
         <div className="absolute inset-0 flex flex-row items-center justify-center text-white z-10">
@@ -248,7 +248,7 @@ const Home = () => {
       </div>
 
       <div className='mb-20 bg-[#f6f7f9]'>
-        <ClientSection />
+        <ClientStories />
       </div>
 
       <div className='mx-64 mb-32'>

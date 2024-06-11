@@ -16,7 +16,6 @@
   padding: 12px;
   font-size: 22px;
   /* color: white; */
-  color: black;
   font-weight: 600;
   text-decoration: none;
   cursor: pointer;
@@ -76,6 +75,10 @@
   }
   .footer-li {
     @apply mt-4 px-4 text-2xl hover:text-[#a2672f];
+  }
+
+  .about-tags {
+    @apply rounded-3xl border bg-[#e2d1bf] p-2 px-8 text-2xl font-normal text-[#a2672f] hover:bg-[#a2672f] hover:text-white transition duration-300;
   }
 }
 

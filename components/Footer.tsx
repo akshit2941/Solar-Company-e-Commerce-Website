@@ -1,4 +1,7 @@
+import AboutPage from '@/app/about/page'
+import Home from '@/app/home/page'
 import Image from 'next/image'
+import Link from 'next/link'
 import React from 'react'
 
 export const Footer = () => {
@@ -12,14 +15,23 @@ export const Footer = () => {
           </div>
           <h1 className='text-white text-xl mt-2 mx-4'>"Go Green, Go Solar"</h1>
         </div>
-        <div className='flex justify-center items-center mt-4'>
-          <Image src="/mail.svg" alt='mail' width={35} height={35} />
+        <div className='flex justify-center items-center text-center mt-4'>
+          <Image src="/mail.svg" alt='mail' width={30} height={35} />
           <h1 className='ml-2 text-xl'>sales@aldexenergies.com</h1>
         </div>
 
         <div>
           <ul className='flex flex-row justify-center'>
-            <li className='footer-li'>About Us</li>
+            <li className='footer-li'>
+              <Link href="/home">
+                Home
+              </Link>
+            </li>
+            <li className='footer-li'>
+              <Link href="/about">
+                About Us
+              </Link>
+            </li>
             <li className='footer-li'>Project</li>
             <li className='footer-li'>Solutions</li>
             <li className='footer-li'>Services</li>
