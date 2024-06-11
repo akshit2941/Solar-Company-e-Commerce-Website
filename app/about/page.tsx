@@ -1,13 +1,35 @@
+"use client"
+import Button from '@/components/Button';
 import ClientDetails from '@/components/ClientDetails';
 import { ClientStories } from '@/components/ClientStories';
 import FAQ from '@/components/FAQ';
 import { Footer } from '@/components/Footer';
 import Navbar from '@/components/Navbar';
 import Image from 'next/image';
-import React from 'react'
+import React, { useState } from 'react'
 
+type TabKey = 'mission' | 'values' | 'services';
+
+const tabs: Record<TabKey, { title: string; content: string }> = {
+    mission: {
+        title: "Together, We Can Pioneer A Sustainable Future.",
+        content: "Our mission is to lead the charge in building a sustainable and greener future for generations to come. We're driven by a steadfast commitment to environmental stewardship, innovation, and positive social impact. Our mission isn't just a statement; it's a commitment to a better, more sustainable world. We invite you to join us on this journey towards a greener and brighter tomorrow. Together, we can pioneer a sustainable future that benefits us all."
+    },
+    values: {
+        title: "Positive Environmental Impact In All We Do.",
+        content: "Our core values serve as the foundation of everything we do. They embody our unwavering dedication to sustainability, innovation, and positive impact. These core values guide our decisions, actions, and interactions, ensuring that we remain steadfast in our pursuit of a more sustainable and eco-friendly future. They serve as a compass, directing us toward positive environmental and social impact in everything we do. We invite you to join us on this journey towards a greener and brighter."
+    },
+    services: {
+        title: "We Take Pride In Commitment To Innovation",
+        content: "we offer a comprehensive suite of sustainability services designed to empower individuals, businesses, and communities to embrace a greener and more environmentally responsible future. From cutting-edge renewable energy solutions such as solar and wind installations to waste reduction and recycling programs, we provide a range of services that span the sustainability spectrum. Our experts work closely with clients to customize solutions tailored to their unique needs."
+    }
+};
 
 const AboutPage = () => {
+
+    const [activeTab, setActiveTab] = useState<TabKey>('mission');
+
+
     return (
         <div className="flex flex-col items-center justify-center">
             <div className="h-[50vh] w-full overflow-hidden relative">
@@ -26,17 +48,24 @@ const AboutPage = () => {
                 </div>
             </div>
 
-            <div className='flex items-center justify-center mx-64 mt-24 gap-32 mb-32'>
-                <div className='w-[60%]'>
+            <div className='flex flex-row items-center justify-center mx-64 mt-24 gap-32 mb-32'>
+                <div className='w-[60%] top-24'>
                     <div className='flex flex-row gap-12'>
-                        <h1 className='about-tags'>Our Mission</h1>
-                        <h1 className='about-tags'>Our Values</h1>
-                        <h1 className='about-tags'>Our Services</h1>
+                        {Object.keys(tabs).map((tab) => (
+                            <h1
+                                key={tab}
+                                className={`about-tags ${activeTab === tab ? 'font-bold' : ''}`}
+                                onClick={() => setActiveTab(tab as TabKey)}
+                                style={{ cursor: 'pointer', backgroundColor: activeTab === tab ? '#a2672f' : '', color: activeTab === tab ? '#ffffff' : '' }}
+                            >
+                                {`Our ${tab.charAt(0).toUpperCase() + tab.slice(1)}`}
+                            </h1>
+                        ))}
                     </div>
 
                     <div className='mt-12'>
-                        <h1 className='text-6xl font-medium'>Together, We Can Pioneer A Sustainable Future.</h1>
-                        <p className='text-2xl mt-6'>Our mission is to lead the charge in building a sustainable and greener future for generations to come. We're driven by a steadfast commitment to environmental stewardship, innovation, and positive social impact. Our mission isn't just a statement; it's a commitment to a better, more sustainable world. We invite you to join us on this journey towards a greener and brighter tomorrow. Together, we can pioneer a sustainable future that benefits us all.</p>
+                        <h1 className='text-6xl font-medium'>{tabs[activeTab].title}</h1>
+                        <p className='text-2xl mt-6'>{tabs[activeTab].content}</p>
                     </div>
                 </div>
 
@@ -127,10 +156,30 @@ const AboutPage = () => {
             </div>
 
 
-            <footer className='w-full mt-64'>
-                <Footer />
-            </footer>
 
+            <footer className='w-full mt-64 relative'>
+                <div className="relative w-full h-[500px] overflow-hidden top-10 z-0" >
+                    <Image
+                        src="/solarBaseImage.jpg"
+                        alt="Styled Image"
+                        layout="fill"
+                        objectFit="cover"
+                    />
+                    <div className="absolute inset-0 bg-black bg-opacity-60 rounded-lg"></div>
+
+                    <div className="absolute inset-0 flex flex-col gap-10 items-center text-center justify-center">
+                        <p className="text-white text-5xl font-medium w-[50%]">It's Always The Right Time To Get Closer To A Zero-Waste Future</p>
+                        <Button
+                            title='Discover More'
+                            variant='btn_white'
+                        />
+                    </div>
+                </div>
+
+                <div className='relative z-20'>
+                    <Footer />
+                </div>
+            </footer>
 
 
 

@@ -28,6 +28,24 @@
   border-radius: 20px;
 }
 
+.story-transition {
+  transition: opacity 0.5s ease-in;
+}
+@keyframes slideIn {
+  0% {
+    transform: translateY(-75%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.animate-slideIn {
+  animation: slideIn 0.5s ease-out forwards;
+}
+
 .image-transform {
   transform: scale(1.04);
 }
@@ -78,7 +96,7 @@
   }
 
   .about-tags {
-    @apply rounded-3xl border bg-[#e2d1bf] p-2 px-8 text-2xl font-normal text-[#a2672f] hover:bg-[#a2672f] hover:text-white transition duration-300;
+    @apply rounded-3xl border bg-[#e2d1bf] p-2 px-8 text-2xl font-normal text-[#a2672f] transition duration-300 hover:bg-[#a2672f] hover:text-white;
   }
 }
 

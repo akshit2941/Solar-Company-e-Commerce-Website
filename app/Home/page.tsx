@@ -30,54 +30,38 @@ const Home = () => {
             </div>
           </div>
           {/* Right Section */}
-          <div className='flex-1 flex justify-center md:justify-end p-4 mr-48'>
-            <div className='grid grid-cols-2 gap-5 justify-center items-center' style={{ gridTemplateColumns: '200px 200px', gridAutoRows: 'auto' }}>
-              <div className="w-48 h-48 relative overflow-hidden rounded-lg">
+          <div className='flex-1 flex justify-center md:justify-end p-8 mt-10 mr-60'>
+            <div className='grid grid-cols-2 gap-y-8 gap-x-48 mt-12 justify-center items-center' style={{ gridTemplateColumns: '200px 200px', gridAutoRows: 'auto' }}>
+              <div className="relative w-[320px] h-[280px] overflow-hidden rounded-xl transform -rotate-12">
                 <Image
-                  src='/block-1.jpg'
-                  alt="display"
-                  // width={170}
-                  // height={170}
+                  src="/block-1.webp"
+                  alt="Styled Image"
                   layout="fill"
                   objectFit="cover"
-                  objectPosition="center"
-                  className='home-box-images object-cover object-center'
                 />
               </div>
-              <div className="w-48 h-48 relative overflow-hidden rounded-lg">
+              <div className="relative w-[320px] h-[280px] overflow-hidden rounded-xl transform rotate-6">
                 <Image
-                  src='/block-2.jpg'
-                  alt="display"
-                  // width={170}
-                  // height={170}
+                  src="/block-2.webp"
+                  alt="Styled Image"
                   layout="fill"
                   objectFit="cover"
-                  objectPosition="center"
-                  className='home-box-images object-cover object-center'
                 />
               </div>
-              <div className="w-48 h-48 relative overflow-hidden rounded-lg">
+              <div className="relative w-[320px] h-[280px] overflow-hidden rounded-xl transform -rotate-6">
                 <Image
-                  src='/block-3.jpg'
-                  alt="display"
-                  // width={170}
-                  // height={170}
+                  src="/block-3.webp"
+                  alt="Styled Image"
                   layout="fill"
                   objectFit="cover"
-                  objectPosition="center"
-                  className='home-box-images object-cover object-center'
                 />
               </div>
-              <div className="w-48 h-48 relative overflow-hidden rounded-lg">
+              <div className="relative w-[380px] h-[380px] overflow-hidden rounded-xl transform rotate-2">
                 <Image
-                  src='/block-4.jpg'
-                  alt="display"
-                  // width={170}
-                  // height={170}
+                  src="/block-4.webp"
+                  alt="Styled Image"
                   layout="fill"
                   objectFit="cover"
-                  objectPosition="center"
-                  className='home-box-images object-cover object-center'
                 />
               </div>
             </div>
@@ -192,15 +176,15 @@ const Home = () => {
 
         <div className='flex mt-8 cursor-pointer'>
           {/* Left */}
-          <div className='flex-1'>
+          <div >
             <div>
-              <div className='overflow-hidden rounded-3xl'>
+              <div className="relative w-[550px] h-[300px] overflow-hidden rounded-3xl ">
                 <Image
-                  src='/project-1.jpg'
-                  alt="project Image"
-                  width={550}
-                  height={200}
-                  className='rounded-3xl my-6 transform transition duration-300 ease-in-out hover:scale-110'
+                  src="/project-1.jpg"
+                  alt="Styled Image"
+                  layout="fill"
+                  objectFit="cover"
+                  className="absolute inset-0 transition-transform duration-500 transform hover:scale-105 "
                 />
               </div>
               <div>
@@ -208,14 +192,14 @@ const Home = () => {
                 <p className='project-para'>Wind Energy</p>
               </div>
             </div>
-            <div>
-              <div className='w-[full]'>
+            <div className='mt-8'>
+              <div className="relative w-[550px] h-[300px] overflow-hidden rounded-3xl  ">
                 <Image
-                  src='/project-2.jpg'
-                  alt="project Image"
-                  width={500}
-                  height={200}
-                  className='rounded-3xl my-6'
+                  src="/project-2.jpg"
+                  alt="Styled Image"
+                  layout="fill"
+                  objectFit="cover"
+                  className="absolute inset-0 transition-transform duration-500 transform hover:scale-105"
                 />
               </div>
               <div>
@@ -225,14 +209,14 @@ const Home = () => {
             </div>
           </div>
           {/* Right */}
-          <div className='flex-1 mx-8'>
-            <div className='w-full h-[85%] relative'>
+          <div className='flex-col w-full ml-10'>
+            <div className="relative w-full h-[90%] overflow-hidden rounded-3xl ">
               <Image
-                src='/project-3.jpg'
-                alt="project Image"
-                layout='fill'
-                objectFit='cover'
-                className='rounded-3xl '
+                src="/project-3.jpg"
+                alt="Styled Image"
+                layout="fill"
+                objectFit="cover"
+                className="absolute inset-0 transition-transform duration-500 transform hover:scale-105"
               />
             </div>
             <div >
