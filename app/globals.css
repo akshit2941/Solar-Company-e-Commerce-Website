@@ -9,23 +9,35 @@
   padding: 0;
   box-sizing: border-box;
   cursor: pointer;
+  font-family: sans-serif;
 }
 
 /* Common Classes */
-.navbar-ul-class {
-  padding: 12px;
-  font-size: 22px;
-  /* color: white; */
-  font-weight: 600;
-  text-decoration: none;
-  cursor: pointer;
-  font-family: Inter, sans-serif;
-}
 .home-box-images {
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 20px;
+}
+
+.custom-list-item {
+  display: list-item;
+  list-style-position: inside;
+}
+
+.custom-list-item-disc {
+  display: list-item;
+  /* position: absolute; */
+  list-style-position: inside;
+}
+
+.custom-list-item-disc::before {
+  content: '•';
+  color: #2e3c35; /* Replace this with your desired color */
+  font-size: 1.5em; /* Adjust size as needed */
+  position: absolute;
+  left: 0;
+  top: 0.1em; /* Adjust vertical alignment as needed */
 }
 
 .story-transition {
@@ -42,6 +54,10 @@
   }
 }
 
+.service-list::marker {
+  color: #b15d3d; /* Change bullet point color */
+}
+
 .animate-slideIn {
   animation: slideIn 0.5s ease-out forwards;
 }
@@ -49,7 +65,45 @@
 .image-transform {
   transform: scale(1.04);
 }
+
+/* styles/globals.css or styles/custom.css */
+.numbered-list {
+  counter-reset: item;
+}
+
+.numbered-list li {
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding-left: 3rem;
+}
+
+.numbered-list li::before {
+  content: counter(item) ' ';
+  counter-increment: item;
+  position: absolute;
+  left: 0;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  background-color: #a26632;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 @layer utilities {
+
+  .service-navigator-common-class{
+    @apply w-full h-[260px]
+  }
+  .navbar-ul-class {
+    @apply p-3 font-sans text-xl duration-500 hover:opacity-70;
+  }
+  .project-navigator {
+    @apply mt-16 rounded-5xl bg-[#e2d1bf] p-2 px-5 text-xl font-medium text-[#936a45] transition duration-300 hover:bg-[#a36630] hover:text-white;
+  }
   .navbar-btn {
     @apply rounded-3xl border-2 p-3 px-6 text-xl;
   }
@@ -97,6 +151,10 @@
 
   .about-tags {
     @apply rounded-3xl border bg-[#e2d1bf] p-2 px-8 text-2xl font-normal text-[#a2672f] transition duration-300 hover:bg-[#a2672f] hover:text-white;
+  }
+
+  .service-list {
+    @apply text-2xl text-black;
   }
 }
 

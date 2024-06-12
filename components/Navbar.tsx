@@ -25,13 +25,25 @@ export const Navbar = () => {
                             About us
                         </Link>
                     </li>
-                    <li className='navbar-ul-class'>Projects</li>
+                    <li className='navbar-ul-class'>
+                        <Link href='/projects'>
+                            Projects
+                        </Link>
+                    </li>
                     <li className='navbar-ul-class'>Solutions</li>
-                    <li className='navbar-ul-class'>Services</li>
+                    <li className='navbar-ul-class'>
+                        <Link href='/services'>
+                            Services
+                        </Link>
+                    </li>
                     <li className='navbar-ul-class'>Products</li>
                 </ul>
             </nav>
-            <button className="navbar-btn text-white mr-12 border-white">Contact Us</button>
+            <button className="navbar-btn text-white mr-12 border-white">
+                <Link href='/contact'>
+                    Contact Us
+                </Link>
+            </button>
         </header>
     );
 };

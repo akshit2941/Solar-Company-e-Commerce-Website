@@ -6,6 +6,7 @@ import { FAQ } from '@/components/FAQ';
 import { ClientStories } from '@/components/ClientStories';
 import { NewsComponent } from '@/components/NewsComponent';
 import { Footer } from '@/components/Footer';
+import Link from 'next/link';
 
 const Home = () => {
   return (
@@ -26,7 +27,9 @@ const Home = () => {
             <h1 className="text-5xl md:text-7xl font-bold mb-4">Renew, Reuse, Recycle</h1>
             <p className='text-2xl mt-4'>Discover how your small actions can make a big impact as we work together to reduce waste, conserve resources, and protect our planet for generations to come.</p>
             <div className='mt-6'>
-              <Button title='Get Started' variant='btn_white' />
+              <Link href='/contact'>
+                <Button title='Get Started' variant='btn_white' />
+              </Link>
             </div>
           </div>
           {/* Right Section */}
@@ -111,34 +114,42 @@ const Home = () => {
             <h1 className='text-4xl font-semibold text-[#2d3d33]'>Our Services</h1>
           </div>
           <div className='flex items-center justify-end'>
-            <Button
-              title='Discover More'
-              variant='btn_black'
-            />
+            <Link href='/services'>
+              <Button
+                title='Discover More'
+                variant='btn_black'
+              />
+            </Link>
           </div>
         </div>
 
         <div className='mt-14 flex flex-row'>
           <div className='w-[100%] h-[300px] '>
-            <ServiceNavigator
-              title="Energy Storage Solutions"
-              content='We believe that technology design are revolutionizing brand experiences.'
-              img="/service-1.svg"
-            />
+            <Link href='/services/service1'>
+              <ServiceNavigator
+                title="Energy Storage Solutions"
+                content='We believe that technology design are revolutionizing brand experiences.'
+                img="/service-1.svg"
+              />
+            </Link>
           </div>
           <div className='w-[100%] h-[300px] '>
-            <ServiceNavigator
-              title="Solar Panel Installation"
-              content='We believe that human-centered design are revolutionizing brand experiences.'
-              img="/service-2.svg"
-            />
+            <Link href='/services/service2'>
+              <ServiceNavigator
+                title="Solar Panel Installation"
+                content='We believe that human-centered design are revolutionizing brand experiences.'
+                img="/service-2.svg"
+              />
+            </Link>
           </div>
           <div className='w-[100%] h-[300px] '>
-            <ServiceNavigator
-              title="Wind Turbine Installation"
-              content='Reduce your capital and operating costs, while modernizing your IT.'
-              img="/service-3.svg"
-            />
+            <Link href='/services/service3'>
+              <ServiceNavigator
+                title="Wind Turbine Installation"
+                content='Reduce your capital and operating costs, while modernizing your IT.'
+                img="/service-3.svg"
+              />
+            </Link>
           </div>
         </div>
       </div>
@@ -152,10 +163,12 @@ const Home = () => {
             <p className='text-white text-xl font-medium mt-6 w-3/4'>We're dedicated to revolutionizing the way we power our world. Our commitment to a greener tomorrow drives us to provide innovative and sustainable energy solutions that make a real difference. Join us in the journey towards a cleaner, more vibrant planet.
             </p>
             <div className='mt-10'>
-              <Button
-                title='Learn More'
-                variant='btn_white'
-              />
+              <Link href='/services'>
+                <Button
+                  title='Learn More'
+                  variant='btn_white'
+                />
+              </Link>
             </div>
           </div>
         </div>
@@ -167,10 +180,12 @@ const Home = () => {
             <h1 className='text-4xl font-semibold text-[#2d3d33]'>Our Projects</h1>
           </div>
           <div className='flex items-center justify-end'>
-            <Button
-              title='Discover More'
-              variant='btn_black'
-            />
+            <Link href='/projects'>
+              <Button
+                title='Discover More'
+                variant='btn_black'
+              />
+            </Link>
           </div>
         </div>
 
@@ -178,51 +193,57 @@ const Home = () => {
           {/* Left */}
           <div >
             <div>
-              <div className="relative w-[550px] h-[300px] overflow-hidden rounded-3xl ">
-                <Image
-                  src="/project-1.jpg"
-                  alt="Styled Image"
-                  layout="fill"
-                  objectFit="cover"
-                  className="absolute inset-0 transition-transform duration-500 transform hover:scale-105 "
-                />
-              </div>
-              <div>
-                <h1 className='project-head'>Wind Farm</h1>
-                <p className='project-para'>Wind Energy</p>
-              </div>
+              <Link href='/projects/projectPage2'>
+                <div className="relative w-[550px] h-[300px] overflow-hidden rounded-3xl ">
+                  <Image
+                    src="/project-1.jpg"
+                    alt="Styled Image"
+                    layout="fill"
+                    objectFit="cover"
+                    className="absolute inset-0 transition-transform duration-500 transform hover:scale-105 "
+                  />
+                </div>
+                <div>
+                  <h1 className='project-head'>Wind Farm</h1>
+                  <p className='project-para'>Wind Energy</p>
+                </div>
+              </Link>
             </div>
             <div className='mt-8'>
-              <div className="relative w-[550px] h-[300px] overflow-hidden rounded-3xl  ">
+              <Link href='/projects/projectPage3'>
+                <div className="relative w-[550px] h-[300px] overflow-hidden rounded-3xl  ">
+                  <Image
+                    src="/project-2.jpg"
+                    alt="Styled Image"
+                    layout="fill"
+                    objectFit="cover"
+                    className="absolute inset-0 transition-transform duration-500 transform hover:scale-105"
+                  />
+                </div>
+                <div>
+                  <h1 className='project-head'>Solar-Powered Home</h1>
+                  <p className='project-para'>Solar Energy</p>
+                </div>
+              </Link>
+            </div>
+          </div>
+          {/* Right */}
+          <div className='flex-col w-full ml-10'>
+            <Link href='/projects/projectPage5'>
+              <div className="relative w-full h-[90%] overflow-hidden rounded-3xl ">
                 <Image
-                  src="/project-2.jpg"
+                  src="/project-3.jpg"
                   alt="Styled Image"
                   layout="fill"
                   objectFit="cover"
                   className="absolute inset-0 transition-transform duration-500 transform hover:scale-105"
                 />
               </div>
-              <div>
-                <h1 className='project-head'>Solar-Powered Home</h1>
+              <div >
+                <h1 className='project-head'>Large-Scale Farm</h1>
                 <p className='project-para'>Solar Energy</p>
               </div>
-            </div>
-          </div>
-          {/* Right */}
-          <div className='flex-col w-full ml-10'>
-            <div className="relative w-full h-[90%] overflow-hidden rounded-3xl ">
-              <Image
-                src="/project-3.jpg"
-                alt="Styled Image"
-                layout="fill"
-                objectFit="cover"
-                className="absolute inset-0 transition-transform duration-500 transform hover:scale-105"
-              />
-            </div>
-            <div >
-              <h1 className='project-head'>Large-Scale Farm</h1>
-              <p className='project-para'>Solar Energy</p>
-            </div>
+            </Link>
           </div>
         </div>
       </div>

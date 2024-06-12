@@ -17,7 +17,7 @@ export const FAQ = () => {
         } else if (faqNumber === 3) {
             setShowDetails3(!showDetails3);
         }
-        setRotateAngle(rotateAngle === 0 ? 90 : 0); 
+        setRotateAngle(rotateAngle === 0 ? 90 : 0);
     };
 
     return (
@@ -31,10 +31,10 @@ export const FAQ = () => {
                     <div className='p-8' onClick={() => toggleRotation(1)}>
                         <div className='flex flex-row items-center text-center'>
                             <div>
-                                <h1 className={`text-3xl font-medium text-[#2e3c33] text-left ${rotateAngle === 90 && showDetails1 ? 'text-[#a46433]' : ''} transition-colors duration-200`}>How can I make the switch to green energy? </h1>
+                                <h1 className={`text-3xl font-semibold text-[#2e3c33] text-left ${rotateAngle === 90 && showDetails1 ? 'text-[#a46433]' : ''} transition-colors duration-200`}>How can I make the switch to green energy? </h1>
                             </div>
                             <Image
-                                src='arrow-right.svg'
+                                src='/arrow-right.svg'
                                 alt='arrow'
                                 width={40}
                                 height={100}
@@ -51,10 +51,10 @@ export const FAQ = () => {
                     <div className='p-8' onClick={() => toggleRotation(2)}>
                         <div className='flex flex-row items-center text-center'>
                             <div>
-                                <h1 className={`text-3xl font-medium text-[#2e3c33] text-left ${rotateAngle === 90 && showDetails2 ? 'text-[#a46433]' : ''} transition-colors duration-200`}>Are there financial incentives for using green energy?</h1>
+                                <h1 className={`text-3xl font-semibold text-[#2e3c33] text-left ${rotateAngle === 90 && showDetails2 ? 'text-[#a46433]' : ''} transition-colors duration-200`}>Are there financial incentives for using green energy?</h1>
                             </div>
                             <Image
-                                src='arrow-right.svg'
+                                src='/arrow-right.svg'
                                 alt='arrow'
                                 width={40}
                                 height={100}
@@ -71,10 +71,10 @@ export const FAQ = () => {
                     <div className='p-8' onClick={() => toggleRotation(3)}>
                         <div className='flex flex-row items-center text-center'>
                             <div>
-                                <h1 className={`text-3xl font-medium text-[#2e3c33] text-left ${rotateAngle === 90 && showDetails3 ? 'text-[#a46433]' : ''} transition-colors duration-200`}>What are the benefits of wind energy?</h1>
+                                <h1 className={`text-3xl font-semibold text-[#2e3c33] text-left ${rotateAngle === 90 && showDetails3 ? 'text-[#a46433]' : ''} transition-colors duration-200`}>What are the benefits of wind energy?</h1>
                             </div>
                             <Image
-                                src='arrow-right.svg'
+                                src='/arrow-right.svg'
                                 alt='arrow'
                                 width={40}
                                 height={100}

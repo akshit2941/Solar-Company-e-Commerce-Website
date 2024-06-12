@@ -16,6 +16,9 @@ const config: Config = {
       }
     },
     extend: {
+      fontFamily: {
+        inter: ['Inter']
+      },
       backgroundImage: {
         'bg-img-1': "url('/video.jpg')"
       },

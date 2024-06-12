@@ -42,7 +42,7 @@ const AboutPage = () => {
                     className="absolute top-0 left-0 w-full h-full z-0"
                 />
 
-                <div className="absolute inset-0 bg-black bg-opacity-50 rounded-lg"></div>
+                <div className="absolute inset-0 bg-black bg-opacity-50"></div>
                 <div className="absolute inset-0 flex items-center justify-center z-10">
                     <h1 className="text-white text-7xl font-medium">About Us</h1>
                 </div>
@@ -108,13 +108,12 @@ const AboutPage = () => {
             </div>
 
             <div className='mb-32'>
-                <div className="relative w-[1400px] h-[500px] overflow-hidden rounded-3xl shadow-lg">
+                <div className="relative w-[1400px] h-[500px] overflow-hidden rounded-3xl">
                     <Image
-                        src="/home-bg.jpg"
+                        src="/about-img.jpg"
                         alt="Styled Image"
                         layout="fill"
                         objectFit="cover"
-                        className="absolute inset-0"
                     />
                 </div>
             </div>

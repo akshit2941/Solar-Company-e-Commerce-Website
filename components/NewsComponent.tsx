@@ -31,24 +31,24 @@ const NewsCard = ({ imageUrl, title, content }: NewsProp) => {
     )
 }
 
-const ProjectCard = ({ imageUrl, title, content }: NewsProp) => {
+export const ProjectCard = ({ imageUrl, title, content }: NewsProp) => {
     return (
         <div className='p-3'>
-            <div className='overflow-hidden rounded-3xl'>
+            <div className="relative w-[440px] h-[300px] overflow-hidden rounded-3xl">
                 <Image
                     src={imageUrl}
-                    alt='news'
-                    width={600}
-                    height={50}
-                    className='rounded-3xl transform transition duration-300 ease-in-out hover:scale-110'
+                    alt="Project Image"
+                    layout="fill"
+                    objectFit="cover"
+                    className="absolute inset-0 transition-transform duration-500 transform hover:scale-105 "
                 />
             </div>
             <div className='mt-8'>
-                <h1 className='text-2xl font-semibold text-[#2c3b35] hover:text-[#87634a]'>{title}</h1>
-                <p className='text-xl font-normal mt-2 text-[#2c3b35]'>{content}</p>
-                <p className='underline text-xl text-[#87634a] mt-4 hover:text-[#2c3b35]' style={{ textUnderlineOffset: '8px' }}>
+                <h1 className='text-2xl font-semibold text-[#2c3b35] hover:text-[#87634a] transition duration-300'>{title}</h1>
+                <p className='text-xl font-normal mt-2 text-[#87634a] hover:text-[#2c3b35] transition duration-500'>{content}</p>
+                {/* <p className='underline text-xl text-[#87634a] mt-4 hover:text-[#2c3b35]' style={{ textUnderlineOffset: '8px' }}>
                     Read More
-                </p>
+                </p> */}
             </div>
         </div>
     )
