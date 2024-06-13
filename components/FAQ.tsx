@@ -21,7 +21,7 @@ export const FAQ = () => {
     };
 
     return (
-        <div className='md:mx-64'>
+        <div className='mx-12 md:mx-64'>
             <div>
                 <span className='bg-[#e2d1bf] text-[#936a45] text-xl p-4 px-8 font-medium rounded-5xl'>FAQ</span>
             </div>
@@ -31,7 +31,7 @@ export const FAQ = () => {
                     <div className='p-8' onClick={() => toggleRotation(1)}>
                         <div className='flex flex-row items-center text-center'>
                             <div>
-                                <h1 className={`text-3xl font-semibold text-[#2e3c33] text-left ${rotateAngle === 90 && showDetails1 ? 'text-[#a46433]' : ''} transition-colors duration-200`}>How can I make the switch to green energy? </h1>
+                                <h1 className={`text-xl md:text-3xl font-semibold text-[#2e3c33] text-left ${rotateAngle === 90 && showDetails1 ? 'text-[#a46433]' : ''} transition-colors duration-200`}>How can I make the switch to green energy? </h1>
                             </div>
                             <Image
                                 src='/arrow-right.svg'
@@ -42,7 +42,7 @@ export const FAQ = () => {
                             />
                         </div>
                         <div>
-                            <p className={`text-start font-normal text-lg mt-2 w-[85%] ${showDetails1 ? 'opacity-100 max-h-[1000px] transition-all duration-1000 ease-in' : 'max-h-0 overflow-hidden transition-all duration-1000 ease-out'}`}>
+                            <p className={`text-start font-normal text-base md:text-lg mt-2 w-[85%] ${showDetails1 ? 'opacity-100 max-h-[1000px] transition-all duration-1000 ease-in' : 'max-h-0 overflow-hidden transition-all duration-1000 ease-out'}`}>
                                 Green energy solutions like solar panels and small wind turbines can be installed on residential properties. These systems can generate clean energy, reducing your electricity bills and carbon footprint.
                             </p>
                         </div>
@@ -51,7 +51,7 @@ export const FAQ = () => {
                     <div className='p-8' onClick={() => toggleRotation(2)}>
                         <div className='flex flex-row items-center text-center'>
                             <div>
-                                <h1 className={`text-3xl font-semibold text-[#2e3c33] text-left ${rotateAngle === 90 && showDetails2 ? 'text-[#a46433]' : ''} transition-colors duration-200`}>Are there financial incentives for using green energy?</h1>
+                                <h1 className={`text-xl md:text-3xl font-semibold text-[#2e3c33] text-left ${rotateAngle === 90 && showDetails2 ? 'text-[#a46433]' : ''} transition-colors duration-200`}>Are there financial incentives for using green energy?</h1>
                             </div>
                             <Image
                                 src='/arrow-right.svg'
@@ -62,7 +62,7 @@ export const FAQ = () => {
                             />
                         </div>
                         <div>
-                            <p className={`text-start font-normal text-lg mt-2 w-[85%] ${showDetails2 ? 'opacity-100 max-h-[1000px] transition-all duration-1000 ease-in' : 'max-h-0 overflow-hidden transition-all duration-1000 ease-out'}`}>
+                            <p className={`text-start font-normal text-base md:text-lg mt-2 w-[85%] ${showDetails2 ? 'opacity-100 max-h-[1000px] transition-all duration-1000 ease-in' : 'max-h-0 overflow-hidden transition-all duration-1000 ease-out'}`}>
                                 Green energy solutions like solar panels and small wind turbines can be installed on residential properties. These systems can generate clean energy, reducing your electricity bills and carbon footprint.
                             </p>
                         </div>
@@ -71,7 +71,7 @@ export const FAQ = () => {
                     <div className='p-8' onClick={() => toggleRotation(3)}>
                         <div className='flex flex-row items-center text-center'>
                             <div>
-                                <h1 className={`text-3xl font-semibold text-[#2e3c33] text-left ${rotateAngle === 90 && showDetails3 ? 'text-[#a46433]' : ''} transition-colors duration-200`}>What are the benefits of wind energy?</h1>
+                                <h1 className={`text-xl md:text-3xl font-semibold text-[#2e3c33] text-left ${rotateAngle === 90 && showDetails3 ? 'text-[#a46433]' : ''} transition-colors duration-200`}>What are the benefits of wind energy?</h1>
                             </div>
                             <Image
                                 src='/arrow-right.svg'
@@ -82,7 +82,7 @@ export const FAQ = () => {
                             />
                         </div>
                         <div>
-                            <p className={`text-start font-normal text-lg mt-2 w-[85%] ${showDetails3 ? 'opacity-100 max-h-[1000px] transition-all duration-1000 ease-in' : 'max-h-0 overflow-hidden transition-all duration-1000 ease-out'}`}>
+                            <p className={`text-start font-normal text-base md:text-lg mt-2 w-[85%] ${showDetails3 ? 'opacity-100 max-h-[1000px] transition-all duration-1000 ease-in' : 'max-h-0 overflow-hidden transition-all duration-1000 ease-out'}`}>
                                 Green energy solutions like solar panels and small wind turbines can be installed on residential properties. These systems can generate clean energy, reducing your electricity bills and carbon footprint.
                             </p>
                         </div>

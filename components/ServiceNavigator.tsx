@@ -9,7 +9,7 @@ type ServiceProp = {
 
 export const ServiceNavigator = ({ title, content, img }: ServiceProp) => {
     return (
-        <div className='bg-[#f6f7f9] rounded-3xl  cursor-pointer p-8 hover:bg-white mr-8 hover:border hover:border-[#16110e] transition duration-700 ease-in-out'>   
+        <div className='bg-[#f6f7f9] rounded-3xl  cursor-pointer p-8 hover:bg-white md:mr-8 hover:border hover:border-[#3b3029] transition duration-700 ease-in-out'>   
             <div >
                 <Image
                     src={img}

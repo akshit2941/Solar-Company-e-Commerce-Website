@@ -24,7 +24,7 @@ const ProjectPage = () => {
                 </div>
             </div>
 
-            <div>
+            {/* <div>
                 <div className='flex justify-center gap-10'>
                     <h1 className='project-navigator'>All Projects</h1>
                     <h1 className='project-navigator'>Wind Energy</h1>
@@ -35,7 +35,7 @@ const ProjectPage = () => {
                         Recycling
                     </h1>
                 </div>
-            </div>
+            </div> */}
 
             <div className='flex flex-col items-center justify-center md:mx-64 mt-16 mb-32'>
                 <div className='flex flex-col md:flex-row gap-4'>

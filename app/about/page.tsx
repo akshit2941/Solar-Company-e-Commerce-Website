@@ -46,13 +46,13 @@ const AboutPage = () => {
 
                 <div className="absolute inset-0 bg-black bg-opacity-50"></div>
                 <div className="absolute inset-0 flex items-center justify-center z-10">
-                    <h1 className="text-white text-7xl font-medium">About Us</h1>
+                    <h1 className="text-white text-5xl md:text-7xl font-medium">About Us</h1>
                 </div>
             </div>
 
-            <div className='flex flex-col md:flex-row items-center justify-center md:mx-64 mt-24 gap-32 mb-32'>
-                <div className='w-full md:w-[60%] top-24'>
-                    <div className='flex md:flex-row gap-12'>
+            <div className='flex flex-col md:flex-row items-center justify-center mx-12 md:mx-64 mt-12 md:mt-24 gap-32 mb-32'>
+                <div className='w-full md:w-[60%] md:top-24'>
+                    <div className='flex md:flex-row gap-4 md:gap-12'>
                         {Object.keys(tabs).map((tab) => (
                             <h1
                                 key={tab}
@@ -82,12 +82,12 @@ const AboutPage = () => {
                 </div>
             </div>
 
-            <div className='mt-36 mb-32 flex flex-col mx-32 justify-center items-center'>
+            <div className='mt-36 mb-32 flex flex-col mx-8 md:mx-32 justify-center items-center'>
                 <div className='flex flex-col text-center justify-center'>
-                    <h1 className='text-5xl font-medium'>
+                    <h1 className='text-5xl font-[2.5rem]'>
                         Empowering Change
                     </h1>
-                    <p className='text-2xl md:mx-64 mt-8'>Our commitment to recycling drives us towards a circular economy where waste becomes a resource. Join us in shaping a cleaner, brighter future.</p>
+                    <p className='text-lg md:text-xl md:mx-64 mt-3 md:mt-8'>Our commitment to recycling drives us towards a circular economy where waste becomes a resource. Join us in shaping a cleaner, brighter future.</p>
                 </div>
 
                 <div className='mt-24 md:mx-32 flex flex-col md:flex-row gap-14'>
@@ -109,7 +109,7 @@ const AboutPage = () => {
                 </div>
             </div>
 
-            <div className='mb-32 relative w-[1400px] h-[500px] overflow-hidden rounded-3xl'>
+            <div className='mb-32 relative w-[1000px] h-[200px] md:w-[1400px] md:h-[500px] overflow-hidden rounded-3xl'>
                 <Image
                     src="/about-img.jpg"
                     alt="Styled Image"
@@ -118,7 +118,7 @@ const AboutPage = () => {
                 />
                 <div className="absolute inset-0 bg-black bg-opacity-15"></div>
                 <div className="absolute inset-0 flex items-center justify-center z-10">
-                    <h1 className="text-white text-7xl font-medium bg-black rounded-full p-5"><IoPlayOutline />
+                    <h1 className="text-white font-medium bg-black rounded-full p-5"><IoPlayOutline />
                     </h1>
                 </div>
             </div>
@@ -141,9 +141,9 @@ const AboutPage = () => {
                             className="absolute inset-0"
                         />
                     </div>
-                    <div className='flex flex-col justify-center w-[90%] mx-14'>
-                        <h1 className='text-5xl font-medium'>Wind Energy</h1>
-                        <p className='text-2xl font-normal mt-8'>Wind energy is a powerful force for change. Our wind turbines capture the breeze and transform it into a steady, renewable energy source, perfect for both urban and rural environments.</p>
+                    <div className='flex flex-col justify-center w-[90%] mx-4 md:mx-14'>
+                        <h1 className='text-4xl md:text-5xl font-medium mt-6 md:mt-0'>Wind Energy</h1>
+                        <p className='text-base md:text-2xl font-normal mt-3  md:mt-8'>Wind energy is a powerful force for change. Our wind turbines capture the breeze and transform it into a steady, renewable energy source, perfect for both urban and rural environments.</p>
                         <p className='underline text-xl text-[#87634a] mt-4 hover:text-[#2c3b35]' style={{ textUnderlineOffset: '8px' }}>
                             Learn More
                         </p>
@@ -183,7 +183,7 @@ const AboutPage = () => {
                     <div className="absolute inset-0 bg-black bg-opacity-60 rounded-lg"></div>
 
                     <div className="absolute inset-0 flex flex-col gap-10 items-center text-center justify-center">
-                        <p className="text-white text-5xl font-medium w-[50%]">It`&apos;s Always The Right Time To Get Closer To A Zero-Waste Future</p>
+                        <p className="text-white text-2xl md:text-5xl font-medium  md:w-[50%]">It&apos;s Always The Right Time To Get Closer To A Zero-Waste Future</p>
                         <Button
                             title='Discover More'
                             variant='btn_white'
@@ -222,8 +222,8 @@ const AboutCard = ({ imageUrl, title, content }: AboutCartProp) => {
                     height={100}
                     className='bg-[#2c3d33] rounded-full p-4'
                 />
-                <h1 className='text-4xl font-medium mt-4'>{title}</h1>
-                <p className='text-2xl font-normal mt-4'>{content}</p>
+                <h1 className='text-3xl font-semibold mt-4'>{title}</h1>
+                <p className='text-lg font-normal mt-4'>{content}</p>
 
             </div>
         </div>
@@ -241,7 +241,7 @@ const AboutEnergyCard = ({ imageUrl, title, content }: AboutEnergyProp) => {
 
     return (
         <div className="flex flex-col md:flex-row-reverse ">
-            <div className="relative w-full h-[25rem] overflow-hidden rounded-3xl shadow-lg ">
+            <div className="relative w-full h-[25rem] overflow-hidden rounded-3xl ">
                 <Image
                     src={imageUrl}
                     alt="Styled Image"
@@ -250,9 +250,9 @@ const AboutEnergyCard = ({ imageUrl, title, content }: AboutEnergyProp) => {
                     className="absolute inset-0"
                 />
             </div>
-            <div className='flex flex-col justify-center w-[90%] mx-14'>
-                <h1 className='text-5xl font-medium'>{title}</h1>
-                <p className='text-2xl font-normal mt-8'>{content}</p>
+            <div className='flex flex-col justify-center w-[90%] mx-4 md:mx-14'>
+                <h1 className='text-4xl md:text-5xl font-medium mt-6 md:mt-0'>{title}</h1>
+                <p className='text-base md:text-2xl font-normal mt-3  md:mt-8'>{content}</p>
                 <p className='underline text-xl text-[#87634a] mt-4 hover:text-[#2c3b35]' style={{ textUnderlineOffset: '8px' }}>
                     Learn More
                 </p>

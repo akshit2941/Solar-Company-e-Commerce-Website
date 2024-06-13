@@ -22,7 +22,7 @@ const ServicePage = () => {
 
                 <div className="absolute inset-0 bg-black bg-opacity-50 rounded-lg"></div>
                 <div className="absolute inset-0 flex items-center justify-center z-10">
-                    <h1 className="text-white text-7xl font-medium">Services</h1>
+                    <h1 className="text-white text-4xl md:text-7xl font-medium">Services</h1>
                 </div>
             </div>
 
@@ -118,10 +118,10 @@ const ServicePage = () => {
             </div>
 
             <div className='bg-[#f6f7f9] flex justify-center my-32'>
-                <div className='w-full items-center md:mx-64 flex flex-col md:flex-row'>
+                <div className='w-full items-center mx-12 md:mx-64 flex flex-col md:flex-row'>
 
                     <div className='flex-1 flex-col'>
-                        <h1 className='text-5xl font-semibold'>Eco-Advantages: What You Gain By Choosing Us</h1>
+                        <h1 className='text-3xl md:text-5xl font-semibold'>Eco-Advantages: What You Gain By Choosing Us</h1>
                         <ul className="list-disc list-inside space-y-2 mt-14">
                             <li className="service-list">Expertise in Sustainability Solutions</li>
                             <li className="service-list">Circular Economy, Reduced Footprint</li>
@@ -135,7 +135,7 @@ const ServicePage = () => {
                         </div>
                     </div>
 
-                    <div className='flex-1 relative w-full h-[1000px] md:h-[500px] rounded-3xl  my-12 justify-end overflow-hidden'>
+                    <div className='flex-1 relative w-full h-[1000px] md:h-[500px] rounded-3xl my-12 justify-end overflow-hidden'>
                         <Image
                             src='/serviceContainer.webp'
                             alt='Service Image'

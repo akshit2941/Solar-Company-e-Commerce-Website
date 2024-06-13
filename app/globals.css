@@ -149,11 +149,11 @@
   }
 
   .about-tags {
-    @apply rounded-3xl border bg-[#e2d1bf] p-2 px-8 text-2xl font-normal text-[#a2672f] transition duration-300 hover:bg-[#a2672f] hover:text-white;
+    @apply rounded-3xl border bg-[#e2d1bf] p-2 px-4 md:px-8 text-lg md:text-2xl font-normal text-[#a2672f] transition duration-300 hover:bg-[#a2672f] hover:text-white;
   }
 
   .service-list {
-    @apply text-2xl text-black;
+    @apply text-lg md:text-2xl text-black;
   }
 }
 
