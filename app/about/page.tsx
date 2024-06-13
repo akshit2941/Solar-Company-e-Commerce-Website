@@ -7,6 +7,8 @@ import { Footer } from '@/components/Footer';
 import Navbar from '@/components/Navbar';
 import Image from 'next/image';
 import React, { useState } from 'react'
+import { IoPlayOutline } from "react-icons/io5";
+
 
 type TabKey = 'mission' | 'values' | 'services';
 
@@ -48,9 +50,9 @@ const AboutPage = () => {
                 </div>
             </div>
 
-            <div className='flex flex-row items-center justify-center mx-64 mt-24 gap-32 mb-32'>
-                <div className='w-[60%] top-24'>
-                    <div className='flex flex-row gap-12'>
+            <div className='flex flex-col md:flex-row items-center justify-center md:mx-64 mt-24 gap-32 mb-32'>
+                <div className='w-full md:w-[60%] top-24'>
+                    <div className='flex md:flex-row gap-12'>
                         {Object.keys(tabs).map((tab) => (
                             <h1
                                 key={tab}
@@ -64,8 +66,8 @@ const AboutPage = () => {
                     </div>
 
                     <div className='mt-12'>
-                        <h1 className='text-6xl font-medium'>{tabs[activeTab].title}</h1>
-                        <p className='text-2xl mt-6'>{tabs[activeTab].content}</p>
+                        <h1 className='text-4xl md:text-6xl font-medium'>{tabs[activeTab].title}</h1>
+                        <p className='text-xl md:text-2xl mt-6'>{tabs[activeTab].content}</p>
                     </div>
                 </div>
 
@@ -85,10 +87,10 @@ const AboutPage = () => {
                     <h1 className='text-5xl font-medium'>
                         Empowering Change
                     </h1>
-                    <p className='text-2xl mx-64 mt-8'>Our commitment to recycling drives us towards a circular economy where waste becomes a resource. Join us in shaping a cleaner, brighter future.</p>
+                    <p className='text-2xl md:mx-64 mt-8'>Our commitment to recycling drives us towards a circular economy where waste becomes a resource. Join us in shaping a cleaner, brighter future.</p>
                 </div>
 
-                <div className='mt-24 mx-32 flex flex-row gap-14'>
+                <div className='mt-24 md:mx-32 flex flex-col md:flex-row gap-14'>
                     <AboutCard
                         imageUrl='/aboutsvg1.svg'
                         title='Clean Energy Revolution'
@@ -107,37 +109,51 @@ const AboutPage = () => {
                 </div>
             </div>
 
-            <div className='mb-32'>
-                <div className="relative w-[1400px] h-[500px] overflow-hidden rounded-3xl">
-                    <Image
-                        src="/about-img.jpg"
-                        alt="Styled Image"
-                        layout="fill"
-                        objectFit="cover"
-                    />
+            <div className='mb-32 relative w-[1400px] h-[500px] overflow-hidden rounded-3xl'>
+                <Image
+                    src="/about-img.jpg"
+                    alt="Styled Image"
+                    layout="fill"
+                    objectFit="cover"
+                />
+                <div className="absolute inset-0 bg-black bg-opacity-15"></div>
+                <div className="absolute inset-0 flex items-center justify-center z-10">
+                    <h1 className="text-white text-7xl font-medium bg-black rounded-full p-5"><IoPlayOutline />
+                    </h1>
                 </div>
             </div>
 
-            <div className='mx-64 flex flex-col mb-32 gap-32'>
+
+            <div className='md:mx-64 flex flex-col mb-32 gap-32'>
                 <AboutEnergyCard
                     imageUrl='/energy-1.jpg'
                     title='Solar Energy'
                     content='The sun is an abundant source of energy waiting to be harnessed. Our solar panels and systems are designed to seamlessly integrate into your space, powering your home or business with clean, reliable energy.'
-                    variant='left'
-
-
                 />
-                <AboutEnergyCard
-                    imageUrl='/energy-2.jpg'
-                    title='Wind Energy'
-                    content='Wind energy is a powerful force for change. Our wind turbines capture the breeze and transform it into a steady, renewable energy source, perfect for both urban and rural environments.'
-                    variant='right'
-                />
+
+                <div className="flex flex-col md:flex-row ">
+                    <div className="relative w-full h-[25rem] overflow-hidden rounded-3xl shadow-lg ">
+                        <Image
+                            src='/energy-2.jpg'
+                            alt="Styled Image"
+                            layout="fill"
+                            objectFit="cover"
+                            className="absolute inset-0"
+                        />
+                    </div>
+                    <div className='flex flex-col justify-center w-[90%] mx-14'>
+                        <h1 className='text-5xl font-medium'>Wind Energy</h1>
+                        <p className='text-2xl font-normal mt-8'>Wind energy is a powerful force for change. Our wind turbines capture the breeze and transform it into a steady, renewable energy source, perfect for both urban and rural environments.</p>
+                        <p className='underline text-xl text-[#87634a] mt-4 hover:text-[#2c3b35]' style={{ textUnderlineOffset: '8px' }}>
+                            Learn More
+                        </p>
+                    </div>
+                </div >
+
                 <AboutEnergyCard
                     imageUrl='/energy-3.jpg'
                     title='Recycling'
                     content='By embracing the principles of reusing, and recycling, were paving the way for a more sustainable future. Discover how small actions can make a big impact as we work together to reduce waste and protect our planet.'
-                    variant='left'
                 />
             </div>
 
@@ -150,7 +166,7 @@ const AboutPage = () => {
                 <ClientStories />
             </div>
 
-            <div className='mt-32 mx-64'>
+            <div className='mt-32'>
                 <FAQ />
             </div>
 
@@ -167,7 +183,7 @@ const AboutPage = () => {
                     <div className="absolute inset-0 bg-black bg-opacity-60 rounded-lg"></div>
 
                     <div className="absolute inset-0 flex flex-col gap-10 items-center text-center justify-center">
-                        <p className="text-white text-5xl font-medium w-[50%]">It's Always The Right Time To Get Closer To A Zero-Waste Future</p>
+                        <p className="text-white text-5xl font-medium w-[50%]">It`&apos;s Always The Right Time To Get Closer To A Zero-Waste Future</p>
                         <Button
                             title='Discover More'
                             variant='btn_white'
@@ -198,7 +214,7 @@ type AboutCartProp = {
 const AboutCard = ({ imageUrl, title, content }: AboutCartProp) => {
     return (
         <div>
-            <div className='flex flex-col text-center items-center'>
+            <div className='flex flex-col  text-center items-center'>
                 <Image
                     src={imageUrl}
                     alt='SVG'
@@ -218,15 +234,13 @@ type AboutEnergyProp = {
     imageUrl: string,
     title: string,
     content: string,
-    variant: string,
 }
 
 
-const AboutEnergyCard = ({ imageUrl, title, content, variant }: AboutEnergyProp) => {
-    const position = variant === 'left' ? 'flex-row-reverse' : 'flex-row';
+const AboutEnergyCard = ({ imageUrl, title, content }: AboutEnergyProp) => {
 
     return (
-        <div className={`flex ${position}`}>
+        <div className="flex flex-col md:flex-row-reverse ">
             <div className="relative w-full h-[25rem] overflow-hidden rounded-3xl shadow-lg ">
                 <Image
                     src={imageUrl}

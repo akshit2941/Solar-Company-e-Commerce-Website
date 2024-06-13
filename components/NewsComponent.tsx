@@ -10,7 +10,7 @@ type NewsProp = {
 
 const NewsCard = ({ imageUrl, title, content }: NewsProp) => {
     return (
-        <div className='p-3'>
+        <div className='p-3 mt-10 md:mt-0'>
             <div className='overflow-hidden rounded-3xl'>
                 <Image
                     src={imageUrl}
@@ -57,8 +57,8 @@ export const ProjectCard = ({ imageUrl, title, content }: NewsProp) => {
 
 export const NewsComponent = () => {
     return (
-        <div className='mt-8'>
-            <div className='flex flex-row'>
+        <div className='mt-8 mx-10 md:mx-0'>
+            <div className='flex flex-col md:flex-row'>
                 <NewsCard imageUrl='/news1.jpg' title='Eco-Friendly Innovations The Latest Advancements' content='The quest for a greener, more sustainable future has led to remarkable innovations in technology.' />
                 <NewsCard imageUrl='/news3.jpg' title='Eco-Friendly Innovations The Latest Advancements' content='The quest for a greener, more sustainable future has led to remarkable innovations in technology.' />
                 <NewsCard imageUrl='/news2.jpg' title='Eco-Friendly Innovations The Latest Advancements' content='The quest for a greener, more sustainable future has led to remarkable innovations in technology.' />

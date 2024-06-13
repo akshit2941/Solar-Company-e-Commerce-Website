@@ -13,8 +13,8 @@ export const Navbar = () => {
                     className='ml-12'
                 />
             </div>
-            <nav>
-                <ul className="flex space-x-6 text-white">
+            <nav className=''>
+                <ul className="hidden md:flex space-x-6 text-white">
                     <li className='navbar-ul-class'>
                         <Link href='/home'>
                             Home
@@ -39,7 +39,7 @@ export const Navbar = () => {
                     <li className='navbar-ul-class'>Products</li>
                 </ul>
             </nav>
-            <button className="navbar-btn text-white mr-12 border-white">
+            <button className="hidden md:flex navbar-btn text-white mr-12 border-white">
                 <Link href='/contact'>
                     Contact Us
                 </Link>

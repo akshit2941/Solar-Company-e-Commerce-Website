@@ -21,19 +21,21 @@ const Home = () => {
           className="absolute top-0 left-0 w-full h-full z-0 rounded-b-3xl bg-[#2f3c35]"
         />
 
-        <div className="absolute inset-0 flex flex-row items-center justify-center text-white z-10">
-          {/* Left Section */}
-          <div className='flex-1 flex flex-col items-center md:items-start text-center md:text-left p-4 ml-48'>
-            <h1 className="text-5xl md:text-7xl font-bold mb-4">Renew, Reuse, Recycle</h1>
-            <p className='text-2xl mt-4'>Discover how your small actions can make a big impact as we work together to reduce waste, conserve resources, and protect our planet for generations to come.</p>
+        <div className=" flex flex-col absolute sm:flex-row items-center justify-center text-white z-10">
+
+
+          <div className='flex flex-1 flex-col p-4 md:ml-48'>
+            <h1 className="text-4xl mt-32 md:mt-0 md:text-7xl font-bold mb-4 ">Renew, Reuse, Recycle</h1>
+            <p className='text-lg md:text-2xl mt-4'>Discover how your small actions can make a big impact as we work together to reduce waste, conserve resources, and protect our planet for generations to come.</p>
             <div className='mt-6'>
               <Link href='/contact'>
                 <Button title='Get Started' variant='btn_white' />
               </Link>
             </div>
           </div>
-          {/* Right Section */}
-          <div className='flex-1 flex justify-center md:justify-end p-8 mt-10 mr-60'>
+
+
+          <div className='flex-1 flex justify-center md:justify-end p-8 mt-10 md:mr-60'>
             <div className='grid grid-cols-2 gap-y-8 gap-x-48 mt-12 justify-center items-center' style={{ gridTemplateColumns: '200px 200px', gridAutoRows: 'auto' }}>
               <div className="relative w-[320px] h-[280px] overflow-hidden rounded-xl transform -rotate-12">
                 <Image
@@ -72,8 +74,9 @@ const Home = () => {
         </div>
       </div>
 
-      <div className='flex flex-row mt-48 mb-48 mx-64 justify-center items-center'>
+      <div className='flex flex-row mt-48 mb-48 md:mx-64 justify-center items-center'>
         {/* Left Image */}
+
         <div className="w-full max-w-lg mx-auto">
           <Image
             src="/Globe.webp"
@@ -86,10 +89,10 @@ const Home = () => {
         </div>
 
         {/* Right Content */}
-        <div className='relative  -mt-16 w-1/2'>
-          <h1 className='text-5xl font-medium text-[#2D3D33]'>Sustainability Is More Than A Goal – It's Our Mission</h1>
+        <div className='relative -mt-16 w-1/2'>
+          <h1 className='text-3xl md:text-5xl font-medium text-[#2D3D33]'>Sustainability Is More Than A Goal – It&apos;s Our Mission</h1>
           <p className='text-2xl font-normal text-[#232323] mt-8'>
-            We're dedicated to revolutionizing the way we power our world. Our commitment to a greener tomorrow drives us to provide innovative and sustainable energy solutions that make a real difference. Join us in the journey towards a cleaner, more vibrant planet.
+            We&apos;re dedicated to revolutionizing the way we power our world. Our commitment to a greener tomorrow drives us to provide innovative and sustainable energy solutions that make a real difference. Join us in the journey towards a cleaner, more vibrant planet.
           </p>
           <div className='relative flex mt-8 bg-[#2c3b35] rounded-2xl p-6 -left-1/4'>
             <div className='flex-1 flex-col items-center text-center'>
@@ -108,7 +111,7 @@ const Home = () => {
         </div>
       </div>
 
-      <div className='mx-64'>
+      <div className='mx-10 md:mx-64'>
         <div className='flex flex-row justify-between m-auto'>
           <div className='text-center items-center justify-start'>
             <h1 className='text-4xl font-semibold text-[#2d3d33]'>Our Services</h1>
@@ -123,7 +126,7 @@ const Home = () => {
           </div>
         </div>
 
-        <div className='mt-14 flex flex-row'>
+        <div className='mt-14 flex flex-col md:flex-row'>
           <div className='w-[100%] h-[300px] '>
             <Link href='/services/service1'>
               <ServiceNavigator
@@ -154,13 +157,13 @@ const Home = () => {
         </div>
       </div>
 
-      <div className='flex flex-row bg-bg-img-1 mb-24 mt-40' >
-        <div className=' bg-[#2d3d33] rounded-br-[210px] w-3/5'>
-          <div className=' ml-52 mb-20'>
+      <div className='flex flex-col bg-none md:bg-bg-img-1 mb-24 mt-40' >
+        <div className=' bg-[#2d3d33] md:rounded-br-[210px] md:w-3/5'>
+          <div className=' md:ml-52 mb-20'>
             <h1 className='text-white text-4xl font-semibold mt-20'>
               Green Solutions
             </h1>
-            <p className='text-white text-xl font-medium mt-6 w-3/4'>We're dedicated to revolutionizing the way we power our world. Our commitment to a greener tomorrow drives us to provide innovative and sustainable energy solutions that make a real difference. Join us in the journey towards a cleaner, more vibrant planet.
+            <p className='text-white text-xl font-medium mt-6 w-3/4'>We&apos;re dedicated to revolutionizing the way we power our world. Our commitment to a greener tomorrow drives us to provide innovative and sustainable energy solutions that make a real difference. Join us in the journey towards a cleaner, more vibrant planet.
             </p>
             <div className='mt-10'>
               <Link href='/services'>
@@ -174,7 +177,7 @@ const Home = () => {
         </div>
       </div>
 
-      <div className='mx-64 mb-32'>
+      <div className='md:mx-64 mb-32'>
         <div className='flex flex-row justify-between m-auto'>
           <div className='text-center items-center justify-start'>
             <h1 className='text-4xl font-semibold text-[#2d3d33]'>Our Projects</h1>
@@ -189,9 +192,9 @@ const Home = () => {
           </div>
         </div>
 
-        <div className='flex mt-8 cursor-pointer'>
+        <div className='flex flex-col md:flex-row mt-8 cursor-pointer'>
           {/* Left */}
-          <div >
+          <div>
             <div>
               <Link href='/projects/projectPage2'>
                 <div className="relative w-[550px] h-[300px] overflow-hidden rounded-3xl ">
@@ -209,6 +212,7 @@ const Home = () => {
                 </div>
               </Link>
             </div>
+
             <div className='mt-8'>
               <Link href='/projects/projectPage3'>
                 <div className="relative w-[550px] h-[300px] overflow-hidden rounded-3xl  ">
@@ -226,29 +230,32 @@ const Home = () => {
                 </div>
               </Link>
             </div>
+
           </div>
           {/* Right */}
-          <div className='flex-col w-full ml-10'>
-            <Link href='/projects/projectPage5'>
-              <div className="relative w-full h-[90%] overflow-hidden rounded-3xl ">
-                <Image
-                  src="/project-3.jpg"
-                  alt="Styled Image"
-                  layout="fill"
-                  objectFit="cover"
-                  className="absolute inset-0 transition-transform duration-500 transform hover:scale-105"
-                />
-              </div>
-              <div >
-                <h1 className='project-head'>Large-Scale Farm</h1>
-                <p className='project-para'>Solar Energy</p>
-              </div>
-            </Link>
+          <div>
+            <div className='flex-col w-full ml-10'>
+              <Link href='/projects/projectPage5'>
+                <div className="relative w-full h-[90%] overflow-hidden rounded-3xl ">
+                  <Image
+                    src="/project-3.jpg"
+                    alt="Styled Image"
+                    layout="fill"
+                    objectFit="cover"
+                    className="absolute inset-0 transition-transform duration-500 transform hover:scale-105"
+                  />
+                </div>
+                <div >
+                  <h1 className='project-head'>Large-Scale Farm</h1>
+                  <p className='project-para'>Solar Energy</p>
+                </div>
+              </Link>
+            </div>
           </div>
         </div>
       </div>
 
-      <div className='mx-64 mb-28'>
+      <div className='mb-28'>
         <FAQ />
       </div>
 
@@ -256,7 +263,7 @@ const Home = () => {
         <ClientStories />
       </div>
 
-      <div className='mx-64 mb-32'>
+      <div className='md:mx-64 mb-32'>
         <div className='flex flex-row justify-between m-auto'>
           <div className='text-center items-center justify-start'>
             <h1 className='text-4xl font-semibold text-[#2d3d33]'>Top News</h1>

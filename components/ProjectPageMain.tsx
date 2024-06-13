@@ -30,14 +30,16 @@ const ProjectPageMain = ({ imageUrl, title, subHeading, buttonTitle }: ProjectPa
                 <div className="absolute inset-0 bg-[#232323] bg-opacity-55"></div>
 
                 <div className="absolute inset-0 flex flex-col items-center justify-center z-10">
-                    <h2 className='bg-[#a26630] text-white p-1 px-4 font-normal text-xl rounded-3xl hover:bg-[#2c3b35] duration-300'>{buttonTitle}</h2>
-                    <h1 className="text-white text-7xl font-semibold mt-8">{title}</h1>
+                    <h2 className='bg-[#a26630] text-white  p-1 px-4 font-normal text-xl rounded-3xl hover:bg-[#2c3b35] duration-300'>{buttonTitle}</h2>
+                    <h1 className="text-white text-7xl text-center font-semibold mt-8">{title}</h1>
                     <p className='text-white text-xl font-normal text-center mt-10 w-[50%]'>{subHeading}</p>
                 </div>
+
             </div>
 
-            <div className='bg-[#f6f6f9] h-[250px] mb-32'>
-                <div className='mx-64 pt-16 flex flex-row'>
+
+            <div className='w-full bg-[#f6f6f9] h-[250px] mb-32'>
+                <div className='mx-12 md:mx-64 pt-16 flex flex-row md:flex-row'>
                     <div className='flex-1'>
                         <h1 className='font-semibold text-2xl'>Client</h1>
                         <p className='font-medium text-xl mt-4'>Akshit</p>
@@ -69,7 +71,8 @@ const ProjectPageMain = ({ imageUrl, title, subHeading, buttonTitle }: ProjectPa
                 </div>
             </div>
 
-            <div className='mx-64 mb-16'>
+
+            <div className='mx-12 md:mx-64 mb-16'>
                 <div>
                     <h1 className='text-5xl text-[#2e3c35] font-semibold'>Project Overview:</h1>
                     <p className='text-2xl text-[#2e3c35] mt-4 '>The Solar-Powered Home Project is an initiative aimed at transforming a traditional residential property into an energy-efficient and sustainable home by integrating solar power systems. This project embodies our commitment to reducing carbon emissions, decreasing energy bills, and promoting renewable energy adoption in residential settings. Through this initiative, we aim to demonstrate the feasibility and benefits of solar energy for homeowners while contributing to a greener and more sustainable future.</p>

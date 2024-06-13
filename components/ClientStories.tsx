@@ -76,13 +76,13 @@ export const ClientStories = () => {
                 <h1 className='text-2xl bg-[#e2d1bf] text-[#936a45] p-3 rounded-5xl mt-16'>Our Happy Client Stories</h1>
             </div>
 
-            <div className='mx-64 text-center mt-12 h-[120px]'>
+            <div className='md:mx-64 text-center mt-12 h-[120px]'>
                 <span className={`text-3xl font-semibold text-[#2c3b35] ${storyAnimation ? 'animate-slideIn' : ''}`}>
                     {selectedClientStory.story}
                 </span>
             </div>
 
-            <div className='flex flex-row mt-8 py-8 justify-center gap-8'>
+            <div className='flex flex-col md:flex-row mt-8 py-8 justify-center gap-8'>
                 {clients.map((client) => (
                     <ClientCard
                         key={client.id}

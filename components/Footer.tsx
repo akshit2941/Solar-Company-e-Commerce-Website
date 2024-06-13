@@ -13,15 +13,15 @@ export const Footer = () => {
           <div className='flex justify-center mt-2'>
             <Image src='/logo.png' alt="logo" width={220} height={50} />
           </div>
-          <h1 className='text-white text-xl mt-2 mx-4'>"Go Green, Go Solar"</h1>
+          <h1 className='text-white text-xl mt-2 mx-4'>&quot;Go Green, Go Solar&quot;</h1>
         </div>
         <div className='flex justify-center items-center text-center mt-4'>
           <Image src="/mail.svg" alt='mail' width={30} height={35} />
           <h1 className='ml-2 text-xl'>sales@aldexenergies.com</h1>
         </div>
 
-        <div>
-          <ul className='flex flex-row justify-center'>
+        <div className='flex justify-center '>
+          <ul className='flex w-full flex-row justify-center'>
             <li className='footer-li'>
               <Link href="/home">
                 Home
@@ -29,12 +29,22 @@ export const Footer = () => {
             </li>
             <li className='footer-li'>
               <Link href="/about">
-                About Us
+                About
               </Link>
             </li>
-            <li className='footer-li'>Project</li>
+            <li className='footer-li'>
+              <Link href='/projects'>
+                Project
+              </Link>
+
+            </li>
             <li className='footer-li'>Solutions</li>
-            <li className='footer-li'>Services</li>
+            <li className='footer-li'>
+              <Link href='/services'>
+                Services
+              </Link>
+
+            </li>
             <li className='footer-li'>Products</li>
           </ul>
         </div>

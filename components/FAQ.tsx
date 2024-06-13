@@ -21,7 +21,7 @@ export const FAQ = () => {
     };
 
     return (
-        <div>
+        <div className='md:mx-64'>
             <div>
                 <span className='bg-[#e2d1bf] text-[#936a45] text-xl p-4 px-8 font-medium rounded-5xl'>FAQ</span>
             </div>

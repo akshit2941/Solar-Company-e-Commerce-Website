@@ -37,13 +37,13 @@ const ProjectPage = () => {
                 </div>
             </div>
 
-            <div className='flex flex-col items-center justify-center mx-64 mt-16 mb-32'>
-                <div className='flex flex-row gap-4'>
+            <div className='flex flex-col items-center justify-center md:mx-64 mt-16 mb-32'>
+                <div className='flex flex-col md:flex-row gap-4'>
                     <Link href='/projects/projectPage1'><ProjectCard imageUrl='/news1.jpg' title='Green Building Retrofit' content='Solar Energy' /></Link>
                     <Link href='/projects/projectPage2'><ProjectCard imageUrl='/project-1.jpg' title='Wind Farm' content='Wind Energy' /></Link>
                     <Link href='/projects/projectPage3'><ProjectCard imageUrl='/project-2.jpg' title='Solar-Powered Home' content='Solar Energy' /></Link>
                 </div>
-                <div className='flex flex-row gap-4'>
+                <div className='flex flex-col md:flex-row gap-4'>
                     <Link href='/projects/projectPage4'><ProjectCard imageUrl='/project-4.jpg' title='Recycling Education Campaign' content='Recycling' /></Link>
                     <Link href='/projects/projectPage5'><ProjectCard imageUrl='/project-3.jpg' title='Large-Scale Solar Farm' content='Solar Energy' /></Link>
                     <Link href='/projects/projectPage6'><ProjectCard imageUrl='/energy-3.jpg' title='Waste Reduction Challenge' content='Recycling' /></Link>

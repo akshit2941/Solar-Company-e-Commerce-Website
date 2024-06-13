@@ -94,9 +94,8 @@
 }
 
 @layer utilities {
-
-  .service-navigator-common-class{
-    @apply w-full h-[260px]
+  .service-navigator-common-class {
+    @apply h-[300px] w-full md:h-[260px];
   }
   .navbar-ul-class {
     @apply p-3 font-sans text-xl duration-500 hover:opacity-70;
@@ -146,7 +145,7 @@
     @apply mt-2 text-xl font-normal text-[#b15d3d] transition duration-300 ease-in-out hover:text-[#2e3c33];
   }
   .footer-li {
-    @apply mt-4 px-4 text-2xl hover:text-[#a2672f];
+    @apply mt-4 px-4 text-base duration-300 hover:text-[#a2672f] md:text-2xl;
   }
 
   .about-tags {

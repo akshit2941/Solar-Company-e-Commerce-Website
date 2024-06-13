@@ -28,10 +28,10 @@ const ServiceComponentMain = ({ title, imageUrl }: ServiceProp) => {
                 </div>
             </div>
 
-            <div className='mx-64 my-32'>
+            <div className='md:mx-64 my-32'>
                 <div>
                     <h1 className='text-5xl text-[#2e3c35] font-semibold'>Solar Panel Installation: Harvesting Energy from the Sun</h1>
-                    <p className='text-2xl text-[#2e3c35] mt-4'>Harness the power of the sun with our comprehensive solar panel installation service. Our team of skilled professionals is committed to transforming your property into a hub of clean, renewable energy. Here's how our solar panel installation service can benefit you:</p>
+                    <p className='text-2xl text-[#2e3c35] mt-4'>Harness the power of the sun with our comprehensive solar panel installation service. Our team of skilled professionals is committed to transforming your property into a hub of clean, renewable energy. Here&apos;s how our solar panel installation service can benefit you:</p>
                 </div>
 
                 <div>
@@ -70,12 +70,12 @@ const ServiceComponentMain = ({ title, imageUrl }: ServiceProp) => {
                 </div>
 
                 <div className='text-2xl text-[#2e3c35] mt-8'>
-                    <p>At Aldex Energy, we're dedicated to making the transition to solar energy a smooth and rewarding experience. From initial assessment and system design to installation and post-installation support, we're with you every step of the way. Together, let's make a brighter, greener future. Contact us today to schedule a consultation and take the first step towards clean energy independence.</p>
+                    <p>At Aldex Energy, we&apos;re dedicated to making the transition to solar energy a smooth and rewarding experience. From initial assessment and system design to installation and post-installation support, we&apos;re with you every step of the way. Together, let&apos;s make a brighter, greener future. Contact us today to schedule a consultation and take the first step towards clean energy independence.</p>
                 </div>
 
             </div>
 
-            <div className='mx-64'>
+            <div >
                 <FAQ />
             </div>
 

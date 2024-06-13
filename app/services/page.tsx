@@ -26,8 +26,8 @@ const ServicePage = () => {
                 </div>
             </div>
 
-            <div className='mx-64'>
-                <div className='mt-14 flex flex-row'>
+            <div className='mx-4 mt-12 md:mx-64'>
+                <div className='md:mt-14 flex flex-col md:flex-row'>
                     <div className='service-navigator-common-class'>
                         <Link href='/services/service1'>
                             <ServiceNavigator
@@ -56,7 +56,7 @@ const ServicePage = () => {
                         </Link>
                     </div>
                 </div>
-                <div className='mt-14 flex flex-row'>
+                <div className='md:mt-14 flex flex-col md:flex-row'>
                     <div className='service-navigator-common-class'>
                         <Link href='/services/service4'>
                             <ServiceNavigator
@@ -86,7 +86,7 @@ const ServicePage = () => {
                         </Link>
                     </div>
                 </div>
-                <div className='mt-14 flex flex-row'>
+                <div className='md:mt-14 flex flex-col md:flex-row'>
                     <div className='service-navigator-common-class'>
                         <Link href='/services/service7'>
                             <ServiceNavigator
@@ -118,7 +118,7 @@ const ServicePage = () => {
             </div>
 
             <div className='bg-[#f6f7f9] flex justify-center my-32'>
-                <div className='w-full items-center mx-64 flex flex-row'>
+                <div className='w-full items-center md:mx-64 flex flex-col md:flex-row'>
 
                     <div className='flex-1 flex-col'>
                         <h1 className='text-5xl font-semibold'>Eco-Advantages: What You Gain By Choosing Us</h1>
@@ -135,7 +135,7 @@ const ServicePage = () => {
                         </div>
                     </div>
 
-                    <div className='flex-1 relative w-full h-[500px] rounded-3xl  my-12 justify-end overflow-hidden'>
+                    <div className='flex-1 relative w-full h-[1000px] md:h-[500px] rounded-3xl  my-12 justify-end overflow-hidden'>
                         <Image
                             src='/serviceContainer.webp'
                             alt='Service Image'
