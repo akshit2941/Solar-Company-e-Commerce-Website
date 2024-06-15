@@ -26,7 +26,7 @@ const ServicePage = () => {
                 </div>
             </div>
 
-            <div className='mx-4 mt-12 md:mx-64'>
+            <div className='flex flex-col lg:gap-2 mx-4 mt-12 lg:mx-12 xl:mx-64'>
                 <div className='md:mt-14 flex flex-col md:flex-row'>
                     <div className='service-navigator-common-class'>
                         <Link href='/services/service1'>
@@ -56,7 +56,7 @@ const ServicePage = () => {
                         </Link>
                     </div>
                 </div>
-                <div className='md:mt-14 flex flex-col md:flex-row'>
+                <div className='lg:mt-32 xl:mt-14 flex flex-col md:flex-row'>
                     <div className='service-navigator-common-class'>
                         <Link href='/services/service4'>
                             <ServiceNavigator
@@ -118,7 +118,7 @@ const ServicePage = () => {
             </div>
 
             <div className='bg-[#f6f7f9] flex justify-center my-32'>
-                <div className='w-full items-center mx-12 md:mx-64 flex flex-col md:flex-row'>
+                <div className='w-full items-center mx-12 lg:mx-14 xl:mx-64 flex flex-col md:flex-row'>
 
                     <div className='flex-1 flex-col'>
                         <h1 className='text-3xl md:text-5xl font-semibold'>Eco-Advantages: What You Gain By Choosing Us</h1>

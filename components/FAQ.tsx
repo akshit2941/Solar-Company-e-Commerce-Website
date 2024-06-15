@@ -21,14 +21,14 @@ export const FAQ = () => {
     };
 
     return (
-        <div className='mx-12 md:mx-64'>
+        <div className='mx-12 lg:mx-18 2xl:mx-64'>
             <div>
                 <span className='bg-[#e2d1bf] text-[#936a45] text-xl p-4 px-8 font-medium rounded-5xl'>FAQ</span>
             </div>
 
             <div className='bg-[#f6f7f9] rounded-3xl'>
-                <div className='divide-y-2 mx-8'>
-                    <div className='p-8' onClick={() => toggleRotation(1)}>
+                <div className='divide-y-2 ms-4 md:mx-8'>
+                    <div className='p-4 md:p-8' onClick={() => toggleRotation(1)}>
                         <div className='flex flex-row items-center text-center'>
                             <div>
                                 <h1 className={`text-xl md:text-3xl font-semibold text-[#2e3c33] text-left ${rotateAngle === 90 && showDetails1 ? 'text-[#a46433]' : ''} transition-colors duration-200`}>How can I make the switch to green energy? </h1>
@@ -48,7 +48,7 @@ export const FAQ = () => {
                         </div>
                     </div>
 
-                    <div className='p-8' onClick={() => toggleRotation(2)}>
+                    <div className='p-4 md:p-8' onClick={() => toggleRotation(2)}>
                         <div className='flex flex-row items-center text-center'>
                             <div>
                                 <h1 className={`text-xl md:text-3xl font-semibold text-[#2e3c33] text-left ${rotateAngle === 90 && showDetails2 ? 'text-[#a46433]' : ''} transition-colors duration-200`}>Are there financial incentives for using green energy?</h1>
@@ -68,7 +68,7 @@ export const FAQ = () => {
                         </div>
                     </div>
 
-                    <div className='p-8' onClick={() => toggleRotation(3)}>
+                    <div className='p-4 md:p-8' onClick={() => toggleRotation(3)}>
                         <div className='flex flex-row items-center text-center'>
                             <div>
                                 <h1 className={`text-xl md:text-3xl font-semibold text-[#2e3c33] text-left ${rotateAngle === 90 && showDetails3 ? 'text-[#a46433]' : ''} transition-colors duration-200`}>What are the benefits of wind energy?</h1>

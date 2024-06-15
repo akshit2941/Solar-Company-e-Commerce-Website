@@ -50,39 +50,41 @@ const AboutPage = () => {
                 </div>
             </div>
 
-            <div className='flex flex-col md:flex-row items-center justify-center mx-12 md:mx-64 mt-12 md:mt-24 gap-32 mb-32'>
-                <div className='w-full md:w-[60%] md:top-24'>
-                    <div className='flex md:flex-row gap-4 md:gap-12'>
-                        {Object.keys(tabs).map((tab) => (
-                            <h1
-                                key={tab}
-                                className={`about-tags ${activeTab === tab ? 'font-bold' : ''}`}
-                                onClick={() => setActiveTab(tab as TabKey)}
-                                style={{ cursor: 'pointer', backgroundColor: activeTab === tab ? '#a2672f' : '', color: activeTab === tab ? '#ffffff' : '' }}
-                            >
-                                {`Our ${tab.charAt(0).toUpperCase() + tab.slice(1)}`}
-                            </h1>
-                        ))}
+            <div className="-mt-12 md:-mt-24 z-10 rounded-3xl bg-white">
+                <div className="flex flex-col md:flex-row items-center justify-center mx-6 lg:mx-16 xl:mx-64 mt-12 md:mt-24 gap-32 mb-2 md:mb-12">
+                    <div className="w-full lg:w-[70%] xl:w-[60%]">
+                        <div className="flex md:flex-row gap-4 lg:gap-6 xl:gap-12">
+                            {Object.keys(tabs).map((tab) => (
+                                <h1
+                                    key={tab}
+                                    className={`about-tags ${activeTab === tab ? 'font-bold' : ''}`}
+                                    onClick={() => setActiveTab(tab as TabKey)}
+                                    style={{ cursor: 'pointer', backgroundColor: activeTab === tab ? '#a2672f' : '', color: activeTab === tab ? '#ffffff' : '' }}
+                                >
+                                    {`Our ${tab.charAt(0).toUpperCase() + tab.slice(1)}`}
+                                </h1>
+                            ))}
+                        </div>
+
+                        <div className="mt-6 md:mt-12">
+                            <h1 className="text-4xl md:text-6xl font-medium">{tabs[activeTab].title}</h1>
+                            <p className="text-xl md:text-xl mt-6">{tabs[activeTab].content}</p>
+                        </div>
                     </div>
 
-                    <div className='mt-12'>
-                        <h1 className='text-4xl md:text-6xl font-medium'>{tabs[activeTab].title}</h1>
-                        <p className='text-xl md:text-2xl mt-6'>{tabs[activeTab].content}</p>
+                    <div className="relative w-full h-[300px] md:w-[420px] md:h-[400px] 2xl:w-[520px] 2xl:h-[500px] overflow-hidden rounded-lg shadow-lg">
+                        <Image
+                            src="/aboutImage.webp"
+                            alt="Styled Image"
+                            layout="fill"
+                            objectFit="cover"
+                            className="absolute inset-0"
+                        />
                     </div>
-                </div>
-
-                <div className="relative w-[520px] h-[500px] overflow-hidden rounded-lg shadow-lg">
-                    <Image
-                        src="/aboutImage.webp"
-                        alt="Styled Image"
-                        layout="fill"
-                        objectFit="cover"
-                        className="absolute inset-0"
-                    />
                 </div>
             </div>
 
-            <div className='mt-36 mb-32 flex flex-col mx-8 md:mx-32 justify-center items-center'>
+            <div className='mt-20 md:mt-36 mb-32 flex flex-col mx-8 lg:mx-6 xl:mx-32 justify-center items-center'>
                 <div className='flex flex-col text-center justify-center'>
                     <h1 className='text-5xl font-[2.5rem]'>
                         Empowering Change
@@ -90,7 +92,7 @@ const AboutPage = () => {
                     <p className='text-lg md:text-xl md:mx-64 mt-3 md:mt-8'>Our commitment to recycling drives us towards a circular economy where waste becomes a resource. Join us in shaping a cleaner, brighter future.</p>
                 </div>
 
-                <div className='mt-24 md:mx-32 flex flex-col md:flex-row gap-14'>
+                <div className='mt-12 md:mt-24 lg:mx-12 xl:mx-32 flex flex-col md:flex-row gap-14'>
                     <AboutCard
                         imageUrl='/aboutsvg1.svg'
                         title='Clean Energy Revolution'
@@ -109,7 +111,7 @@ const AboutPage = () => {
                 </div>
             </div>
 
-            <div className='mb-32 relative w-[1000px] h-[200px] md:w-[1400px] md:h-[500px] overflow-hidden rounded-3xl'>
+            <div className='hidden md:flex mb-32 relative w-[1000px] h-[200px] lg:w-[1100px] lg:h-[300px] 1xl:w-[1400px] 2xl:h-[500px] overflow-hidden rounded-3xl'>
                 <Image
                     src="/about-img.jpg"
                     alt="Styled Image"
@@ -124,7 +126,7 @@ const AboutPage = () => {
             </div>
 
 
-            <div className='md:mx-64 flex flex-col mb-32 gap-32'>
+            <div className='mx-5 lg:mx-12 2xl:mx-64 flex flex-col mb-32 gap-12 md:gap-32'>
                 <AboutEnergyCard
                     imageUrl='/energy-1.jpg'
                     title='Solar Energy'
@@ -172,7 +174,7 @@ const AboutPage = () => {
 
 
 
-            <footer className='w-full mt-64 relative'>
+            <footer className='w-full mt-12  md:mt-24 relative'>
                 <div className="relative w-full h-[500px] overflow-hidden top-10 z-0" >
                     <Image
                         src="/solarBaseImage.jpg"

@@ -9,13 +9,13 @@ export default function ClientDetails() {
             </div>
 
             <div className='flex flex-col text-center items-center mt-10'>
-                <h1 className='text-5xl font-semibold'>Over 1500 Clients Use Our Services</h1>
-                <p className='text-2xl font-normal w-[50%] mt-8'>
+                <h1 className='text-3xl md:text-5xl font-semibold'>Over 1500 Clients Use Our Services</h1>
+                <p className='text-xl md:text-2xl font-normal w-[80%] md:w-[50%] mt-8'>
                     Green energy solutions like solar panels and small wind turbines can be installed on residential properties.
                 </p>
             </div>
 
-            <div className='flex flex-row items-center justify-center gap-20 mt-20'>
+            <div className='hidden md:flex flex-row items-center justify-center gap-20 mt-20'>
                 <ClentIcons
                     imageUrl='/icon1.png'
                 />

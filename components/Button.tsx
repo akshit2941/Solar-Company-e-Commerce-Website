@@ -9,9 +9,11 @@ type ButtonProp = {
 const Button = ({ title, variant }: ButtonProp) => {
     const imageSrc = variant === 'btn_white' ? '/next_white.png' : '/next_black.png';
     const btnColor = variant === 'btn_white' ? 'bg-[#2e3f35] ' : 'bg-white';
+    const textColor = variant === 'btn_white' ? 'text-black' : 'text-white';
+
     return (
         <button className={`py-2 text-xl font-medium rounded-full pl-6 pr-2 flex flex-row text-center justify-center items-center group ${variant}`}>
-            <label >{title}</label>
+            <label className={`${textColor}`}>{title}</label>
             <Image
                 src={imageSrc}
                 alt="next"

@@ -17,7 +17,7 @@ export const Navbar = () => {
 
     return (
         <nav className='relative w-full h-24 text-white z-20'>
-            <div className='flex justify-between items-center h-full w-full px-4 2xl:px-16'>
+            <div className='flex justify-between items-center h-full mt-4 md:t-2 w-full px-4 2xl:px-16'>
                 <Image
                     src={Logo}
                     alt='Logo'
@@ -26,7 +26,7 @@ export const Navbar = () => {
                     className='cursor-pointer'
                     priority
                 />
-                <div className='hidden sm:flex'>
+                <div className='hidden sm:flex z-20'>
                     <ul className="hidden md:flex space-x-6 text-white">
                         <li className='navbar-ul-class'>
                             <Link href='/home'>
@@ -35,7 +35,7 @@ export const Navbar = () => {
                         </li>
                         <li className='navbar-ul-class'>
                             <Link href='/about'>
-                                About us
+                                About
                             </Link>
                         </li>
                         <li className='navbar-ul-class'>
@@ -86,35 +86,37 @@ export const Navbar = () => {
 
                 <div className='flex'>
                     <ul className='flex flex-col'>
-                        <li className='navbar-ul-class'>
+                        <li className='navbar-ul-class-menue'>
                             <Link href='/home'>
                                 Home
                             </Link>
                         </li>
-                        <li className='navbar-ul-class'>
+                        <li className='navbar-ul-class-menue'>
                             <Link href='/about'>
-                                About us
+                                About
                             </Link>
                         </li>
-                        <li className='navbar-ul-class'>
+                        <li className='navbar-ul-class-menue'>
                             <Link href='/projects'>
                                 Projects
                             </Link>
                         </li>
-                        <li className='navbar-ul-class'>Solutions</li>
-                        <li className='navbar-ul-class'>
+                        <li className='navbar-ul-class-menue'>Solutions</li>
+                        <li className='navbar-ul-class-menue'>
                             <Link href='/services'>
                                 Services
                             </Link>
                         </li>
-                        <li className='navbar-ul-class'>Products</li>
+                        <li className='navbar-ul-class-menue'>Products</li>
                     </ul>
                 </div>
                 <div className='mt-5 ml-2'>
-                    <Button
-                        title='Contact Us'
-                        variant='btn_black'
-                    />
+                    <Link href='/contact'>
+                        <Button
+                            title='Contact Us'
+                            variant='btn_black'
+                        />
+                    </Link>
                 </div>
             </div>
         </nav>

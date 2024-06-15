@@ -9,10 +9,9 @@ import React from 'react'
 const ContactPage = () => {
   return (
     <div>
-
       <div className="h-[50vh] w-full overflow-hidden relative  rounded-b-5xl">
-        <Navbar />
         <div className='relative overflow-hidden h-[900px] w-full'>
+          <Navbar />
           <Image
             src="/contactNavbar.webp"
             alt="Background"
@@ -23,12 +22,12 @@ const ContactPage = () => {
         </div>
         <div className="absolute inset-0 bg-black bg-opacity-50"></div>
         <div className="absolute inset-0 flex items-center justify-center z-10">
-          <h1 className="text-white text-7xl font-medium">Contact Us</h1>
+          <h1 className="text-white text-5xl md:text-7xl font-semibold">Contact Us</h1>
         </div>
       </div>
 
-      <div className='my-32'>
-        <div className='flex flex-col md:flex-row mx-8 lg:mx-64 mb-32'>
+      <div className='my-2 md:my-32'>
+        <div className='flex flex-col md:flex-row mx-8 lg:mx-20 xl:mx-64 mb-8 md:mb-32'>
           <div className='flex-1 mt-16 p-8 pl-0'>
 
             <div className='flex mb-8'>
@@ -36,10 +35,10 @@ const ContactPage = () => {
             </div>
 
             <div className=' mb-4'>
-              <h1 className='text-5xl font-semibold  mb-4'>
+              <h1 className='text-3xl md:text-5xl font-semibold  mb-4'>
                 Chat With Our Support Team
               </h1>
-              <p className='text-2xl'>
+              <p className='text-xl md:text-2xl'>
                 Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.
               </p>
             </div>
@@ -53,8 +52,8 @@ const ContactPage = () => {
             </div>
           </div>
 
-          <div className='flex-1 justify-center items-center my-16'>
-            <div className='relative flex w-full h-full ml-8'>
+          <div className='flex-1 justify-center items-center my-6 md:my-16'>
+            <div className='relative flex w-full h-[300px] md:w-full md:h-full md:ml-8'>
               <Image
                 src='/contactImage.webp'
                 alt='Contact Image'
@@ -76,11 +75,11 @@ const ContactPage = () => {
         <ClientStories />
       </div>
 
-      <div className='mx-64 my-32'>
+      <div className='my-12 md:my-32'>
         <FAQ />
       </div>
 
-      <div className='mt-32'>
+      <div className='md:mt-32'>
         <Footer />
       </div>
 

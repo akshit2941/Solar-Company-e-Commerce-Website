@@ -23,15 +23,16 @@ const ServiceComponentMain = ({ title, imageUrl }: ServiceProp) => {
                 />
 
                 <div className="absolute inset-0 bg-black bg-opacity-50"></div>
-                <div className="absolute inset-0 flex items-center justify-center z-10">
-                    <h1 className="text-white text-7xl font-semibold">{title}</h1>
+
+                <div className="absolute inset-0 flex text-center items-center justify-center z-10">
+                    <h1 className="text-white text-4xl md:text-7xl  font-semibold">{title}</h1>
                 </div>
             </div>
 
-            <div className='md:mx-64 my-32'>
+            <div className='mx-5 md:mx-64 my-32'>
                 <div>
-                    <h1 className='text-5xl text-[#2e3c35] font-semibold'>Solar Panel Installation: Harvesting Energy from the Sun</h1>
-                    <p className='text-2xl text-[#2e3c35] mt-4'>Harness the power of the sun with our comprehensive solar panel installation service. Our team of skilled professionals is committed to transforming your property into a hub of clean, renewable energy. Here&apos;s how our solar panel installation service can benefit you:</p>
+                    <h1 className='text-3xl md:text-5xl text-[#2e3c35] font-semibold'>Solar Panel Installation: Harvesting Energy from the Sun</h1>
+                    <p className='text-xl md:text-2xl text-[#2e3c35] mt-4'>Harness the power of the sun with our comprehensive solar panel installation service. Our team of skilled professionals is committed to transforming your property into a hub of clean, renewable energy. Here&apos;s how our solar panel installation service can benefit you:</p>
                 </div>
 
                 <div>
@@ -69,7 +70,7 @@ const ServiceComponentMain = ({ title, imageUrl }: ServiceProp) => {
                     />
                 </div>
 
-                <div className='text-2xl text-[#2e3c35] mt-8'>
+                <div className='text-xl md:text-2xl text-[#2e3c35] mt-8'>
                     <p>At Aldex Energy, we&apos;re dedicated to making the transition to solar energy a smooth and rewarding experience. From initial assessment and system design to installation and post-installation support, we&apos;re with you every step of the way. Together, let&apos;s make a brighter, greener future. Contact us today to schedule a consultation and take the first step towards clean energy independence.</p>
                 </div>
 
@@ -99,8 +100,8 @@ type ReusableProp = {
 export const ResusableDecimalPoints = ({ title, content }: ReusableProp) => {
     return (
         <div className='mt-8'>
-            <h1 className='text-5xl text-[#2e3c35] font-semibold '>{title}</h1>
-            <p className='text-2xl text-[#2e3c35] mt-8'>{content}</p>
+            <h1 className='text-3xl md:text-5xl text-[#2e3c35] font-semibold '>{title}</h1>
+            <p className='text-xl md:text-2xl text-[#2e3c35] mt-8'>{content}</p>
         </div>
 
     );

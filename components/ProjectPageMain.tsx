@@ -16,8 +16,8 @@ const ProjectPageMain = ({ imageUrl, title, subHeading, buttonTitle }: ProjectPa
     return (
         <div>
             <div className="h-[100vh] w-full overflow-hidden relative">
-                <Navbar />
                 <div className='relative overflow-hidden h-[1000px] w-full'>
+                    <Navbar />
                     <Image
                         src={imageUrl}
                         alt="Background"
@@ -31,15 +31,15 @@ const ProjectPageMain = ({ imageUrl, title, subHeading, buttonTitle }: ProjectPa
 
                 <div className="absolute inset-0 flex flex-col items-center justify-center z-10">
                     <h2 className='bg-[#a26630] text-white  p-1 px-4 font-normal text-xl rounded-3xl hover:bg-[#2c3b35] duration-300'>{buttonTitle}</h2>
-                    <h1 className="text-white text-7xl text-center font-semibold mt-8">{title}</h1>
-                    <p className='text-white text-xl font-normal text-center mt-10 w-[50%]'>{subHeading}</p>
+                    <h1 className="text-white text-5xl md:text-7xl text-center font-semibold mt-8">{title}</h1>
+                    <p className='text-white text-lg md:text-xl font-normal text-center mt-10 w-[70%] md:w-[50%]'>{subHeading}</p>
                 </div>
 
             </div>
 
 
-            <div className='w-full bg-[#f6f6f9] h-[250px] mb-32'>
-                <div className='mx-12 md:mx-64 pt-16 flex flex-row md:flex-row'>
+            <div className='w-full bg-[#f6f6f9] h-fit md:h-[250px] mb-32'>
+                <div className='mx-12 lg:mx-32 xl:mx-64 pt-16 flex flex-row md:flex-row'>
                     <div className='flex-1'>
                         <h1 className='font-semibold text-2xl'>Client</h1>
                         <p className='font-medium text-xl mt-4'>Akshit</p>
@@ -72,14 +72,14 @@ const ProjectPageMain = ({ imageUrl, title, subHeading, buttonTitle }: ProjectPa
             </div>
 
 
-            <div className='mx-12 md:mx-64 mb-16'>
+            <div className='mx-12 lg:mx-24 xl:mx-64 mb-16'>
                 <div>
-                    <h1 className='text-5xl text-[#2e3c35] font-semibold'>Project Overview:</h1>
-                    <p className='text-2xl text-[#2e3c35] mt-4 '>The Solar-Powered Home Project is an initiative aimed at transforming a traditional residential property into an energy-efficient and sustainable home by integrating solar power systems. This project embodies our commitment to reducing carbon emissions, decreasing energy bills, and promoting renewable energy adoption in residential settings. Through this initiative, we aim to demonstrate the feasibility and benefits of solar energy for homeowners while contributing to a greener and more sustainable future.</p>
+                    <h1 className='text-3xl md:text-5xl text-[#2e3c35] font-semibold'>Project Overview:</h1>
+                    <p className='text-xl md:text-2xl text-[#2e3c35] mt-2 md:mt-4 '>The Solar-Powered Home Project is an initiative aimed at transforming a traditional residential property into an energy-efficient and sustainable home by integrating solar power systems. This project embodies our commitment to reducing carbon emissions, decreasing energy bills, and promoting renewable energy adoption in residential settings. Through this initiative, we aim to demonstrate the feasibility and benefits of solar energy for homeowners while contributing to a greener and more sustainable future.</p>
                 </div>
 
                 <div className='mt-12'>
-                    <h1 className='text-5xl text-[#2e3c35] font-semibold'>Key Project Goals:</h1>
+                    <h1 className='text-3xl md:text-5xl text-[#2e3c35] font-semibold'>Key Project Goals:</h1>
                     <ul className="list-decimal">
 
                         <DecimalPoints
@@ -102,7 +102,7 @@ const ProjectPageMain = ({ imageUrl, title, subHeading, buttonTitle }: ProjectPa
                 </div>
 
                 <div className='mt-20'>
-                    <h1 className='text-5xl text-[#2e3c35] font-semibold'>Project Components:</h1>
+                    <h1 className='text-3xl md:text-5xl text-[#2e3c35] font-semibold'>Project Components:</h1>
                     <ul className="list-decimal">
                         <DecimalPoints
                             title='Solar Panel Installation:'
@@ -128,7 +128,7 @@ const ProjectPageMain = ({ imageUrl, title, subHeading, buttonTitle }: ProjectPa
                 </div>
 
                 <div className='mt-20'>
-                    <h1 className='text-5xl text-[#2e3c35] font-semibold'>Expected Outcomes:</h1>
+                    <h1 className='ext-3xl md:text-5xl text-[#2e3c35] font-semibold'>Expected Outcomes:</h1>
 
                     <ul className='list-disc mt-10'>
                         <li className='custom-list-item-disc text-2xl text-[#2e3c35] mt-6'>A solar-powered home that showcases the practicality and benefits of renewable energy.</li>
@@ -159,7 +159,7 @@ type DecimalPointsContent = {
 export const DecimalPoints = ({ title, content }: DecimalPointsContent) => {
     return (
         <div>
-            <li className="custom-list-item text-2xl text-[#2e3c35] mt-6">
+            <li className="custom-list-item text-xl md:text-2xl text-[#2e3c35] mt-3 md:mt-6">
                 <span className="font-bold">{title}</span>{content}
             </li>
         </div>

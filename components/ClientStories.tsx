@@ -82,7 +82,7 @@ export const ClientStories = () => {
                 </span>
             </div>
 
-            <div className='flex flex-col md:flex-row mt-8 md:py-8 justify-center gap-8'>
+            <div className='flex flex-col md:flex-row py-5 mt-20 lg:mt-18 xl:mt-8 md:py-8 justify-center gap-8'>
                 {clients.map((client) => (
                     <ClientCard
                         key={client.id}

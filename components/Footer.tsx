@@ -6,7 +6,7 @@ import React from 'react'
 
 export const Footer = () => {
   return (
-    <div className='bg-[#2d3d33] text-white rounded-t-[50px] h-fit  flex justify-center items-center'>
+    <div className='bg-[#2d3d33] text-white rounded-t-[50px] h-fit flex justify-center items-center'>
       <div className='text-center'>
         {/* Left */}
         <div className='mb-4'>
@@ -17,7 +17,7 @@ export const Footer = () => {
         </div>
         <div className='flex justify-center items-center text-center mt-4'>
           <Image src="/mail.svg" alt='mail' width={30} height={35} />
-          <h1 className='ml-2 text-xl'>sales@aldexenergies.com</h1>
+          <h1 className='text-white ml-2 text-xl'>sales@aldexenergies.com</h1>
         </div>
 
         <div className='flex justify-center '>
