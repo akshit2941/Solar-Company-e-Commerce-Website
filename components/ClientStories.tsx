@@ -1,5 +1,5 @@
 "use client"
-import React, { useState, useEffect, useMemo } from 'react';
+import React, { useState, useMemo } from 'react';
 import Image from 'next/image';
 
 type ClientProp = {
@@ -12,16 +12,14 @@ type ClientProp = {
 
 const ClientCard = ({ avatarSrc, name, role, onClick, isSelected }: ClientProp) => {
     return (
-        <div onClick={onClick} className={`cursor-pointer mx-12 rounded-full border transform duration-300 hover:border-black hover:bg-[#f6f7f9]  ${isSelected ? 'bg-[#f6f7f9] border-black' : 'bg-white'}`}>
-            <div className='flex border p-3 md:p-6 rounded-full'>
-                <div className='relative -mt-9 -ml-10'>
-                    <Image src='/colon.svg' alt='colon' width={50} height={50} className='bg-[#b15d3d] rounded-full p-2' />
-                </div>
-                <Image src={avatarSrc} alt='avatar' width={100} height={24} className='rounded-full' />
-                <div className='mx-4'>
-                    <h1 className='text-2xl md:text-3xl font-semibold'>{name}</h1>
-                    <p className='text-lg font-normal text-[#a2672f]'>{role}</p>
-                </div>
+        <div onClick={onClick} className={`cursor-pointer rounded-full border transform duration-300 hover:border-black hover:bg-[#f6f7f9] ${isSelected ? 'bg-[#f6f7f9] border-black' : 'bg-white'} p-4 flex items-center gap-4 transition-all`}>
+            {/* <div className=' -mt-24'>
+                <Image src='/colon.svg' alt='colon' width={35} height={30} className='bg-[#b15d3d] rounded-full p-2' />
+            </div> */}
+            <Image src={avatarSrc} alt='avatar' width={60} height={60} className='rounded-full' />
+            <div>
+                <h1 className='text-xl md:text-2xl font-semibold'>{name}</h1>
+                <p className='text-sm md:text-lg font-normal text-[#a2672f]'>{role}</p>
             </div>
         </div>
     );
@@ -35,7 +33,6 @@ export const ClientStories = () => {
     });
 
     const [selectedClient, setSelectedClient] = useState('David L.');
-    const [storyAnimation, setStoryAnimation] = useState(false);
 
     const clients = useMemo(() => [
         {
@@ -62,27 +59,23 @@ export const ClientStories = () => {
     ], []);
 
     const handleClientClick = (client: typeof clients[0]) => {
-        setStoryAnimation(true);
-        setTimeout(() => {
-            setSelectedClientStory(client);
-            setSelectedClient(client.name);
-            setStoryAnimation(false);
-        }, 500);
+        setSelectedClientStory(client);
+        setSelectedClient(client.name);
     };
 
     return (
-        <div>
+        <div className='container mx-auto px-4'>
             <div className='flex justify-center'>
-                <h1 className='text-2xl bg-[#e2d1bf] text-[#936a45] p-3 rounded-5xl mt-16'>Our Happy Client Stories</h1>
+                <h1 className='text-xl md:text-2xl lg:text-3xl bg-[#e2d1bf] text-[#936a45] p-3 rounded-3xl mt-8 md:mt-12 lg:mt-16'>Our Happy Client Stories</h1>
             </div>
 
-            <div className='mx-12 md:mx-64 text-center mt-12 h-[120px]'>
-                <span className={`text-xl md:text-3xl font-semibold text-[#2c3b35] ${storyAnimation ? 'animate-slideIn' : ''}`}>
+            <div className='mx-4 md:mx-32 lg:mx-64 text-center mt-8 md:mt-10 lg:mt-12'>
+                <span className='text-lg md:text-xl lg:text-2xl font-semibold text-[#2c3b35]'>
                     {selectedClientStory.story}
                 </span>
             </div>
 
-            <div className='flex flex-col md:flex-row py-5 mt-20 lg:mt-18 xl:mt-8 md:py-8 justify-center gap-8'>
+            <div className='flex flex-wrap justify-center gap-6 mt-8 pb-10 md:mt-12 lg:mt-16'>
                 {clients.map((client) => (
                     <ClientCard
                         key={client.id}

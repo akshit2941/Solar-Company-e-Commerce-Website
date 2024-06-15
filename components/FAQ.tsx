@@ -7,8 +7,6 @@ export const FAQ = () => {
     const [showDetails2, setShowDetails2] = useState(false);
     const [showDetails3, setShowDetails3] = useState(false);
 
-    const [rotateAngle, setRotateAngle] = useState(0);
-
     const toggleRotation = (faqNumber: number) => {
         if (faqNumber === 1) {
             setShowDetails1(!showDetails1);
@@ -17,7 +15,6 @@ export const FAQ = () => {
         } else if (faqNumber === 3) {
             setShowDetails3(!showDetails3);
         }
-        setRotateAngle(rotateAngle === 0 ? 90 : 0);
     };
 
     return (
@@ -31,14 +28,14 @@ export const FAQ = () => {
                     <div className='p-4 md:p-8' onClick={() => toggleRotation(1)}>
                         <div className='flex flex-row items-center text-center'>
                             <div>
-                                <h1 className={`text-xl md:text-3xl font-semibold text-[#2e3c33] text-left ${rotateAngle === 90 && showDetails1 ? 'text-[#a46433]' : ''} transition-colors duration-200`}>How can I make the switch to green energy? </h1>
+                                <h1 className={`text-xl lg:text-2xl xl:text-3xl font-semibold text-[#2e3c33] text-left ${showDetails1 ? 'text-[#a46433]' : ''} transition-colors duration-200`}>How can I make the switch to green energy? </h1>
                             </div>
                             <Image
                                 src='/arrow-right.svg'
                                 alt='arrow'
                                 width={40}
-                                height={100}
-                                className={`ml-auto transform rotate-${rotateAngle} transition-all duration-500 ease-in-out`}
+                                height={40}
+                                className={`ml-auto transform transition-transform duration-500 ease-in-out ${showDetails1 ? 'rotate-90' : 'rotate-0'}`}
                             />
                         </div>
                         <div>
@@ -51,14 +48,14 @@ export const FAQ = () => {
                     <div className='p-4 md:p-8' onClick={() => toggleRotation(2)}>
                         <div className='flex flex-row items-center text-center'>
                             <div>
-                                <h1 className={`text-xl md:text-3xl font-semibold text-[#2e3c33] text-left ${rotateAngle === 90 && showDetails2 ? 'text-[#a46433]' : ''} transition-colors duration-200`}>Are there financial incentives for using green energy?</h1>
+                                <h1 className={`text-xl lg:text-2xl xl:text-3xl font-semibold text-[#2e3c33] text-left ${showDetails2 ? 'text-[#a46433]' : ''} transition-colors duration-200`}>Are there financial incentives for using green energy?</h1>
                             </div>
                             <Image
                                 src='/arrow-right.svg'
                                 alt='arrow'
                                 width={40}
-                                height={100}
-                                className={`ml-auto transform rotate-${rotateAngle} transition-all duration-500 ease-in-out`}
+                                height={40}
+                                className={`ml-auto transform transition-transform duration-500 ease-in-out ${showDetails2 ? 'rotate-90' : 'rotate-0'}`}
                             />
                         </div>
                         <div>
@@ -71,14 +68,14 @@ export const FAQ = () => {
                     <div className='p-4 md:p-8' onClick={() => toggleRotation(3)}>
                         <div className='flex flex-row items-center text-center'>
                             <div>
-                                <h1 className={`text-xl md:text-3xl font-semibold text-[#2e3c33] text-left ${rotateAngle === 90 && showDetails3 ? 'text-[#a46433]' : ''} transition-colors duration-200`}>What are the benefits of wind energy?</h1>
+                                <h1 className={`text-xl lg:text-2xl xl:text-3xl font-semibold text-[#2e3c33] text-left ${showDetails3 ? 'text-[#a46433]' : ''} transition-colors duration-200`}>What are the benefits of wind energy?</h1>
                             </div>
                             <Image
                                 src='/arrow-right.svg'
                                 alt='arrow'
                                 width={40}
-                                height={100}
-                                className={`ml-auto transform rotate-${rotateAngle} transition-all duration-500 ease-in-out`}
+                                height={40}
+                                className={`ml-auto transform transition-transform duration-500 ease-in-out ${showDetails3 ? 'rotate-90' : 'rotate-0'}`}
                             />
                         </div>
                         <div>

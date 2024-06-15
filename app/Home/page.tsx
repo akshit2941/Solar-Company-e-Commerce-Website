@@ -11,7 +11,7 @@ import Link from 'next/link';
 const Home = () => {
   return (
     <div>
-      <div className="relative h-[95vh] w-full overflow-hidden">
+      <div className="relative min-h-full w-full overflow-hidden flex flex-col pb-8 xl:pb-44">
         <Navbar />
         <Image
           src="/home-bg.svg"
@@ -21,20 +21,23 @@ const Home = () => {
           className="absolute top-0 left-0 w-full h-full z-0 rounded-b-3xl bg-[#2f3c35]"
         />
 
-        <div className=" flex flex-col absolute sm:flex-row 2xl:mt-0 items-center justify-center text-white z-10">
-
-          <div className='flex flex-1 p-8 mt-3 md:mt-0 items-center md:items-start flex-col xl:ml-12 2xl:ml-48'>
-            <h1 className="text-white text-[2.5rem] md:text-5xl 2xl:text-[4.4rem] md:text-left font-bold md:mb-4 ">Renew, Reuse, Recycle</h1>
-            <p className='text-white text-lg text-center md:text-start w-full md:text-xl 2xl:text-[1.25rem] md:mt-2'>Discover how your small actions can make a big impact as we work together to reduce waste, conserve resources, and protect our planet for generations to come.</p>
-            <div className='mt-6'>
-              <Link href='/contact'>
-                <Button title='Get Started' variant='btn_white' />
+        <div className="flex flex-col sm:flex-row 2xl:mt-0 items-center justify-center text-white z-10 flex-grow">
+          <div className="flex flex-1 p-8 mt-3 md:mt-0 items-center md:items-start flex-col xl:ml-12 2xl:ml-48">
+            <h1 className="text-white text-[2.5rem] md:text-5xl 2xl:text-[4.4rem] md:text-left font-bold md:mb-4">
+              Renew, Reuse, Recycle
+            </h1>
+            <p className="text-white text-lg text-center md:text-start w-full md:text-xl 2xl:text-[1.25rem] md:mt-2">
+              Discover how your small actions can make a big impact as we work together to reduce waste, conserve resources, and protect our planet for generations to come.
+            </p>
+            <div className="mt-6">
+              <Link href="/contact">
+                <Button title="Get Started" variant="btn_white" />
               </Link>
             </div>
           </div>
 
           <div className="flex-1 flex justify-center md:justify-end p-8 mt-2 md:mt-0 2xl:mr-64">
-            <div className="grid grid-cols-2 gap-y-2 gap-x-3 md:gap-x- md:gap-y-6   mt-4 md:mt-8 justify-center items-center">
+            <div className="grid grid-cols-2 gap-y-2 gap-x-3 md:gap-x-6 md:gap-y-6 mt-4 md:mt-8 justify-center items-center">
               <div className="relative w-[150px] h-[150px] sm:w-[240px] sm:h-[200px] md:w-[200px] md:h-[200px] 2xl:w-[200px] 2xl:h-[200px] overflow-hidden rounded-xl transform -rotate-12">
                 <Image
                   src="/block-1.webp"
@@ -71,6 +74,8 @@ const Home = () => {
           </div>
         </div>
       </div>
+
+
 
       <div className='flex flex-col md:flex-row mt-12 md:mt-48 mb-16 md:mb-48 lg:mx-14 2xl:mx-64 justify-center items-center'>
         {/* Left Image */}

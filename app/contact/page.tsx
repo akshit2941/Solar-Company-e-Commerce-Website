@@ -22,7 +22,7 @@ const ContactPage = () => {
         </div>
         <div className="absolute inset-0 bg-black bg-opacity-50"></div>
         <div className="absolute inset-0 flex items-center justify-center z-10">
-          <h1 className="text-white text-5xl md:text-7xl font-semibold">Contact Us</h1>
+          <h1 className="text-white text-5xl lg:text-6xl xl:text-7xl font-semibold">Contact Us</h1>
         </div>
       </div>
 
