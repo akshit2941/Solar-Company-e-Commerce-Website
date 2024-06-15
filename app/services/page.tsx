@@ -28,8 +28,8 @@ const ServicePage = () => {
         </div>
       </div>
 
-      <div className='mx-4 mt-12 flex flex-col lg:mx-12 lg:gap-2 xl:mx-64'>
-        <div className='flex flex-col md:mt-14 md:flex-row'>
+      <div className='mx-4 mt-12 flex flex-col lg:mx-12 lg:gap-2 2xl:mx-64'>
+        <div className='flex flex-col 2xl:mt-14 md:flex-row'>
           <div className='service-navigator-common-class'>
             <Link href='/services/service1'>
               <ServiceNavigator
@@ -120,7 +120,7 @@ const ServicePage = () => {
       </div>
 
       <div className='my-32 flex justify-center bg-[#f6f7f9]'>
-        <div className='mx-12 flex w-full flex-col items-center md:flex-row lg:mx-14 xl:mx-64'>
+        <div className='mx-12 flex w-full flex-col items-center md:flex-row lg:mx-14 2xl:mx-64'>
           <div className='flex-1 flex-col'>
             <h1 className='text-3xl font-semibold md:text-5xl'>
               Eco-Advantages: What You Gain By Choosing Us

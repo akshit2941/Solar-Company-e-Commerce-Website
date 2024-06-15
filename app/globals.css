@@ -96,7 +96,7 @@
 
 @layer utilities {
   .service-navigator-common-class {
-    @apply my-5 h-[300px] w-full md:my-20 md:h-[260px] 2xl:my-0;
+    @apply my-5 h-[300px] w-full md:my-2 md:h-[260px] 2xl:my-0;
   }
   .navbar-ul-class {
     @apply p-3 font-sans text-xl text-white duration-500 hover:opacity-70;

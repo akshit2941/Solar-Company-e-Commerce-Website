@@ -92,7 +92,7 @@ const Home = () => {
         </div>
 
         {/* Right Content */}
-        <div className='relative mx-6 mt-10 lg:-m-10 lg:mx-8 lg:mt-0 lg:w-[85%] 2xl:mx-10 2xl:-mt-16 2xl:w-1/2'>
+        <div className='relative mx-6 mt-10 lg:-m-10 lg:mx-8  lg:w-[85%] lg:-mt-10 2xl:mx-10 2xl:-mt-16 2xl:w-1/2'>
           <div>
             <h1 className='text-3xl font-semibold text-[#2D3D33] lg:text-4xl 2xl:text-5xl'>
               Sustainability Is More Than A Goal – It&apos;s Our Mission
@@ -106,28 +106,28 @@ const Home = () => {
             </p>
           </div>
 
-          <div className='relative mt-8 flex rounded-2xl bg-[#2c3b35] p-6 md:-left-1/4'>
+          <div className='relative mt-8 flex rounded-2xl bg-[#2c3b35] lg:w-[80%] 2xl:w-full p-6 lg:mt-2 lg:-left-[20%] 2xl:-left-1/4'>
             <div className='flex-1 flex-col items-center text-center'>
-              <h1 className='text-4xl font-medium text-white lg:text-5xl 2xl:text-6xl'>
+              <h1 className='text-4xl font-medium text-white lg:text-4xl 2xl:text-6xl'>
                 384
               </h1>
-              <p className='mt-2 text-xl font-normal text-white lg:text-xl 2xl:text-2xl'>
+              <p className='mt-2 text-xl font-normal text-white lg:text-lg 2xl:text-2xl'>
                 Successful projects
               </p>
             </div>
             <div className='flex-1 flex-col items-center text-center'>
-              <h1 className='text-4xl font-medium text-white lg:text-5xl 2xl:text-6xl'>
+              <h1 className='text-4xl font-medium text-white lg:text-4xl 2xl:text-6xl'>
                 1000+
               </h1>
-              <p className='mt-2 text-xl font-normal text-white lg:text-xl 2xl:text-2xl'>
+              <p className='mt-2 text-xl font-normal text-white lg:text-lg 2xl:text-2xl'>
                 Satisfied clients
               </p>
             </div>
             <div className='flex-1 flex-col items-center text-center'>
-              <h1 className='text-4xl font-medium text-white lg:text-5xl 2xl:text-6xl'>
+              <h1 className='text-4xl font-medium text-white lg:text-4xl 2xl:text-6xl'>
                 20
               </h1>
-              <p className='mt-2 text-xl font-normal text-white lg:text-xl 2xl:text-2xl'>
+              <p className='mt-2 text-xl font-normal text-white lg:text-lg 2xl:text-2xl'>
                 Megawatt capacity
               </p>
             </div>

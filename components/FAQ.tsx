@@ -18,7 +18,7 @@ export const FAQ = () => {
   }
 
   return (
-    <div className='lg:mx-18 mx-12 2xl:mx-64'>
+    <div className='lg:mx-18 mx-6 2xl:mx-64'>
       <div>
         <span className='rounded-5xl bg-[#e2d1bf] p-4 px-8 text-xl font-medium text-[#936a45]'>
           FAQ
@@ -31,7 +31,7 @@ export const FAQ = () => {
             <div className='flex flex-row items-center text-center'>
               <div>
                 <h1
-                  className={`text-left text-xl font-semibold text-[#2e3c33] lg:text-2xl xl:text-3xl ${showDetails1 ? 'text-[#a46433]' : ''} transition-colors duration-200`}
+                  className={`text-left text-lg font-semibold text-[#2e3c33] lg:text-2xl xl:text-3xl ${showDetails1 ? 'text-[#a46433]' : ''} transition-colors duration-200`}
                 >
                   How can I make the switch to green energy?{' '}
                 </h1>
@@ -60,7 +60,7 @@ export const FAQ = () => {
             <div className='flex flex-row items-center text-center'>
               <div>
                 <h1
-                  className={`text-left text-xl font-semibold text-[#2e3c33] lg:text-2xl xl:text-3xl ${showDetails2 ? 'text-[#a46433]' : ''} transition-colors duration-200`}
+                  className={`text-left text-lg font-semibold text-[#2e3c33] lg:text-2xl xl:text-3xl ${showDetails2 ? 'text-[#a46433]' : ''} transition-colors duration-200`}
                 >
                   Are there financial incentives for using green energy?
                 </h1>
@@ -89,7 +89,7 @@ export const FAQ = () => {
             <div className='flex flex-row items-center text-center'>
               <div>
                 <h1
-                  className={`text-left text-xl font-semibold text-[#2e3c33] lg:text-2xl xl:text-3xl ${showDetails3 ? 'text-[#a46433]' : ''} transition-colors duration-200`}
+                  className={`text-left text-lg font-semibold text-[#2e3c33] lg:text-2xl xl:text-3xl ${showDetails3 ? 'text-[#a46433]' : ''} transition-colors duration-200`}
                 >
                   What are the benefits of wind energy?
                 </h1>

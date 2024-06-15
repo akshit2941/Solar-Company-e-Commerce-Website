@@ -81,7 +81,7 @@ const ProjectPageMain = ({
         </div>
       </div>
 
-      <div className='mx-12 mb-16 lg:mx-24 xl:mx-64'>
+      <div className='mx-12 mb-16 lg:mx-24 2xl:mx-64'>
         <div>
           <h1 className='text-3xl font-semibold text-[#2e3c35] md:text-5xl'>
             Project Overview:

@@ -72,7 +72,7 @@ export const ClientStories = () => {
         id: 3,
         avatarSrc: '/avatar.png',
         name: 'Carlos S.',
-        role: 'Community Organizer',
+        role: 'Head Community Organizer',
         story:
           'Implementing this system in our community has shown significant energy savings and increased awareness about energy conservation.'
       }
@@ -95,7 +95,7 @@ export const ClientStories = () => {
 
       <div className='mx-4 mt-8 text-center md:mx-32 md:mt-10 lg:mx-64 lg:mt-12'>
         <span className='text-lg font-semibold text-[#2c3b35] md:text-xl lg:text-2xl'>
-          {selectedClientStory.story}
+          "{selectedClientStory.story}"
         </span>
       </div>
 

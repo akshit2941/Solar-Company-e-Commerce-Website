@@ -33,7 +33,8 @@ export const Footer = () => {
             <li className='footer-li'>
               <Link href='/projects'>Project</Link>
             </li>
-            <li className='footer-li'>Solutions</li>
+            <li className='footer-li'>
+              <Link href='/solutions' >Solutions</Link></li>
             <li className='footer-li'>
               <Link href='/services'>Services</Link>
             </li>

@@ -17,11 +17,11 @@ export const Navbar = () => {
 
   return (
     <nav className='relative z-20 h-24 w-full text-white'>
-      <div className='md:t-2 mt-4 flex h-full w-full items-center justify-between px-4 2xl:px-16'>
+      <div className='md:t-2 mt-1 flex h-full w-full items-center justify-between px-4 2xl:px-16'>
         <Image
           src={Logo}
           alt='Logo'
-          width={205}
+          width={175}
           height={75}
           className='cursor-pointer'
           priority
@@ -37,11 +37,16 @@ export const Navbar = () => {
             <li className='navbar-ul-class'>
               <Link href='/projects'>Projects</Link>
             </li>
-            <li className='navbar-ul-class'>Solutions</li>
+            <li className='navbar-ul-class'>
+              <Link href='/solutions'>
+                Solutions
+              </Link>
+            </li>
             <li className='navbar-ul-class'>
               <Link href='/services'>Services</Link>
             </li>
-            <li className='navbar-ul-class'>Products</li>
+            <li className='navbar-ul-class'>
+              <Link href='/products'>Products</Link></li>
           </ul>
         </div>
 
@@ -87,11 +92,13 @@ export const Navbar = () => {
             <li className='navbar-ul-class-menue'>
               <Link href='/projects'>Projects</Link>
             </li>
-            <li className='navbar-ul-class-menue'>Solutions</li>
+            <li className='navbar-ul-class-menue'><Link href='/solutions'>
+              Solutions
+            </Link></li>
             <li className='navbar-ul-class-menue'>
               <Link href='/services'>Services</Link>
             </li>
-            <li className='navbar-ul-class-menue'>Products</li>
+            <li className='navbar-ul-class-menue'> <Link href='/products'>Products</Link></li>
           </ul>
         </div>
         <div className='ml-2 mt-5'>

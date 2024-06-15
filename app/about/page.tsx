@@ -34,7 +34,7 @@ const AboutPage = () => {
 
     return (
         <div className='flex flex-col items-center justify-center'>
-            <div className='relative h-[50vh] w-full overflow-hidden'>
+            <div className='relative h-[50vh]  w-full overflow-hidden'>
                 <Navbar />
                 <Image
                     src='/news1.jpg'
@@ -52,8 +52,8 @@ const AboutPage = () => {
                 </div>
             </div>
 
-            <div className='z-10 -mt-12 rounded-3xl bg-white md:-mt-24'>
-                <div className='mx-6 mb-2 mt-12 flex flex-col items-center justify-center gap-32 md:mb-12 md:mt-24 md:flex-row lg:mx-16 xl:mx-64'>
+            <div className='z-10 -mt-12 rounded-3xl bg-white lg:-mt-2 2xl:-mt-24'>
+                <div className='mx-6 mb-2 mt-12 flex flex-col items-center justify-center gap-32 md:mb-12 md:mt-24 md:flex-row lg:mx-16 2xl:mx-64'>
                     <div className='w-full lg:w-[70%] xl:w-[60%]'>
                         <div className='flex gap-4 md:flex-row lg:gap-6 xl:gap-12'>
                             {Object.keys(tabs).map(tab => (
@@ -94,9 +94,9 @@ const AboutPage = () => {
                 </div>
             </div>
 
-            <div className='mx-8 mb-32 mt-20 flex flex-col items-center justify-center md:mt-36 lg:mx-6 xl:mx-32'>
+            <div className='mx-8 mb-32 mt-20 flex flex-col items-center justify-center md:mt-36 lg:mx-6 2xl:mx-32'>
                 <div className='flex flex-col justify-center text-center'>
-                    <h1 className='text-5xl font-[2.5rem]'>Empowering Change</h1>
+                    <h1 className='text-5xl font-semibold'>Empowering Change</h1>
                     <p className='mt-3 text-lg md:mx-64 md:mt-8 md:text-xl'>
                         Our commitment to recycling drives us towards a circular economy
                         where waste becomes a resource. Join us in shaping a cleaner,
@@ -104,7 +104,7 @@ const AboutPage = () => {
                     </p>
                 </div>
 
-                <div className='mt-12 flex flex-col gap-14 md:mt-24 md:flex-row lg:mx-12 xl:mx-32'>
+                <div className='mt-12 flex flex-col gap-14 md:mt-24 md:flex-row lg:mx-12 2xl:mx-32'>
                     <AboutCard
                         imageUrl='/aboutsvg1.svg'
                         title='Clean Energy Revolution'
@@ -203,7 +203,7 @@ const AboutPage = () => {
                     <div className='absolute inset-0 rounded-lg bg-black bg-opacity-60'></div>
 
                     <div className='absolute inset-0 flex flex-col items-center justify-center gap-10 text-center'>
-                        <p className='text-2xl font-medium text-white md:w-[50%] md:text-5xl'>
+                        <p className='text-xl font-medium font-inter text-white md:w-[50%] md:text-4xl'>
                             It&apos;s Always The Right Time To Get Closer To A Zero-Waste
                             Future
                         </p>
