@@ -54,7 +54,7 @@ const ProjectPage = () => {
           <Link href='/projects/projectPage4'>
             <ProjectCard
               imageUrl='/project-4.jpg'
-              title='Recycling Education Campaign'
+              title='Recycling Educations'
               content='Recycling'
             />
           </Link>

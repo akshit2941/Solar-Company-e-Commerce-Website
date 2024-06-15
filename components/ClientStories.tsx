@@ -93,9 +93,9 @@ export const ClientStories = () => {
         </h1>
       </div>
 
-      <div className='mx-4 mt-8 text-center md:mx-32 md:mt-10 lg:mx-64 lg:mt-12'>
+      <div className='mx-4 mt-8 text-center md:mx-32 md:mt-10 lg:mx-12 2xl:mx-64 lg:mt-12'>
         <span className='text-lg font-semibold text-[#2c3b35] md:text-xl lg:text-2xl'>
-          "{selectedClientStory.story}"
+          &apos;{selectedClientStory.story}&apos;
         </span>
       </div>
 

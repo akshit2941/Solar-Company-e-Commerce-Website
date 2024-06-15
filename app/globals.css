@@ -99,7 +99,7 @@
     @apply my-5 h-[300px] w-full md:my-2 md:h-[260px] 2xl:my-0;
   }
   .navbar-ul-class {
-    @apply p-3 font-sans text-xl text-white duration-500 hover:opacity-70;
+    @apply p-3 font-sans text-base text-white duration-500 hover:opacity-70 2xl:text-xl;
   }
   .navbar-ul-class-menue {
     @apply p-3 font-sans text-xl text-[#2e3c33] duration-500 hover:opacity-70;
@@ -108,7 +108,7 @@
     @apply mt-16 rounded-5xl bg-[#e2d1bf] p-2 px-5 text-xl font-medium text-[#936a45] transition duration-300 hover:bg-[#a36630] hover:text-white;
   }
   .navbar-btn {
-    @apply rounded-3xl border p-2 px-8 text-lg xl:text-lg;
+    @apply rounded-3xl border p-2 px-8 text-base 2xl:text-lg;
   }
 
   .btn_white {

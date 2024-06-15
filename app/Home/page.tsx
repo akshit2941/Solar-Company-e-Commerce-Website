@@ -38,9 +38,9 @@ const Home = () => {
             </div>
           </div>
 
-          <div className='mt-2 flex flex-1 justify-center p-8 md:mt-0 md:justify-end 2xl:mr-64'>
+          <div className='mt-2 flex flex-1 justify-center p-5 md:mt-2 md:justify-end 2xl:mr-64'>
             <div className='mt-4 grid grid-cols-2 items-center justify-center gap-x-3 gap-y-2 md:mt-8 md:gap-x-6 md:gap-y-6'>
-              <div className='relative h-[150px] w-[150px] -rotate-12 transform overflow-hidden rounded-xl sm:h-[200px] sm:w-[240px] md:h-[200px] md:w-[200px] 2xl:h-[200px] 2xl:w-[200px]'>
+              <div className='relative h-[150px] w-[150px] -rotate-12 transform overflow-hidden rounded-xl sm:h-[200px] sm:w-[240px] md:h-[200px] md:w-[200px] 2xl:h-[210px] 2xl:w-[210px]'>
                 <Image
                   src='/block-1.webp'
                   alt='Styled Image'
@@ -48,7 +48,7 @@ const Home = () => {
                   objectFit='cover'
                 />
               </div>
-              <div className='relative h-[150px] w-[180px] rotate-6 transform overflow-hidden rounded-xl sm:h-[200px] sm:w-[240px] md:h-[220px] md:w-[220px] 2xl:h-[220px] 2xl:w-[220px]'>
+              <div className='relative h-[150px] w-[180px] rotate-6 transform overflow-hidden rounded-xl sm:h-[200px] sm:w-[240px] md:h-[220px] md:w-[220px] 2xl:h-[240px] 2xl:w-[240px]'>
                 <Image
                   src='/block-2.webp'
                   alt='Styled Image'
@@ -56,7 +56,7 @@ const Home = () => {
                   objectFit='cover'
                 />
               </div>
-              <div className='relative h-[140px] w-[170px] -rotate-6 transform overflow-hidden rounded-xl sm:h-[200px] sm:w-[240px] lg:h-[200px] lg:w-[200px] 2xl:h-[200px] 2xl:w-[200px]'>
+              <div className='relative h-[140px] w-[170px] -rotate-6 transform overflow-hidden rounded-xl sm:h-[200px] sm:w-[240px] lg:h-[200px] lg:w-[200px] 2xl:h-[210px] 2xl:w-[210px]'>
                 <Image
                   src='/block-3.webp'
                   alt='Styled Image'
@@ -64,7 +64,7 @@ const Home = () => {
                   objectFit='cover'
                 />
               </div>
-              <div className='relative h-[180px] w-[180px] rotate-2 transform overflow-hidden rounded-xl sm:h-[220px] sm:w-[220px] xl:h-[250px] xl:w-[250px] 2xl:h-[250px] 2xl:w-[250px]'>
+              <div className='relative h-[180px] w-[180px] rotate-2 transform overflow-hidden rounded-xl sm:h-[220px] sm:w-[220px] xl:h-[250px] xl:w-[250px] 2xl:h-[260px] 2xl:w-[260px]'>
                 <Image
                   src='/block-4.webp'
                   alt='Styled Image'
@@ -77,7 +77,7 @@ const Home = () => {
         </div>
       </div>
 
-      <div className='mb-16 mt-12 flex flex-col items-center justify-center md:mb-48 md:mt-48 md:flex-row lg:mx-14 2xl:mx-64'>
+      <div className='mb-16 mt-12 flex flex-col items-center justify-center md:mb-48 md:mt-48 md:flex-row lg:mx-2 2xl:mx-64'>
         {/* Left Image */}
 
         <div className='w-full max-w-lg p-8 2xl:mx-auto 2xl:p-0'>
@@ -92,12 +92,12 @@ const Home = () => {
         </div>
 
         {/* Right Content */}
-        <div className='relative mx-6 mt-10 lg:-m-10 lg:mx-8  lg:w-[85%] lg:-mt-10 2xl:mx-10 2xl:-mt-16 2xl:w-1/2'>
+        <div className='relative mx-6 mt-10 lg:-m-10 lg:mx-2 lg:w-[85%] lg:-mt-10 2xl:mx-10 2xl:-mt-16 2xl:w-1/2'>
           <div>
             <h1 className='text-3xl font-semibold text-[#2D3D33] lg:text-4xl 2xl:text-5xl'>
               Sustainability Is More Than A Goal – It&apos;s Our Mission
             </h1>
-            <p className='mt-8 text-xl font-normal text-[#232323] md:text-2xl'>
+            <p className='mt-8 text-xl font-normal text-[#232323] lg:text-xl 2xl:text-2xl'>
               We&apos;re dedicated to revolutionizing the way we power our
               world. Our commitment to a greener tomorrow drives us to provide
               innovative and sustainable energy solutions that make a real
@@ -106,12 +106,12 @@ const Home = () => {
             </p>
           </div>
 
-          <div className='relative mt-8 flex rounded-2xl bg-[#2c3b35] lg:w-[80%] 2xl:w-full p-6 lg:mt-2 lg:-left-[20%] 2xl:-left-1/4'>
+          <div className='relative mt-8 flex rounded-2xl bg-[#2c3b35] lg:w-full 2xl:w-full p-6 lg:mt-8 lg:-left-[20%] 2xl:-left-1/4'>
             <div className='flex-1 flex-col items-center text-center'>
               <h1 className='text-4xl font-medium text-white lg:text-4xl 2xl:text-6xl'>
                 384
               </h1>
-              <p className='mt-2 text-xl font-normal text-white lg:text-lg 2xl:text-2xl'>
+              <p className='mt-2 text-xl font-normal text-white lg:text-base 2xl:text-2xl'>
                 Successful projects
               </p>
             </div>
@@ -119,7 +119,7 @@ const Home = () => {
               <h1 className='text-4xl font-medium text-white lg:text-4xl 2xl:text-6xl'>
                 1000+
               </h1>
-              <p className='mt-2 text-xl font-normal text-white lg:text-lg 2xl:text-2xl'>
+              <p className='mt-2 text-xl font-normal text-white lg:text-base 2xl:text-2xl'>
                 Satisfied clients
               </p>
             </div>
@@ -127,7 +127,7 @@ const Home = () => {
               <h1 className='text-4xl font-medium text-white lg:text-4xl 2xl:text-6xl'>
                 20
               </h1>
-              <p className='mt-2 text-xl font-normal text-white lg:text-lg 2xl:text-2xl'>
+              <p className='mt-2 text-xl font-normal text-white lg:text-base 2xl:text-2xl'>
                 Megawatt capacity
               </p>
             </div>
@@ -180,6 +180,8 @@ const Home = () => {
           </div>
         </div>
       </div>
+
+
       <div className='mb-24 mt-40'>
         <div className='relative h-[300px] w-[100%] overflow-hidden md:hidden'>
           <Image
@@ -192,7 +194,7 @@ const Home = () => {
         </div>
         <div className='flex flex-col bg-none md:bg-bg-img-1'>
           <div className='bg-[#2d3d33] md:w-3/5 md:rounded-br-[210px]'>
-            <div className='mb-20 ml-12 md:ml-52'>
+            <div className='mb-20 ml-12 2xl:ml-52'>
               <h1 className='mt-20 text-4xl font-semibold text-white'>
                 Green Solutions
               </h1>

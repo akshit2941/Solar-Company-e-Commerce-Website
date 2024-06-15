@@ -41,7 +41,7 @@ const ProductPage = () => {
                     <div className='lg:mx-16 2xl:mx-32 flex-1 text-[#2e3c33]' >
                         <h1 className='text-3xl lg:text-6xl 2xl:text-7xl text-[#2e3c33] mt-2 2xl:mt-8 font-bold'>Bamboo Toothbrushes</h1>
                         <h2 className='text-2xl lg:text-3xl 2xl:text-4xl font-semibold mt-2 lg:mt-4 2xl:mt-8'>$ 10.00 USD</h2>
-                        <p className='text-lg lg:text-xl font-medium mt-2 lg:mt-4 2xl:mt-8'>Join the eco-friendly oral care revolution with our Bamboo Toothbrush! Crafted from sustainably sourced bamboo, this toothbrush is your daily companion for a cleaner mouth and a greener planet. Make the switch to our Bamboo Toothbrush today and enjoy a cleaner, greener smile while reducing your plastic footprint. It's a small change that can make a big difference for you and the environment.</p>
+                        <p className='text-lg lg:text-xl font-medium mt-2 lg:mt-4 2xl:mt-8'>Join the eco-friendly oral care revolution with our Bamboo Toothbrush! Crafted from sustainably sourced bamboo, this toothbrush is your daily companion for a cleaner mouth and a greener planet. Make the switch to our Bamboo Toothbrush today and enjoy a cleaner, greener smile while reducing your plastic footprint. It&apos;s a small change that can make a big difference for you and the environment.</p>
                         <div className='mt-2 lg:mt-4 2xl:mt-8'>
                             <Button title='Purchase' variant='btn_black' />
                         </div>
@@ -53,10 +53,10 @@ const ProductPage = () => {
 
             <div className='my-32 mx-8 lg:mx-12 2xl:mx-56'>
                 <div className='flex flex-col-reverse lg:flex-row '>
-                    <div className='lg:mx-16 2xl:mx-32 lg:ml-0 flex-1 text-[#2e3c33]' >
+                    <div className='lg:mx-16 2xl:mx-32 lg:ml-0 2xl:ml-0 flex-1 text-[#2e3c33]' >
                         <h1 className='text-3xl lg:text-6xl 2xl:text-7xl text-[#2e3c33] mt-2 2xl:mt-8 font-bold'>Shopping Bag</h1>
                         <h2 className='text-2xl lg:text-3xl 2xl:text-4xl font-semibold mt-2 lg:mt-4 2xl:mt-8'>$ 10.00 USD</h2>
-                        <p className='text-lg lg:text-xl font-medium mt-2 lg:mt-4 2xl:mt-8'>Join the eco-friendly oral care revolution with our Bamboo Toothbrush! Crafted from sustainably sourced bamboo, this toothbrush is your daily companion for a cleaner mouth and a greener planet. Make the switch to our Bamboo Toothbrush today and enjoy a cleaner, greener smile while reducing your plastic footprint. It's a small change that can make a big difference for you and the environment.</p>
+                        <p className='text-lg lg:text-xl font-medium mt-2 lg:mt-4 2xl:mt-8'>Join the eco-friendly oral care revolution with our Bamboo Toothbrush! Crafted from sustainably sourced bamboo, this toothbrush is your daily companion for a cleaner mouth and a greener planet. Make the switch to our Bamboo Toothbrush today and enjoy a cleaner, greener smile while reducing your plastic footprint. It&apos;s a small change that can make a big difference for you and the environment.</p>
                         <div className='mt-2 lg:mt-4 2xl:mt-8'>
                             <Button title='Purchase' variant='btn_black' />
                         </div>

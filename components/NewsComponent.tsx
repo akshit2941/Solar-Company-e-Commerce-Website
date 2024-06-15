@@ -38,7 +38,7 @@ const NewsCard = ({ imageUrl, title, content }: NewsProp) => {
 export const ProjectCard = ({ imageUrl, title, content }: NewsProp) => {
   return (
     <div className='p-3'>
-      <div className='relative h-[300px] w-[370px] overflow-hidden rounded-3xl md:h-[310px] md:w-[320px] xl:h-[300px] xl:w-[420px]'>
+      <div className='relative h-[300px] w-[370px] overflow-hidden rounded-3xl md:h-[310px] md:w-[320px] lg:h-[220px] lg:w-[290px] 2xl:h-[300px] 2xl:w-[420px]'>
         <Image
           src={imageUrl}
           alt='Project Image'
