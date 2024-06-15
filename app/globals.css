@@ -96,13 +96,13 @@
 
 @layer utilities {
   .service-navigator-common-class {
-    @apply h-[300px] w-full md:h-[260px];
+    @apply my-5 h-[300px] w-full md:my-20 md:h-[260px] 2xl:my-0;
   }
   .navbar-ul-class {
-    @apply p-3 font-sans text-white text-xl duration-500 hover:opacity-70;
+    @apply p-3 font-sans text-xl text-white duration-500 hover:opacity-70;
   }
   .navbar-ul-class-menue {
-    @apply p-3 font-sans text-[#2e3c33] text-xl duration-500 hover:opacity-70;
+    @apply p-3 font-sans text-xl text-[#2e3c33] duration-500 hover:opacity-70;
   }
   .project-navigator {
     @apply mt-16 rounded-5xl bg-[#e2d1bf] p-2 px-5 text-xl font-medium text-[#936a45] transition duration-300 hover:bg-[#a36630] hover:text-white;
@@ -149,15 +149,15 @@
     @apply mt-2 text-xl font-normal text-[#b15d3d] transition duration-300 ease-in-out hover:text-[#2e3c33];
   }
   .footer-li {
-    @apply mt-4 px-4 text-white text-[0.7rem] duration-300 hover:text-[#a2672f] md:text-2xl;
+    @apply mt-4 px-4 text-[0.7rem] text-white duration-300 hover:text-[#a2672f] md:text-2xl;
   }
 
   .about-tags {
-    @apply rounded-3xl border bg-[#e2d1bf] p-3 px-4 md:px-8 text-[0.84rem] md:text-2xl font-normal text-[#a2672f] transition duration-300 hover:bg-[#a2672f] hover:text-white;
+    @apply rounded-3xl border bg-[#e2d1bf] p-3 px-4 text-[0.84rem] font-normal text-[#a2672f] transition duration-300 hover:bg-[#a2672f] hover:text-white md:px-8 md:text-2xl;
   }
 
   .service-list {
-    @apply text-lg md:text-2xl text-black;
+    @apply text-lg text-black md:text-2xl;
   }
 }
 
