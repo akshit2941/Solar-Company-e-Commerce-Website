@@ -30,7 +30,7 @@ const SolutionPage = () => {
             <div className='z-10 -mt-12 rounded-3xl bg-white relative -top-12'>
                 <div className='mt-24 flex flex-col gap-32'>
                     <div className='bg-[#f6f6f9] pt-20 pb-10'>
-                        <div className='flex mx-6 lg:mx-12 2xl:mx-56 mb-4'>
+                        <div className='flex mx-6 md:mx-6 lg:mx-12 2xl:mx-56 mb-4'>
                             <SolutionsTileLeft
                                 imageUrl='/solutionImage3.webp'
                                 title='Assessment And Consultation'

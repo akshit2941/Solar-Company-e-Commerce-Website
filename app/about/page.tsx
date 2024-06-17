@@ -53,7 +53,7 @@ const AboutPage = () => {
             </div>
 
             <div className='z-10 -mt-12 rounded-3xl bg-white lg:-mt-2 2xl:-mt-24'>
-                <div className='mx-6 mb-2 mt-12 flex flex-col items-center justify-center gap-32 md:mb-12 md:mt-24 md:flex-row lg:mx-16 2xl:mx-64'>
+                <div className='mx-6 mb-2 mt-12 flex flex-col items-center justify-center gap-32 md:mb-12 md:mt-24 lg:flex-row md:mx-8 lg:mx-16 2xl:mx-64'>
                     <div className='w-full lg:w-[70%] xl:w-[60%]'>
                         <div className='flex gap-4 md:flex-row lg:gap-6 xl:gap-12'>
                             {Object.keys(tabs).map(tab => (
@@ -94,17 +94,17 @@ const AboutPage = () => {
                 </div>
             </div>
 
-            <div className='mx-8 mb-32 mt-20 flex flex-col items-center justify-center md:mt-36 lg:mx-6 2xl:mx-32'>
+            <div className='mx-8 mb-32 mt-20 flex flex-col items-center justify-center md:mt-36 md:mx-1 lg:mx-6 2xl:mx-32'>
                 <div className='flex flex-col justify-center text-center'>
                     <h1 className='text-5xl font-semibold'>Empowering Change</h1>
-                    <p className='mt-3 text-lg md:mx-64 md:mt-8 md:text-xl'>
+                    <p className='mt-3 text-lg md:mx-24 lg:mx-64 md:mt-8 md:text-xl'>
                         Our commitment to recycling drives us towards a circular economy
                         where waste becomes a resource. Join us in shaping a cleaner,
                         brighter future.
                     </p>
                 </div>
 
-                <div className='mt-12 flex flex-col gap-14 md:mt-24 md:flex-row lg:mx-12 2xl:mx-32'>
+                <div className='mt-12 flex flex-col gap-14 md:mt-24 md:flex-row md:mx-8 lg:mx-12 2xl:mx-32'>
                     <AboutCard
                         imageUrl='/aboutsvg1.svg'
                         title='Clean Energy Revolution'
@@ -123,7 +123,7 @@ const AboutPage = () => {
                 </div>
             </div>
 
-            <div className='xl:w-[1400px] relative mb-32 hidden h-[200px] w-[1000px] overflow-hidden rounded-3xl md:flex lg:h-[300px] lg:w-[1100px] 2xl:h-[500px]'>
+            <div className='xl:w-[1400px] relative mb-32 hidden h-[200px] w-[1000px] overflow-hidden rounded-3xl md:flex md:h-[300px] md:w-[650px] lg:h-[300px] lg:w-[1100px] 2xl:h-[500px]'>
                 <Image
                     src='/about-img.jpg'
                     alt='Styled Image'
@@ -138,7 +138,7 @@ const AboutPage = () => {
                 </div>
             </div>
 
-            <div className='mx-5 mb-32 flex flex-col gap-12 md:gap-32 lg:mx-12 2xl:mx-64'>
+            <div className='mx-5 mb-32 flex flex-col gap-12 md:gap-32 md:mx-4 lg:mx-12 2xl:mx-64'>
                 <AboutEnergyCard
                     imageUrl='/energy-1.jpg'
                     title='Solar Energy'
@@ -155,11 +155,11 @@ const AboutPage = () => {
                             className='absolute inset-0'
                         />
                     </div>
-                    <div className='mx-4 flex w-[90%] flex-col justify-center md:mx-14'>
-                        <h1 className='mt-6 text-4xl font-medium md:mt-0 md:text-5xl'>
+                    <div className='mx-4 flex w-[90%] flex-col justify-center md:mx-6  lg:mx-14'>
+                        <h1 className='mt-6 text-4xl font-medium md:mt-0 lg:text-5xl'>
                             Wind Energy
                         </h1>
-                        <p className='mt-3 text-base font-normal md:mt-8 md:text-2xl'>
+                        <p className='mt-3 text-base font-normal md:mt-2 lg:mt-8 md:text-lg lg:text-2xl'>
                             Wind energy is a powerful force for change. Our wind turbines
                             capture the breeze and transform it into a steady, renewable
                             energy source, perfect for both urban and rural environments.
@@ -263,11 +263,11 @@ const AboutEnergyCard = ({ imageUrl, title, content }: AboutEnergyProp) => {
                     className='absolute inset-0'
                 />
             </div>
-            <div className='mx-4 flex w-[90%] flex-col justify-center md:mx-14'>
-                <h1 className='mt-6 text-4xl font-medium md:mt-0 md:text-5xl'>
+            <div className='mx-4 flex w-[90%] flex-col justify-center md:mx-6 lg:mx-14'>
+                <h1 className='mt-6 text-4xl font-medium md:mt-0 lg:text-5xl'>
                     {title}
                 </h1>
-                <p className='mt-3 text-base font-normal md:mt-8 md:text-2xl'>
+                <p className='mt-3 text-base font-normal md:mt-2 lg:mt-8 md:text-lg lg:text-2xl'>
                     {content}
                 </p>
                 <p

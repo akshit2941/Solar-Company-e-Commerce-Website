@@ -10,7 +10,7 @@ type SolutionTileProp = {
 
 export const SolutionsTileLeft = ({ imageUrl, title, content, number }: SolutionTileProp) => {
     return (
-        <div className='flex flex-col lg:flex-row font-inter md:flex-row '>
+        <div className='flex flex-col lg:flex-row font-inter '>
             <div className='relative h-[25rem] w-full overflow-hidden rounded-3xl'>
                 <Image
                     src={imageUrl}
@@ -21,16 +21,16 @@ export const SolutionsTileLeft = ({ imageUrl, title, content, number }: Solution
                 />
             </div>
 
-            <div className='flex items-start justify-start lg:items-center lg:justify-center mt-5 md:mt-0 md:mx-10 px-5'>
+            <div className='flex items-start justify-start lg:items-center lg:justify-center mt-5 lg:mt-0 lg:mx-10 px-5'>
                 <h1 className='text-7xl font-inter font-bold bg-[#e2d1bf] p-3 px-5 rounded-5xl text-[#a36630]'>0{number}</h1>
             </div>
 
 
             <div className='flex w-full flex-col justify-center'>
-                <h1 className='mt-6 text-4xl  font-semibold text-[#2e3c33]  md:mt-0 md:text-4xl'>
+                <h1 className='mt-6 text-4xl  font-semibold text-[#2e3c33]  lg:mt-0 md:text-4xl'>
                     {title}
                 </h1>
-                <p className='mt-4 text-[#2e3c33] text-base font-normal md:mt-3 md:text-xl'>
+                <p className='mt-4 text-[#2e3c33] text-base font-normal lg:mt-3 md:text-xl'>
                     {content}
                 </p>
                 <p
@@ -48,7 +48,7 @@ export const SolutionsTileLeft = ({ imageUrl, title, content, number }: Solution
 export const SolutionsTileRight = ({ imageUrl, title, content, number }: SolutionTileProp) => {
     return (
         <div>
-            <div className='hidden md:flex flex-col font-inter md:flex-row'>
+            <div className='hidden lg:flex flex-col font-inter lg:flex-row'>
                 <div className='flex items-center justify-center mx-10 ml-0 px-5'>
                     <h1 className='text-7xl font-inter font-bold bg-[#e2d1bf] p-3 px-5 rounded-5xl text-[#a36630]'>0{number}</h1>
                 </div>
@@ -79,7 +79,7 @@ export const SolutionsTileRight = ({ imageUrl, title, content, number }: Solutio
                 </div>
             </div>
 
-            <div className='flex flex-col lg:flex-row font-inter md:hidden '>
+            <div className='flex flex-col lg:flex-row font-inter lg:hidden '>
                 <div className='relative h-[25rem] w-full overflow-hidden rounded-3xl'>
                     <Image
                         src={imageUrl}
@@ -90,16 +90,16 @@ export const SolutionsTileRight = ({ imageUrl, title, content, number }: Solutio
                     />
                 </div>
 
-                <div className='flex items-start justify-start lg:items-center lg:justify-center mt-5 md:mt-0 md:mx-10 px-5'>
+                <div className='flex items-start justify-start lg:items-center lg:justify-center mt-5 lg:mt-0 lg:mx-10 px-5'>
                     <h1 className='text-7xl font-inter font-bold bg-[#e2d1bf] p-3 px-5 rounded-5xl text-[#a36630]'>0{number}</h1>
                 </div>
 
 
                 <div className='flex w-full flex-col justify-center'>
-                    <h1 className='mt-6 text-4xl  font-semibold text-[#2e3c33]  md:mt-0 md:text-4xl'>
+                    <h1 className='mt-6 text-4xl  font-semibold text-[#2e3c33]  lg:mt-0 md:text-4xl'>
                         {title}
                     </h1>
-                    <p className='mt-4 text-[#2e3c33] text-base font-normal md:mt-3 md:text-xl'>
+                    <p className='mt-4 text-[#2e3c33] text-base font-normal lg:mt-3 md:text-xl'>
                         {content}
                     </p>
                     <p

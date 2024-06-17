@@ -13,7 +13,7 @@ const Button = ({ title, variant }: ButtonProp) => {
 
   return (
     <button
-      className={`group flex flex-row items-center justify-center rounded-full py-2 pl-6 pr-2 text-center text-xl font-medium ${variant}`}
+      className={`group flex flex-row items-center justify-center rounded-full py-1 pr-1 pl-3 lg:py-2 lg:pl-6 lg:pr-2 text-center md:text-lg lg:text-xl font-medium ${variant}`}
     >
       <label className={`${textColor}`}>{title}</label>
       <Image

@@ -114,10 +114,10 @@ type ReusableProp = {
 export const ResusableDecimalPoints = ({ title, content }: ReusableProp) => {
   return (
     <div className='mt-8'>
-      <h1 className='text-3xl font-semibold text-[#2e3c35] lg:text-4xl 2xl:text-5xl'>
+      <h1 className='text-3xl font-semibold text-[#2e3c34] lg:text-4xl 2xl:text-5xl'>
         {title}
       </h1>
-      <p className='mt-8 text-xl text-[#2e3c35] md:text-2xl'>{content}</p>
+      <p className='mt-8 text-xl text-[#2e3c34] md:text-2xl'>{content}</p>
     </div>
   )
 }

@@ -95,11 +95,20 @@
 }
 
 @layer utilities {
+  .home-2-head {
+    @apply text-4xl font-medium text-white md:text-4xl lg:text-4xl 2xl:text-6xl;
+  }
+  .home-2-para {
+    @apply mt-2 text-xl font-normal text-white md:text-sm lg:text-base 2xl:text-2xl;
+  }
   .service-navigator-common-class {
-    @apply my-5 h-[300px] w-full md:my-2 md:h-[260px] 2xl:my-0;
+    @apply my-5 h-[300px] w-full md:my-2 md:h-[450px] lg:h-[260px] 2xl:my-0;
   }
   .navbar-ul-class {
     @apply p-3 font-sans text-base text-white duration-500 hover:opacity-70 2xl:text-xl;
+  }
+  .navbar-ul-class-black {
+    @apply p-3 font-sans text-base text-black duration-500 hover:opacity-70 2xl:text-xl;
   }
   .navbar-ul-class-menue {
     @apply p-3 font-sans text-xl text-[#2e3c33] duration-500 hover:opacity-70;
@@ -157,7 +166,7 @@
   }
 
   .service-list {
-    @apply text-lg text-black md:text-2xl;
+    @apply text-lg text-black lg:text-2xl;
   }
 }
 

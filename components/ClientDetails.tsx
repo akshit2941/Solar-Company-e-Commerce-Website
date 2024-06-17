@@ -20,7 +20,7 @@ export default function ClientDetails() {
         </p>
       </div>
 
-      <div className='mt-20 hidden flex-row items-center justify-center gap-20 md:flex'>
+      <div className='mt-20 hidden flex-row items-center justify-center gap-20 lg:flex'>
         <ClentIcons imageUrl='/icon1.png' />
         <ClentIcons imageUrl='/icon2.png' />
         <ClentIcons imageUrl='/icon3.png' />

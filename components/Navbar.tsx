@@ -26,7 +26,7 @@ export const Navbar = () => {
           className='cursor-pointer'
           priority
         />
-        <div className='z-20 hidden sm:flex'>
+        <div className='z-20 hidden lg:flex'>
           <ul className='hidden space-x-6 text-white md:flex'>
             <li className='navbar-ul-class'>
               <Link href='/home'>Home</Link>
@@ -50,17 +50,17 @@ export const Navbar = () => {
           </ul>
         </div>
 
-        <button className='navbar-btn mr-12 hidden border-white text-white md:flex'>
+        <button className='navbar-btn mr-12 hidden border-white text-white lg:flex'>
           <Link href='/contact'>Contact Us</Link>
         </button>
 
-        <div onClick={handleNav} className='cursor-pointer pl-24 sm:hidden'>
+        <div onClick={handleNav} className='cursor-pointer pl-24 lg:hidden'>
           <CiMenuFries size={25} />
         </div>
       </div>
 
       <div
-        className={`fixed top-0 ${menuOpen ? 'left-0' : 'left-[-100%]'} h-screen w-[65%] bg-[#feffff] p-2 text-black duration-500 ease-in sm:hidden`}
+        className={`fixed top-0 ${menuOpen ? 'left-0' : 'left-[-100%]'} h-screen w-[65%] md:w-[45%] bg-[#feffff] p-2 text-black duration-500 ease-in lg:hidden`}
       >
         <div className='flex flex-row'>
           <div className='flex justify-center'>

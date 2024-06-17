@@ -21,12 +21,12 @@ const Home = () => {
           className='absolute left-0 top-0 z-0 h-full w-full rounded-b-3xl bg-[#2f3c35]'
         />
 
-        <div className='z-10 flex flex-grow flex-col items-center justify-center text-white sm:flex-row 2xl:mt-0'>
-          <div className='mt-3 flex flex-1 flex-col items-center p-8 md:mt-0 md:items-start xl:ml-12 2xl:ml-48'>
-            <h1 className='text-center text-[2.5rem] font-bold text-white md:mb-4 md:text-left md:text-5xl 2xl:text-[4.4rem]'>
+        <div className='z-10 flex flex-grow flex-col items-center justify-center text-white lg:flex-row 2xl:mt-0'>
+          <div className='mt-3 flex flex-1 flex-col items-center p-8 md:mt-0 lg:items-start xl:ml-12 2xl:ml-48'>
+            <h1 className='text-center text-[2.5rem] font-bold text-white md:text-4xl lg:mb-4 md:text-left lg:text-5xl 2xl:text-[4.4rem]'>
               Renew, Reuse, Recycle
             </h1>
-            <p className='w-full text-center text-lg text-white md:mt-2 md:text-start md:text-xl 2xl:text-[1.25rem]'>
+            <p className='w-full text-center text-lg text-white md:mt-2 md:text-start md:text-lg lg:text-xl 2xl:text-[1.25rem]'>
               Discover how your small actions can make a big impact as we work
               together to reduce waste, conserve resources, and protect our
               planet for generations to come.
@@ -38,9 +38,9 @@ const Home = () => {
             </div>
           </div>
 
-          <div className='mt-2 flex flex-1 justify-center p-5 md:mt-2 md:justify-end 2xl:mr-64'>
-            <div className='mt-4 grid grid-cols-2 items-center justify-center gap-x-3 gap-y-2 md:mt-8 md:gap-x-6 md:gap-y-6'>
-              <div className='relative h-[150px] w-[150px] -rotate-12 transform overflow-hidden rounded-xl sm:h-[200px] sm:w-[240px] md:h-[200px] md:w-[200px] 2xl:h-[210px] 2xl:w-[210px]'>
+          <div className='mt-2 flex flex-1 justify-center p-5 lg:mt-2 lg:justify-end 2xl:mr-64'>
+            <div className='mt-4 grid grid-cols-2 items-center justify-center gap-x-3 gap-y-2 md:gap-x-12 md:gap-y-10 lg:mt-8 lg:gap-x-6 lg:gap-y-6'>
+              <div className='relative h-[150px] w-[150px] -rotate-12 transform overflow-hidden rounded-xl sm:h-[200px] sm:w-[240px] md:h-[220px] md:w-[220px] lg:h-[200px] lg:w-[200px] 2xl:h-[210px] 2xl:w-[210px]'>
                 <Image
                   src='/block-1.webp'
                   alt='Styled Image'
@@ -48,7 +48,7 @@ const Home = () => {
                   objectFit='cover'
                 />
               </div>
-              <div className='relative h-[150px] w-[180px] rotate-6 transform overflow-hidden rounded-xl sm:h-[200px] sm:w-[240px] md:h-[220px] md:w-[220px] 2xl:h-[240px] 2xl:w-[240px]'>
+              <div className='relative h-[150px] w-[180px] rotate-6 transform overflow-hidden rounded-xl sm:h-[200px] sm:w-[240px] md:h-[220px] md:w-[240px] lg:h-[220px] lg:w-[220px] 2xl:h-[240px] 2xl:w-[240px]'>
                 <Image
                   src='/block-2.webp'
                   alt='Styled Image'
@@ -56,7 +56,7 @@ const Home = () => {
                   objectFit='cover'
                 />
               </div>
-              <div className='relative h-[140px] w-[170px] -rotate-6 transform overflow-hidden rounded-xl sm:h-[200px] sm:w-[240px] lg:h-[200px] lg:w-[200px] 2xl:h-[210px] 2xl:w-[210px]'>
+              <div className='relative h-[140px] w-[170px] -rotate-6 transform overflow-hidden rounded-xl sm:h-[200px] sm:w-[240px] md:h-[210px] md:w-[240px] lg:h-[200px] lg:w-[200px] 2xl:h-[210px] 2xl:w-[210px]'>
                 <Image
                   src='/block-3.webp'
                   alt='Styled Image'
@@ -64,7 +64,7 @@ const Home = () => {
                   objectFit='cover'
                 />
               </div>
-              <div className='relative h-[180px] w-[180px] rotate-2 transform overflow-hidden rounded-xl sm:h-[220px] sm:w-[220px] xl:h-[250px] xl:w-[250px] 2xl:h-[260px] 2xl:w-[260px]'>
+              <div className='relative h-[180px] w-[180px] rotate-2 transform overflow-hidden rounded-xl sm:h-[220px] sm:w-[220px] md:h-[250px] md:w-[250px] lg:h-[250px] lg:w-[250px] 2xl:h-[260px] 2xl:w-[260px]'>
                 <Image
                   src='/block-4.webp'
                   alt='Styled Image'
@@ -77,7 +77,7 @@ const Home = () => {
         </div>
       </div>
 
-      <div className='mb-16 mt-12 flex flex-col items-center justify-center md:mb-48 md:mt-48 md:flex-row lg:mx-2 2xl:mx-64'>
+      <div className='mb-16 mt-12 flex flex-col items-center justify-center md:mb-48 md:mt-48 lg:flex-row lg:mx-2 2xl:mx-64'>
         {/* Left Image */}
 
         <div className='w-full max-w-lg p-8 2xl:mx-auto 2xl:p-0'>
@@ -94,10 +94,10 @@ const Home = () => {
         {/* Right Content */}
         <div className='relative mx-6 mt-10 lg:-m-10 lg:mx-2 lg:w-[85%] lg:-mt-10 2xl:mx-10 2xl:-mt-16 2xl:w-1/2'>
           <div>
-            <h1 className='text-3xl font-semibold text-[#2D3D33] lg:text-4xl 2xl:text-5xl'>
+            <h1 className='text-3xl font-semibold text-[#2D3D33] md:text-4xl lg:text-4xl 2xl:text-5xl'>
               Sustainability Is More Than A Goal – It&apos;s Our Mission
             </h1>
-            <p className='mt-8 text-xl font-normal text-[#232323] lg:text-xl 2xl:text-2xl'>
+            <p className='mt-8 text-xl font-normal text-[#232323] md:text-xl lg:text-xl 2xl:text-2xl'>
               We&apos;re dedicated to revolutionizing the way we power our
               world. Our commitment to a greener tomorrow drives us to provide
               innovative and sustainable energy solutions that make a real
@@ -108,26 +108,26 @@ const Home = () => {
 
           <div className='relative mt-8 flex rounded-2xl bg-[#2c3b35] lg:w-full 2xl:w-full p-6 lg:mt-8 lg:-left-[20%] 2xl:-left-1/4'>
             <div className='flex-1 flex-col items-center text-center'>
-              <h1 className='text-4xl font-medium text-white lg:text-4xl 2xl:text-6xl'>
+              <h1 className='home-2-head'>
                 384
               </h1>
-              <p className='mt-2 text-xl font-normal text-white lg:text-base 2xl:text-2xl'>
+              <p className='home-2-para'>
                 Successful projects
               </p>
             </div>
             <div className='flex-1 flex-col items-center text-center'>
-              <h1 className='text-4xl font-medium text-white lg:text-4xl 2xl:text-6xl'>
+              <h1 className='home-2-head'>
                 1000+
               </h1>
-              <p className='mt-2 text-xl font-normal text-white lg:text-base 2xl:text-2xl'>
+              <p className='home-2-para'>
                 Satisfied clients
               </p>
             </div>
             <div className='flex-1 flex-col items-center text-center'>
-              <h1 className='text-4xl font-medium text-white lg:text-4xl 2xl:text-6xl'>
+              <h1 className='home-2-head'>
                 20
               </h1>
-              <p className='mt-2 text-xl font-normal text-white lg:text-base 2xl:text-2xl'>
+              <p className='home-2-para'>
                 Megawatt capacity
               </p>
             </div>
@@ -136,7 +136,7 @@ const Home = () => {
       </div>
 
       <div className='mx-10 lg:mx-16 2xl:mx-64'>
-        <div className='m-auto flex flex-col justify-between md:flex-row'>
+        <div className='m-auto flex flex-col items-center justify-between md:flex-row'>
           <div className='items-center justify-start text-center'>
             <h1 className='text-4xl font-semibold text-[#2d3d33]'>
               Our Services
@@ -215,7 +215,7 @@ const Home = () => {
         </div>
       </div>
 
-      <div className='mb-32 lg:mx-16 2xl:mx-64'>
+      <div className='mb-32 md:mx-8 lg:mx-16 2xl:mx-64'>
         <div className='m-auto flex flex-col justify-between md:flex-row'>
           <div className='items-center justify-start text-center'>
             <h1 className='text-4xl font-semibold text-[#2d3d33]'>
@@ -310,17 +310,20 @@ const Home = () => {
         <ClientStories />
       </div>
 
-      <div className='mb-32 lg:mx-16 2xl:mx-64'>
+      <div className='mb-32 md:mx-8 lg:mx-16 2xl:mx-64'>
         <div className='m-auto flex flex-col justify-between md:flex-row'>
           <div className='items-center justify-center text-center md:justify-start'>
             <h1 className='text-4xl font-semibold text-[#2d3d33]'>Top News</h1>
           </div>
           <div className='mt-12 flex items-center justify-center md:mt-0 md:justify-end'>
+
             <Button title='Discover More' variant='btn_black' />
           </div>
         </div>
         <div>
+
           <NewsComponent />
+
         </div>
       </div>
 

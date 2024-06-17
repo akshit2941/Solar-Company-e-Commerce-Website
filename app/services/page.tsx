@@ -120,9 +120,9 @@ const ServicePage = () => {
       </div>
 
       <div className='my-32 flex justify-center bg-[#f6f7f9]'>
-        <div className='mx-12 flex w-full flex-col items-center md:flex-row lg:mx-14 2xl:mx-64'>
+        <div className='mx-12 flex w-full flex-col items-center md:flex-row md:mx-6 lg:mx-14 2xl:mx-64'>
           <div className='flex-1 flex-col'>
-            <h1 className='text-3xl font-semibold md:text-5xl'>
+            <h1 className='text-3xl font-semibold lg:text-5xl'>
               Eco-Advantages: What You Gain By Choosing Us
             </h1>
             <ul className='mt-14 list-inside list-disc space-y-2'>
@@ -136,7 +136,7 @@ const ServicePage = () => {
                 Measurable Impact, Lasting Change
               </li>
             </ul>
-            <div className='mt-14 flex items-center'>
+            <div className='mt-14 md:mt-6 lg:mt-14 flex items-center'>
               <Button title='View Projects' variant='btn_black' />
             </div>
           </div>

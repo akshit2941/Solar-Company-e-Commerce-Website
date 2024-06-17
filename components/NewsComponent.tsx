@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import React from 'react'
 
 type NewsProp = {
@@ -38,7 +39,7 @@ const NewsCard = ({ imageUrl, title, content }: NewsProp) => {
 export const ProjectCard = ({ imageUrl, title, content }: NewsProp) => {
   return (
     <div className='p-3'>
-      <div className='relative h-[300px] w-[370px] overflow-hidden rounded-3xl md:h-[310px] md:w-[320px] lg:h-[220px] lg:w-[290px] 2xl:h-[300px] 2xl:w-[420px]'>
+      <div className='relative h-[300px] w-[370px] overflow-hidden rounded-3xl md:h-[200px] md:w-[210px] lg:h-[220px] lg:w-[290px] 2xl:h-[300px] 2xl:w-[420px]'>
         <Image
           src={imageUrl}
           alt='Project Image'
@@ -63,23 +64,30 @@ export const NewsComponent = () => {
   return (
     <div className='mx-10 mt-8 md:mx-0'>
       <div className='flex flex-col md:flex-row'>
-        <NewsCard
-          imageUrl='/news1.jpg'
-          title='Eco-Friendly Innovations The Latest Advancements'
-          content='The quest for a greener, more sustainable future has led to remarkable innovations in technology.'
-        />
-        <NewsCard
-          imageUrl='/news3.jpg'
-          title='Eco-Friendly Innovations The Latest Advancements'
-          content='The quest for a greener, more sustainable future has led to remarkable innovations in technology.'
-        />
-        <NewsCard
-          imageUrl='/news2.jpg'
-          title='Eco-Friendly Innovations The Latest Advancements'
-          content='The quest for a greener, more sustainable future has led to remarkable innovations in technology.'
-        />
+        <Link href='/news/NewsPage1'>
+          <NewsCard
+            imageUrl='/news1.jpg'
+            title='Eco-Friendly Innovations The Latest Advancements'
+            content='The quest for a greener, more sustainable future has led to remarkable innovations in technology.'
+          />
+        </Link>
+        <Link href='/news/NewsPage2'>
+          <NewsCard
+            imageUrl='/news3.jpg'
+            title='Eco-Friendly Innovations The Latest Advancements'
+            content='The quest for a greener, more sustainable future has led to remarkable innovations in technology.'
+          />
+        </Link>
+        <Link href='/news/NewsPage3'>
+          <NewsCard
+            imageUrl='/news2.jpg'
+            title='Eco-Friendly Innovations The Latest Advancements'
+            content='The quest for a greener, more sustainable future has led to remarkable innovations in technology.'
+          />
+        </Link>
+
       </div>
-    </div>
+    </div >
   )
 }
 

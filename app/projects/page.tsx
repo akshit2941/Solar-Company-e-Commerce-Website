@@ -26,8 +26,8 @@ const ProjectPage = () => {
         </div>
       </div>
 
-      <div className='mb-32 mt-16 flex flex-col items-center justify-center lg:mx-8 xl:mx-24'>
-        <div className='flex flex-col gap-4 md:flex-row'>
+      <div className='mb-32 mt-16 flex flex-col items-center justify-center md:mx-6 lg:mx-8 xl:mx-24'>
+        <div className='flex flex-col   gap-4 md:flex-row'>
           <Link href='/projects/projectPage1'>
             <ProjectCard
               imageUrl='/news1.jpg'
