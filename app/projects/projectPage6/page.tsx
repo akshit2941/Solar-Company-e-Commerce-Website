@@ -2,6 +2,7 @@ import { Footer } from '@/components/Footer'
 import Navbar from '@/components/Navbar'
 import Image from 'next/image'
 import React from 'react'
+import { DecimalPoints } from '@/components/DecimalPoints'
 import { FaFacebookF, FaInstagram, FaTwitter } from 'react-icons/fa'
 
 const ProjectPage6 = () => {
@@ -145,19 +146,3 @@ const ProjectPage6 = () => {
 }
 
 export default ProjectPage6
-
-type DecimalPointsContent = {
-  title: string
-  content: string
-}
-
-export const DecimalPoints = ({ title, content }: DecimalPointsContent) => {
-  return (
-    <div>
-      <li className='custom-list-item mt-3 text-xl text-[#2e3c35] md:mt-6 md:text-2xl'>
-        <span className='font-bold'>{title}</span>
-        {content}
-      </li>
-    </div>
-  )
-}

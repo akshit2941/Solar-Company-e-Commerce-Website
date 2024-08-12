@@ -2,6 +2,7 @@ import { Footer } from '@/components/Footer'
 import Navbar from '@/components/Navbar'
 import Image from 'next/image'
 import React from 'react'
+import { DecimalPoints } from '@/components/DecimalPoints'
 import { FaFacebookF, FaInstagram, FaTwitter } from 'react-icons/fa'
 
 const ProjectPage5 = () => {
@@ -61,7 +62,7 @@ const ProjectPage5 = () => {
             Project Overview:
           </h1>
           <p className='mt-2 text-xl text-[#2e3c35] md:mt-4 md:text-2xl'>
-            The Metro Valley Projects Private Ltd. project involved the implementation of a 250 kWh solar mini grid. This system is strategically designed to enhance the facility’s energy autonomy by integrating solar power with localized energy distribution. The project highlights our commitment to delivering sustainable and scalable energy solutions that reduce dependency on traditional power sources and support the facility's operational efficiency.
+            The Metro Valley Projects Private Ltd. project involved the implementation of a 250 kWh solar mini grid. This system is strategically designed to enhance the facility’s energy autonomy by integrating solar power with localized energy distribution. The project highlights our commitment to delivering sustainable and scalable energy solutions that reduce dependency on traditional power sources and support the facility&apos;s operational efficiency.
           </p>
         </div>
 
@@ -148,19 +149,3 @@ const ProjectPage5 = () => {
 }
 
 export default ProjectPage5
-
-type DecimalPointsContent = {
-  title: string
-  content: string
-}
-
-export const DecimalPoints = ({ title, content }: DecimalPointsContent) => {
-  return (
-    <div>
-      <li className='custom-list-item mt-3 text-xl text-[#2e3c35] md:mt-6 md:text-2xl'>
-        <span className='font-bold'>{title}</span>
-        {content}
-      </li>
-    </div>
-  )
-}

@@ -1,5 +1,6 @@
 import { Footer } from '@/components/Footer'
 import Navbar from '@/components/Navbar'
+import { DecimalPoints } from '@/components/DecimalPoints'
 import Image from 'next/image'
 import React from 'react'
 import { FaFacebookF, FaInstagram, FaTwitter } from 'react-icons/fa'
@@ -61,7 +62,7 @@ const ProjectPage2 = () => {
             Project Overview:
           </h1>
           <p className='mt-2 text-xl text-[#2e3c35] md:mt-4 md:text-2xl'>
-            The Mits Gwalior project features the installation of a 320 kWh solar power system on the facility's rooftop. This initiative enhances the building's energy efficiency by leveraging renewable solar energy to meet substantial power demands. The project exemplifies our dedication to reducing energy costs, minimizing environmental impact, and supporting sustainable energy practices through effective rooftop solar integration.
+            The Mits Gwalior project features the installation of a 320 kWh solar power system on the facility&apos;s rooftop. This initiative enhances the building&apos;s energy efficiency by leveraging renewable solar energy to meet substantial power demands. The project exemplifies our dedication to reducing energy costs, minimizing environmental impact, and supporting sustainable energy practices through effective rooftop solar integration.
           </p>
         </div>
 
@@ -148,18 +149,3 @@ const ProjectPage2 = () => {
 
 export default ProjectPage2
 
-type DecimalPointsContent = {
-  title: string
-  content: string
-}
-
-export const DecimalPoints = ({ title, content }: DecimalPointsContent) => {
-  return (
-    <div>
-      <li className='custom-list-item mt-3 text-xl text-[#2e3c35] md:mt-6 md:text-2xl'>
-        <span className='font-bold'>{title}</span>
-        {content}
-      </li>
-    </div>
-  )
-}

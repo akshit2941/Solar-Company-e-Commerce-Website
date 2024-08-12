@@ -1,5 +1,6 @@
 import { Footer } from '@/components/Footer'
 import Navbar from '@/components/Navbar'
+import { DecimalPoints } from '@/components/DecimalPoints'
 import Image from 'next/image'
 import React from 'react'
 import { FaFacebookF, FaInstagram, FaTwitter } from 'react-icons/fa'
@@ -61,7 +62,7 @@ const ProjectPage1 = () => {
             Project Overview:
           </h1>
           <p className='mt-2 text-xl text-[#2e3c35] md:mt-4 md:text-2xl'>
-            The installation of a 300 kWh solar power system at Holister Medical in Bawal represents a significant step towards enhancing energy efficiency and sustainability. This ground-mounted system has been designed to meet the facility’s substantial energy needs while reducing reliance on conventional energy sources. The project underscores our commitment to providing reliable, renewable energy solutions that contribute to lower operational costs and support environmental sustainability.
+            The installation of a 300 kWh solar power system at Holister Medical in Bawal represents a significant step towards enhancing energy efficiency and sustainability. This ground-mounted system has been designed to meet the facility&apos;s substantial energy needs while reducing reliance on conventional energy sources. The project underscores our commitment to providing reliable, renewable energy solutions that contribute to lower operational costs and support environmental sustainability.
           </p>
         </div>
 
@@ -76,7 +77,7 @@ const ProjectPage1 = () => {
             />
             <DecimalPoints
               title='Sustainable Energy Use:'
-              content='Utilizing solar energy to decrease the facility’s carbon footprint and support environmentally responsible energy practices.'
+              content='Utilizing solar energy to decrease the facility&apos;s carbon footprint and support environmentally responsible energy practices.'
             />
             <DecimalPoints
               title='Cost Reduction:'
@@ -143,18 +144,4 @@ const ProjectPage1 = () => {
 
 export default ProjectPage1
 
-type DecimalPointsContent = {
-  title: string
-  content: string
-}
 
-export const DecimalPoints = ({ title, content }: DecimalPointsContent) => {
-  return (
-    <div>
-      <li className='custom-list-item mt-3 text-xl text-[#2e3c35] md:mt-6 md:text-2xl'>
-        <span className='font-bold'>{title}</span>
-        {content}
-      </li>
-    </div>
-  )
-}

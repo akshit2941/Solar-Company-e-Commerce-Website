@@ -149,12 +149,12 @@ const AboutPage = () => {
                         <p className='mt-3 text-base font-normal md:mt-2 lg:mt-8 md:text-lg lg:text-2xl'>
                             Maximize the potential of every drop with our rainwater harvesting systems. Efficiently capturing and storing rainwater, these systems provide an eco-friendly solution to water scarcity. Use harvested rainwater for irrigation, household needs, or industrial processes, reducing your dependence on traditional water sources and contributing to sustainable water management.
                         </p>
-                        <p
+                        {/* <p
                             className='mt-4 text-xl text-[#87634a] underline hover:text-[#2c3b35]'
                             style={{ textUnderlineOffset: '8px' }}
                         >
                             Learn More
-                        </p>
+                        </p> */}
                     </div>
                 </div>
 
@@ -255,12 +255,12 @@ const AboutEnergyCard = ({ imageUrl, title, content }: AboutEnergyProp) => {
                 <p className='mt-3 text-base font-normal md:mt-2 lg:mt-8 md:text-lg lg:text-2xl'>
                     {content}
                 </p>
-                <p
+                {/* <p
                     className='mt-4 text-xl text-[#87634a] underline hover:text-[#2c3b35]'
                     style={{ textUnderlineOffset: '8px' }}
                 >
                     Learn More
-                </p>
+                </p> */}
             </div>
         </div>
     )

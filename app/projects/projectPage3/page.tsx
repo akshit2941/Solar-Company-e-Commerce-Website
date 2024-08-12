@@ -1,6 +1,8 @@
 import { Footer } from '@/components/Footer'
 import Navbar from '@/components/Navbar'
 import Image from 'next/image'
+import { DecimalPoints } from '@/components/DecimalPoints'
+
 import React from 'react'
 import { FaFacebookF, FaInstagram, FaTwitter } from 'react-icons/fa'
 
@@ -29,7 +31,7 @@ const ProjectPage3 = () => {
             Bharat Electronics Limited
           </h1>
           <p className='mt-10 w-[70%] text-center text-lg font-normal text-white md:w-[50%] md:text-xl'>
-            A prestigious 400 kWh solar power system was expertly installed at Bharat Electronics Limited, showcasing one of our most significant and high-profile projects. This advanced solar solution integrates cutting-edge technology to enhance the facility's energy efficiency and sustainability, setting a high standard for excellence in solar energy deployment.
+            A prestigious 400 kWh solar power system was expertly installed at Bharat Electronics Limited, showcasing one of our most significant and high-profile projects. This advanced solar solution integrates cutting-edge technology to enhance the facility&apos;s energy efficiency and sustainability, setting a high standard for excellence in solar energy deployment.
           </p>
         </div>
       </div>
@@ -61,7 +63,7 @@ const ProjectPage3 = () => {
             Project Overview:
           </h1>
           <p className='mt-2 text-xl text-[#2e3c35] md:mt-4 md:text-2xl'>
-            The 400 kWh solar power system at Bharat Electronics Limited represents a landmark achievement in our portfolio. This high-profile installation exemplifies our capability to deliver top-tier solar solutions, integrating state-of-the-art technology to enhance energy efficiency and sustainability at one of the industry's leading companies. The project underscores our commitment to excellence and innovation in renewable energy.
+            The 400 kWh solar power system at Bharat Electronics Limited represents a landmark achievement in our portfolio. This high-profile installation exemplifies our capability to deliver top-tier solar solutions, integrating state-of-the-art technology to enhance energy efficiency and sustainability at one of the industry&apos;s leading companies. The project underscores our commitment to excellence and innovation in renewable energy.
           </p>
         </div>
 
@@ -145,19 +147,3 @@ const ProjectPage3 = () => {
 }
 
 export default ProjectPage3
-
-type DecimalPointsContent = {
-  title: string
-  content: string
-}
-
-export const DecimalPoints = ({ title, content }: DecimalPointsContent) => {
-  return (
-    <div>
-      <li className='custom-list-item mt-3 text-xl text-[#2e3c35] md:mt-6 md:text-2xl'>
-        <span className='font-bold'>{title}</span>
-        {content}
-      </li>
-    </div>
-  )
-}

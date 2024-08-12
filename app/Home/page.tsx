@@ -153,7 +153,7 @@ const Home = () => {
             <Link href='/services/service1'>
               <ServiceNavigator
                 title='Solar Engineering'
-                content='Harness innovative solar technology for smarter, more sustainable energy solutions.'
+                content='Designing cutting-edge solar solutions that drive efficiency and innovation.'
                 img='/service-1.svg'
               />
             </Link>
@@ -162,7 +162,7 @@ const Home = () => {
             <Link href='/services/service2'>
               <ServiceNavigator
                 title='Solar Procurement'
-                content='Streamline your solar supply chain with efficiency and precision in every step.'
+                content='Streamlining procurement to ensure top-quality solar equipment and materials.'
                 img='/service-2.svg'
               />
             </Link>
@@ -171,7 +171,7 @@ const Home = () => {
             <Link href='/services/service3'>
               <ServiceNavigator
                 title='Solar Construction'
-                content='Optimize your energy infrastructure with cost-effective, cutting-edge construction.'
+                content='Optimizing construction processes for efficient and reliable solar installations.'
                 img='/service-3.svg'
               />
             </Link>
@@ -231,7 +231,7 @@ const Home = () => {
           {/* Left Column */}
           <div className='flex-1 md:mr-4'>
             <div>
-              <Link href='/projects/projectPage2'>
+              <Link href='/projects/projectPage3'>
                 <div className='relative h-[250px] w-full overflow-hidden rounded-3xl md:h-[300px]'>
                   <Image
                     src='/project-1.jpg'
@@ -251,7 +251,7 @@ const Home = () => {
             </div>
 
             <div className='mt-8'>
-              <Link href='/projects/projectPage3'>
+              <Link href='/projects/projectPage5'>
                 <div className='relative h-[250px] w-full overflow-hidden rounded-3xl md:h-[300px]'>
                   <Image
                     src='/project-2.jpg'
@@ -266,7 +266,7 @@ const Home = () => {
                     Metro Valley Projects Private Ltd.
                   </h1>
                   <p className='project-para text-sm sm:text-base'>
-                      
+
                   </p>
                 </div>
               </Link>
@@ -276,7 +276,7 @@ const Home = () => {
           {/* Right Column */}
           <div className='mt-8 flex-1 md:ml-4 md:mt-0'>
             <div className='h-[250px] w-full md:h-[700px]'>
-              <Link href='/projects/projectPage5'>
+              <Link href='/projects/projectPage4'>
                 <div className='relative h-full w-full overflow-hidden rounded-3xl'>
                   <Image
                     src='/project-3.jpg'
