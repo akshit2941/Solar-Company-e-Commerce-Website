@@ -31,22 +31,22 @@ const ProjectPage = () => {
           <Link href='/projects/projectPage1'>
             <ProjectCard
               imageUrl='/news1.jpg'
-              title='Green Building Retrofit'
-              content='Solar Energy'
+              title='Holister Medical, Bawal'
+              content='300kWh'
             />
           </Link>
           <Link href='/projects/projectPage2'>
             <ProjectCard
               imageUrl='/project-1.jpg'
-              title='Wind Farm'
-              content='Wind Energy'
+              title='MITS Gwalior'
+              content='300kWh'
             />
           </Link>
           <Link href='/projects/projectPage3'>
             <ProjectCard
               imageUrl='/project-2.jpg'
-              title='Solar-Powered Home'
-              content='Solar Energy'
+              title='Bharat Electronics Limited'
+              content='400kWh'
             />
           </Link>
         </div>
@@ -54,22 +54,22 @@ const ProjectPage = () => {
           <Link href='/projects/projectPage4'>
             <ProjectCard
               imageUrl='/project-4.jpg'
-              title='Recycling Educations'
-              content='Recycling'
+              title='Delhi Mumbai ExpressWay'
+              content='1.8 mWh'
             />
           </Link>
           <Link href='/projects/projectPage5'>
             <ProjectCard
               imageUrl='/project-3.jpg'
-              title='Large-Scale Solar Farm'
-              content='Solar Energy'
+              title='Metro Valley Projects Private Ltd.'
+              content='250kWh'
             />
           </Link>
           <Link href='/projects/projectPage6'>
             <ProjectCard
               imageUrl='/energy-3.jpg'
-              title='Waste Reduction Challenge'
-              content='Recycling'
+              title='PM Surya Ghar Yojana'
+              content='150 Houses'
             />
           </Link>
         </div>

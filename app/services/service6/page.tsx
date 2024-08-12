@@ -5,8 +5,10 @@ const Service6 = () => {
   return (
     <div>
       <ServiceComponentMain
-        imageUrl='/serviceCardNavbar5.jpg'
-        title='Shredding Services'
+        imageUrl='/energy-1.jpg'
+        title='Rain Water Harvesting'
+        serviceTitle='Rain Water Harvesting'
+        serviceContent='Innovative systems capture and store rainwater for sustainable use. Efficient harvesting techniques help reduce water bills and support eco-friendly practices by utilizing natural resources effectively.'
       />
     </div>
   )

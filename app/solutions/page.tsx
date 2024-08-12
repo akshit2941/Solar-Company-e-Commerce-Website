@@ -33,18 +33,18 @@ const SolutionPage = () => {
                         <div className='flex mx-6 md:mx-6 lg:mx-12 2xl:mx-56 mb-4'>
                             <SolutionsTileLeft
                                 imageUrl='/solutionImage3.webp'
-                                title='Assessment And Consultation'
+                                title='OPEX Model (Build-Own-Operate)'
                                 number={1}
-                                content='We begin by understanding your unique needs and goals. Our experts conduct a thorough assessment of your energy usage, recycling requirements, or sustainability objectives. We listen to your concerns, answer your questions, and work together to outline a tailored plan that aligns with your vision.'
+                                content='The OPEX/BOO model lets you pay only for the renewable energy you use, avoiding upfront investment. Enjoy clean energy from solar, wind, or hybrid solutions with savings of 20% to 40% compared to grid tariffs. We handle all maintenance and operation. Sign a Power Purchase Agreement (PPA) for cost-effective power.'
                             />
                         </div>
                     </div>
                     <div className='flex mx-6 lg:mx-12 2xl:mx-56 md:mb-4'>
                         <SolutionsTileRight
                             imageUrl='/serviceCardNavbar2.jpg'
-                            title='Customized Solutions'
+                            title='Renewable Energy Services Company (RESCO)'
                             number={2}
-                            content="With a clear understanding of your needs, we design and propose customized solutions that optimize efficiency and sustainability. Whether it' s developing a solar energy system, implementing a recycling program, or integrating energy-saving technologies, our solutions are designed to fit seamlessly into your lifestyle or business operations."
+                            content="The RESCO Model, favored by SECI, offers zero investment for solar rooftop installations. Pay only for the energy you consume at lower rates than grid electricity. It's widely used by government entities and non-profits, with potential subsidies and favorable regulations."
                         />
                     </div>
 
@@ -52,9 +52,9 @@ const SolutionPage = () => {
                         <div className='flex mx-6 lg:mx-12 2xl:mx-56 md:mb-4'>
                             <SolutionsTileLeft
                                 imageUrl='/solutionImage2.webp'
-                                title='Professional Implementation'
+                                title='CAPEX Model (EPC)'
                                 number={3}
-                                content='Our experienced team takes care of all the necessary installations, ensuring everything operates smoothly. From solar panel installations to setting up recycling infrastructure, we handle every detail with professionalism and precision, adhering to the highest industry standards.'
+                                content='With the CAPEX model, invest in and own a renewable energy facility. Whether rooftop solar or a hybrid farm, we handle installation and provide ongoing maintenance. Enjoy ownership, reduced carbon footprint, and tax benefits through accelerated depreciation.'
                             />
                         </div>
                     </div>
@@ -63,7 +63,7 @@ const SolutionPage = () => {
                             imageUrl='/solutionImage1.webp'
                             title='Ongoing Support And Monitoring'
                             number={4}
-                            content="Our commitment doesn't end with installation. We provide continuous support, monitoring, and maintenance to ensure that your systems run efficiently and effectively. We're here to answer questions, resolve any issues, and help you make the most of your sustainable solutions for the long term."
+                            content="We offer continuous support, monitoring, and maintenance to ensure your systems perform optimally. Our team is available to address any issues and help you maximize the benefits of your sustainable solutions."
                         />
                     </div>
                 </div>
@@ -92,8 +92,6 @@ const SolutionPage = () => {
                     <Footer />
                 </div>
             </footer>
-
-
         </div>
     )
 }

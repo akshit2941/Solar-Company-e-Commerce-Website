@@ -6,7 +6,9 @@ const Service1 = () => {
     <div>
       <ServiceComponentMain
         imageUrl='/serviceCardNavbar1.jpg'
-        title='Energy Storage Solutions'
+        title='Solar Engineering'
+        serviceTitle='Solar Engineering'
+        serviceContent='Expertly designed solar solutions that optimize energy efficiency and foster innovation. By integrating advanced technologies, our solar engineering services ensure your systems operate at peak performance, delivering reliable and sustainable energy for the long term.'
       />
     </div>
   )

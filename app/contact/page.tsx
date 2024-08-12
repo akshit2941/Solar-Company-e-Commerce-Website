@@ -42,9 +42,7 @@ const ContactPage = () => {
                 Chat With Our Support Team
               </h1>
               <p className='text-xl md:text-2xl'>
-                Nam libero tempore, cum soluta nobis est eligendi optio cumque
-                nihil impedit quo minus id quod maxime placeat facere possimus,
-                omnis voluptas assumenda est, omnis dolor repellendus.
+                Our team is always ready to assist you with any questions, concerns, or inquiries you might have. Whether you're interested in learning more about our products and services, need technical support, or just want to chat about your project ideas, we're just a message away.
               </p>
             </div>
 

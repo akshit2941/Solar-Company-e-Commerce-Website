@@ -33,8 +33,8 @@ const ServicePage = () => {
           <div className='service-navigator-common-class'>
             <Link href='/services/service1'>
               <ServiceNavigator
-                title='Energy Storage Solutions'
-                content='We believe that technology design are revolutionizing brand experiences.'
+                title='Solar Engineering'
+                content='Designing cutting-edge solar solutions that drive efficiency and innovation.'
                 img='/service-1.svg'
               />
             </Link>
@@ -42,8 +42,8 @@ const ServicePage = () => {
           <div className='service-navigator-common-class'>
             <Link href='/services/service2'>
               <ServiceNavigator
-                title='Solar Panel Installation'
-                content='We believe that human-centered design are revolutionizing brand experiences.'
+                title='Solar Procurement'
+                content='Streamlining procurement to ensure top-quality solar equipment and materials.'
                 img='/service-2.svg'
               />
             </Link>
@@ -51,8 +51,8 @@ const ServicePage = () => {
           <div className='service-navigator-common-class'>
             <Link href='/services/service3'>
               <ServiceNavigator
-                title='Wind Turbine Installation'
-                content='Reduce your capital and operating costs, while modernizing your IT.'
+                title='Solar Construction'
+                content='Optimizing construction processes for efficient and reliable solar installations.'
                 img='/service-3.svg'
               />
             </Link>
@@ -63,7 +63,7 @@ const ServicePage = () => {
             <Link href='/services/service4'>
               <ServiceNavigator
                 title='Energy Audits'
-                content='We believe that technology design are revolutionizing brand experiences.'
+                content='Assessing energy use to uncover opportunities for cost savings and efficiency.'
                 img='/service-4.svg'
               />
             </Link>
@@ -71,9 +71,8 @@ const ServicePage = () => {
           <div className='service-navigator-common-class'>
             <Link href='/services/service5'>
               <ServiceNavigator
-                title='Renewable Energy 
-                                Consult'
-                content='Process of designing, creating, deploying and maintaining software.'
+                title='Solar Operations & Maintenance'
+                content='Ensuring the long-term performance and reliability of solar power systems.'
                 img='/service-5.svg'
               />
             </Link>
@@ -81,43 +80,15 @@ const ServicePage = () => {
           <div className='service-navigator-common-class'>
             <Link href='/services/service6'>
               <ServiceNavigator
-                title='Shredding Services'
-                content='Protect networks, devices and data from attacks or unauthorized access.'
-                img='/service-6.svg'
-              />
-            </Link>
-          </div>
-        </div>
-        <div className='flex flex-col md:mt-14 md:flex-row'>
-          <div className='service-navigator-common-class'>
-            <Link href='/services/service7'>
-              <ServiceNavigator
-                title='Cardboard & Paper Recycling'
-                content='See to the integrity and security of your records.'
+                title='Rain Water Harvesting'
+                content='Implementing systems to capture and utilize rainwater efficiently.'
                 img='/service-7.svg'
-              />
-            </Link>
-          </div>
-          <div className='service-navigator-common-class'>
-            <Link href='/services/service8'>
-              <ServiceNavigator
-                title='Solutions for Scrap Metal'
-                content='See to the integrity and security of your records.'
-                img='/service-8.svg'
-              />
-            </Link>
-          </div>
-          <div className='service-navigator-common-class'>
-            <Link href='/services/service9'>
-              <ServiceNavigator
-                title='Commercial Plastics Recycling'
-                content='See to the integrity and security of your records.'
-                img='/service-9.svg'
               />
             </Link>
           </div>
         </div>
       </div>
+
 
       <div className='my-32 flex justify-center bg-[#f6f7f9]'>
         <div className='mx-12 flex w-full flex-col items-center md:flex-row md:mx-6 lg:mx-14 2xl:mx-64'>

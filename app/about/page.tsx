@@ -7,7 +7,6 @@ import { Footer } from '@/components/Footer'
 import Navbar from '@/components/Navbar'
 import Image from 'next/image'
 import React, { useState } from 'react'
-import { IoPlayOutline } from 'react-icons/io5'
 
 type TabKey = 'mission' | 'values' | 'services'
 
@@ -15,17 +14,17 @@ const tabs: Record<TabKey, { title: string; content: string }> = {
     mission: {
         title: 'Together, We Can Pioneer A Sustainable Future.',
         content:
-            "Our mission is to lead the charge in building a sustainable and greener future for generations to come. We're driven by a steadfast commitment to environmental stewardship, innovation, and positive social impact. Our mission isn't just a statement; it's a commitment to a better, more sustainable world. We invite you to join us on this journey towards a greener and brighter tomorrow. Together, we can pioneer a sustainable future that benefits us all."
+            "At Aldex Energy, our mission is to empower communities and businesses by providing reliable, innovative, and sustainable solar energy solutions. We strive to make clean energy accessible to everyone, reducing carbon footprints and promoting environmental stewardship. By embracing the power of the sun, we aim to contribute to a greener, more sustainable future for generations to come."
     },
     values: {
         title: 'Positive Environmental Impact In All We Do.',
         content:
-            'Our core values serve as the foundation of everything we do. They embody our unwavering dedication to sustainability, innovation, and positive impact. These core values guide our decisions, actions, and interactions, ensuring that we remain steadfast in our pursuit of a more sustainable and eco-friendly future. They serve as a compass, directing us toward positive environmental and social impact in everything we do. We invite you to join us on this journey towards a greener and brighter.'
+            'Our core values guide everything we do. We are committed to integrity, conducting business with the highest ethical standards and transparency. We embrace innovation, continuously seeking and implementing cutting-edge technologies to enhance our solar solutions. Sustainability is at the heart of our operations, as we foster a greener future by advocating for and adopting sustainable practices.'
     },
     services: {
         title: 'We Take Pride In Commitment To Innovation',
         content:
-            'we offer a comprehensive suite of sustainability services designed to empower individuals, businesses, and communities to embrace a greener and more environmentally responsible future. From cutting-edge renewable energy solutions such as solar and wind installations to waste reduction and recycling programs, we provide a range of services that span the sustainability spectrum. Our experts work closely with clients to customize solutions tailored to their unique needs.'
+            "We offer a comprehensive range of services to meet all your solar energy needs. Our residential solar solutions are customized for homes, helping you save on energy bills while reducing your environmental impact. For businesses, we provide tailored commercial solar energy systems designed to maximize efficiency and cost savings. Additionally, we offer ongoing maintenance and support to ensure your solar energy system operates at peak performance."
     }
 }
 
@@ -94,61 +93,49 @@ const AboutPage = () => {
                 </div>
             </div>
 
-            <div className='mx-8 mb-32 mt-20 flex flex-col items-center justify-center md:mt-36 md:mx-1 lg:mx-6 2xl:mx-32'>
-                <div className='flex flex-col justify-center text-center'>
-                    <h1 className='text-5xl font-semibold'>Empowering Change</h1>
-                    <p className='mt-3 text-lg md:mx-24 lg:mx-64 md:mt-8 md:text-xl'>
-                        Our commitment to recycling drives us towards a circular economy
-                        where waste becomes a resource. Join us in shaping a cleaner,
-                        brighter future.
-                    </p>
-                </div>
+            <div className='bg-[#f6f6f9] mb-12'>
+                <div className='mx-8 mb-32 mt-20 flex flex-col items-center justify-center md:mt-36 md:mx-1 lg:mx-6 2xl:mx-32'>
+                    <div className='flex flex-col justify-center text-center'>
+                        <h1 className='text-5xl font-semibold'>Empowering Change</h1>
+                        <p className='mt-3 text-lg md:mx-24 lg:mx-64 md:mt-8 md:text-xl'>
+                            Our commitment to recycling drives us towards a circular economy
+                            where waste becomes a resource. Join us in shaping a cleaner,
+                            brighter future.
+                        </p>
+                    </div>
 
-                <div className='mt-12 flex flex-col gap-14 md:mt-24 md:flex-row md:mx-8 lg:mx-12 2xl:mx-32'>
-                    <AboutCard
-                        imageUrl='/aboutsvg1.svg'
-                        title='Clean Energy Revolution'
-                        content='By harnessing renewable resources like solar and wind, were reducing our carbon footprint, advancing a sustainable energy landscape.'
-                    />
-                    <AboutCard
-                        imageUrl='/aboutsvg2.svg'
-                        title='Circular Economy'
-                        content='By recycling and reducing landfill waste, were conserving valuable resources, curbing pollution, and leaving a healthier planet.'
-                    />
-                    <AboutCard
-                        imageUrl='/aboutsvg3.svg'
-                        title='Role in Sustainability'
-                        content='Through your support of green energy and recycling practices, youre contributing to a more resilient environment.'
-                    />
+                    <div className='mt-12 flex flex-col gap-14 md:mt-24 md:flex-row md:mx-8 lg:mx-12 2xl:mx-32'>
+                        <AboutCard
+                            imageUrl='/aboutsvg1.svg'
+                            title='Clean Energy Revolution'
+                            content='By harnessing renewable resources like solar and wind, were reducing our carbon footprint, advancing a sustainable energy landscape.'
+                        />
+                        <AboutCard
+                            imageUrl='/aboutsvg2.svg'
+                            title='Circular Economy'
+                            content='By recycling and reducing landfill waste, were conserving valuable resources, curbing pollution, and leaving a healthier planet.'
+                        />
+                        <AboutCard
+                            imageUrl='/aboutsvg3.svg'
+                            title='Role in Sustainability'
+                            content='Through your support of green energy and recycling practices, youre contributing to a more resilient environment.'
+                        />
+                    </div>
                 </div>
             </div>
 
-            <div className='xl:w-[1400px] relative mb-32 hidden h-[200px] w-[1000px] overflow-hidden rounded-3xl md:flex md:h-[300px] md:w-[650px] lg:h-[300px] lg:w-[1100px] 2xl:h-[500px]'>
-                <Image
-                    src='/about-img.jpg'
-                    alt='Styled Image'
-                    layout='fill'
-                    objectFit='cover'
-                />
-                <div className='absolute inset-0 bg-black bg-opacity-15'></div>
-                <div className='absolute inset-0 z-10 flex items-center justify-center'>
-                    <h1 className='rounded-full bg-black p-5 font-medium text-white'>
-                        <IoPlayOutline />
-                    </h1>
-                </div>
-            </div>
 
             <div className='mx-5 mb-32 flex flex-col gap-12 md:gap-32 md:mx-4 lg:mx-12 2xl:mx-64'>
                 <AboutEnergyCard
-                    imageUrl='/energy-1.jpg'
+                    imageUrl='/energy-2.jpg'
                     title='Solar Energy'
-                    content='The sun is an abundant source of energy waiting to be harnessed. Our solar panels and systems are designed to seamlessly integrate into your space, powering your home or business with clean, reliable energy.'
+                    content='Harness the limitless power of the sun with our advanced solar panels and systems. Designed for efficiency and reliability, they provide clean energy for your home or business, reducing costs and environmental impact. Switch to solar and enjoy sustainable energy that powers your future.'
                 />
 
                 <div className='flex flex-col md:flex-row'>
                     <div className='relative h-[25rem] w-full overflow-hidden rounded-3xl shadow-lg'>
                         <Image
-                            src='/energy-2.jpg'
+                            src='/energy-1.jpg'
                             alt='Styled Image'
                             layout='fill'
                             objectFit='cover'
@@ -157,12 +144,10 @@ const AboutPage = () => {
                     </div>
                     <div className='mx-4 flex w-[90%] flex-col justify-center md:mx-6  lg:mx-14'>
                         <h1 className='mt-6 text-4xl font-medium md:mt-0 lg:text-5xl'>
-                            Wind Energy
+                            Rain Water Harvesting
                         </h1>
                         <p className='mt-3 text-base font-normal md:mt-2 lg:mt-8 md:text-lg lg:text-2xl'>
-                            Wind energy is a powerful force for change. Our wind turbines
-                            capture the breeze and transform it into a steady, renewable
-                            energy source, perfect for both urban and rural environments.
+                            Maximize the potential of every drop with our rainwater harvesting systems. Efficiently capturing and storing rainwater, these systems provide an eco-friendly solution to water scarcity. Use harvested rainwater for irrigation, household needs, or industrial processes, reducing your dependence on traditional water sources and contributing to sustainable water management.
                         </p>
                         <p
                             className='mt-4 text-xl text-[#87634a] underline hover:text-[#2c3b35]'
@@ -175,8 +160,8 @@ const AboutPage = () => {
 
                 <AboutEnergyCard
                     imageUrl='/energy-3.jpg'
-                    title='Recycling'
-                    content='By embracing the principles of reusing, and recycling, were paving the way for a more sustainable future. Discover how small actions can make a big impact as we work together to reduce waste and protect our planet.'
+                    title='Solar Consultancy'
+                    content='Navigate your solar journey with confidence through our expert solar consultancy services. We provide tailored advice on system design, installation, and optimization to ensure maximum efficiency and cost savings. Whether you&apos;re a homeowner, business, or industrial entity, our consultancy empowers you to make informed decisions, guiding you every step of the way to harness the full potential of solar energy.'
                 />
             </div>
 

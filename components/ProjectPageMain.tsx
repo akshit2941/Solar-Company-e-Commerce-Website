@@ -46,26 +46,12 @@ const ProjectPageMain = ({
         </div>
       </div>
 
-      <div className='mb-32 h-fit w-full bg-[#f6f6f9] md:h-[250px]'>
+      <div className='mb-8 h-fit w-full bg-[#f6f6f9] md:h-[250px]'>
         <div className='mx-12 flex flex-row pt-16 md:flex-row lg:mx-32 xl:mx-64'>
-          <div className='flex-1'>
-            <h1 className='text-2xl font-semibold'>Client</h1>
-            <p className='mt-4 text-xl font-medium'>Akshit</p>
-          </div>
-          <div className='flex-1'>
-            <h1 className='text-2xl font-semibold'>Date</h1>
-            <p className='mt-4 text-xl font-medium'>June 13, 2024</p>
-          </div>
-          <div className='flex-1'>
-            <h1 className='text-2xl font-semibold'>Services</h1>
-            <p className='mt-4 text-xl font-medium'>
-              Design, Illustration, Art
-            </p>
-          </div>
-          <div className='flex-1'>
+          <div className='flex-1 justify-center text-center'>
             <h1 className='text-2xl font-semibold'>Share On</h1>
             <div className='mt-2'>
-              <div className='flex space-x-4'>
+              <div className='flex space-x-4 text-center justify-center'>
                 <div className='rounded-full bg-[#decbbf] p-4'>
                   <FaFacebookF className='h-6 w-6 text-[#a56d4c]' />
                 </div>
@@ -81,7 +67,7 @@ const ProjectPageMain = ({
         </div>
       </div>
 
-      <div className='mx-12 mb-16 lg:mx-24 2xl:mx-64'>
+      <div className='mx-12 mt-16 mb-16 lg:mx-24 2xl:mx-64'>
         <div>
           <h1 className='text-3xl font-semibold text-[#2e3c35] md:text-5xl'>
             Project Overview:

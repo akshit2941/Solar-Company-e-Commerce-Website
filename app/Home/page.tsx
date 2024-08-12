@@ -24,12 +24,10 @@ const Home = () => {
         <div className='z-10 flex flex-grow flex-col items-center justify-center text-white lg:flex-row 2xl:mt-0'>
           <div className='mt-3 flex flex-1 flex-col items-center p-8 md:mt-0 lg:items-start xl:ml-12 2xl:ml-48'>
             <h1 className='text-center text-[2.5rem] font-bold text-white md:text-4xl lg:mb-4 md:text-left lg:text-5xl 2xl:text-[4.4rem]'>
-              Renew, Reuse, Recycle
+              Go Green, Go Solar
             </h1>
             <p className='w-full text-center text-lg text-white md:mt-2 md:text-start md:text-lg lg:text-xl 2xl:text-[1.25rem]'>
-              Discover how your small actions can make a big impact as we work
-              together to reduce waste, conserve resources, and protect our
-              planet for generations to come.
+              Take the first step towards a sustainable future with Aldex Energy. Save on energy bills and reduce your carbon footprint by switching to solar power. Join us in making the world a cleaner, brighter place. Go green, go solar!
             </p>
             <div className='mt-6'>
               <Link href='/contact'>
@@ -117,7 +115,7 @@ const Home = () => {
             </div>
             <div className='flex-1 flex-col items-center text-center'>
               <h1 className='home-2-head'>
-                1000+
+                250+
               </h1>
               <p className='home-2-para'>
                 Satisfied clients
@@ -125,7 +123,7 @@ const Home = () => {
             </div>
             <div className='flex-1 flex-col items-center text-center'>
               <h1 className='home-2-head'>
-                20
+                20+
               </h1>
               <p className='home-2-para'>
                 Megawatt capacity
@@ -154,8 +152,8 @@ const Home = () => {
           <div className='w-full flex-1'>
             <Link href='/services/service1'>
               <ServiceNavigator
-                title='Energy Storage Solutions'
-                content='We believe that technology design are revolutionizing brand experiences.'
+                title='Solar Engineering'
+                content='Harness innovative solar technology for smarter, more sustainable energy solutions.'
                 img='/service-1.svg'
               />
             </Link>
@@ -163,8 +161,8 @@ const Home = () => {
           <div className='w-full flex-1'>
             <Link href='/services/service2'>
               <ServiceNavigator
-                title='Solar Panel Installation'
-                content='We believe that human-centered design are revolutionizing brand experiences.'
+                title='Solar Procurement'
+                content='Streamline your solar supply chain with efficiency and precision in every step.'
                 img='/service-2.svg'
               />
             </Link>
@@ -172,8 +170,8 @@ const Home = () => {
           <div className='w-full flex-1'>
             <Link href='/services/service3'>
               <ServiceNavigator
-                title='Wind Turbine Installation'
-                content='Reduce your capital and operating costs, while modernizing your IT.'
+                title='Solar Construction'
+                content='Optimize your energy infrastructure with cost-effective, cutting-edge construction.'
                 img='/service-3.svg'
               />
             </Link>
@@ -244,9 +242,9 @@ const Home = () => {
                   />
                 </div>
                 <div>
-                  <h1 className='project-head text-lg sm:text-xl'>Wind Farm</h1>
+                  <h1 className='project-head text-lg sm:text-xl'>Bharat Electronics Limited</h1>
                   <p className='project-para text-sm sm:text-base'>
-                    Wind Energy
+                    400 kWh
                   </p>
                 </div>
               </Link>
@@ -265,10 +263,10 @@ const Home = () => {
                 </div>
                 <div>
                   <h1 className='project-head text-lg sm:text-xl'>
-                    Solar-Powered Home
+                    Metro Valley Projects Private Ltd.
                   </h1>
                   <p className='project-para text-sm sm:text-base'>
-                    Solar Energy
+                      
                   </p>
                 </div>
               </Link>
@@ -290,10 +288,10 @@ const Home = () => {
                 </div>
                 <div>
                   <h1 className='project-head text-lg sm:text-xl'>
-                    Large-Scale Solar Farm
+                    Delhi Mumbai ExpressWay
                   </h1>
                   <p className='project-para text-sm sm:text-base'>
-                    Solar Energy
+                    1.8 mWh
                   </p>
                 </div>
               </Link>

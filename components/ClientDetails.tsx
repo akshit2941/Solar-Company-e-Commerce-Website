@@ -12,7 +12,7 @@ export default function ClientDetails() {
 
       <div className='mt-10 flex flex-col items-center text-center'>
         <h1 className='text-3xl font-semibold md:text-5xl'>
-          Over 1500 Clients Use Our Services
+          Over 300 Clients Use Our Services
         </h1>
         <p className='mt-8 w-[80%] text-xl font-normal md:w-[50%] md:text-2xl'>
           Green energy solutions like solar panels and small wind turbines can
@@ -20,13 +20,13 @@ export default function ClientDetails() {
         </p>
       </div>
 
-      <div className='mt-20 hidden flex-row items-center justify-center gap-20 lg:flex'>
+      {/* <div className='mt-20 hidden flex-row items-center justify-center gap-20 lg:flex'>
         <ClentIcons imageUrl='/icon1.png' />
         <ClentIcons imageUrl='/icon2.png' />
         <ClentIcons imageUrl='/icon3.png' />
         <ClentIcons imageUrl='/icon4.png' />
         <ClentIcons imageUrl='/icon6.png' />
-      </div>
+      </div> */}
     </div>
   )
 }

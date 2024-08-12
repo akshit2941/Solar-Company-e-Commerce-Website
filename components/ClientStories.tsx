@@ -13,7 +13,7 @@ type ClientProp = {
 const ClientCard = ({
   avatarSrc,
   name,
-  role,
+  // role,
   onClick,
   isSelected
 }: ClientProp) => {
@@ -34,7 +34,7 @@ const ClientCard = ({
       />
       <div>
         <h1 className='text-xl font-semibold md:text-2xl'>{name}</h1>
-        <p className='text-sm font-normal text-[#a2672f] md:text-lg'>{role}</p>
+        {/* <p className='text-sm font-normal text-[#a2672f] md:text-lg'>{role}</p> */}
       </div>
     </div>
   )
@@ -54,16 +54,16 @@ export const ClientStories = () => {
     () => [
       {
         id: 1,
-        avatarSrc: '/avatar-1.jpg',
-        name: 'David L.',
+        avatarSrc: '/avatar.png',
+        name: 'Rekha Sharma',
         role: 'Environmental Advocate',
         story:
           '"This energy management system has transformed how I interact with my home. Being able to control lights, appliances, and heating remotely has not only saved energy but also added convenience to my lifestyle."'
       },
       {
         id: 2,
-        avatarSrc: '/avatar-2.jpg',
-        name: 'Lisa B.',
+        avatarSrc: '/avatar.png',
+        name: 'Priyanka Solanki',
         role: 'Sustainable Living Advocate',
         story:
           'The system has not only reduced our energy bills but also taught our family about sustainable living. It’s a win-win!'
@@ -71,7 +71,7 @@ export const ClientStories = () => {
       {
         id: 3,
         avatarSrc: '/avatar.png',
-        name: 'Carlos S.',
+        name: 'G.S.Infotech Solutions',
         role: 'Head Community Organizer',
         story:
           'Implementing this system in our community has shown significant energy savings and increased awareness about energy conservation.'
