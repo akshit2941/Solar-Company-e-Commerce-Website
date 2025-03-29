@@ -12,7 +12,7 @@ const ProjectPage1 = () => {
         <div className='relative h-[1000px] w-full overflow-hidden'>
           <Navbar />
           <Image
-            src="/project-1.jpg"
+            src="/p-1.jpeg"
             alt='Background'
             layout='fill'
             objectFit='cover'

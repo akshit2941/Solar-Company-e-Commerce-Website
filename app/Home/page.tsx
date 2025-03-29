@@ -48,7 +48,7 @@ const Home = () => {
               </div>
               <div className='relative h-[150px] w-[180px] rotate-6 transform overflow-hidden rounded-xl sm:h-[200px] sm:w-[240px] md:h-[220px] md:w-[240px] lg:h-[220px] lg:w-[220px] 2xl:h-[240px] 2xl:w-[240px]'>
                 <Image
-                  src='/block-2.webp'
+                  src='/block-3.webp'
                   alt='Styled Image'
                   layout='fill'
                   objectFit='cover'
@@ -56,7 +56,7 @@ const Home = () => {
               </div>
               <div className='relative h-[140px] w-[170px] -rotate-6 transform overflow-hidden rounded-xl sm:h-[200px] sm:w-[240px] md:h-[210px] md:w-[240px] lg:h-[200px] lg:w-[200px] 2xl:h-[210px] 2xl:w-[210px]'>
                 <Image
-                  src='/block-3.webp'
+                  src='/block-4.webp'
                   alt='Styled Image'
                   layout='fill'
                   objectFit='cover'
@@ -64,7 +64,7 @@ const Home = () => {
               </div>
               <div className='relative h-[180px] w-[180px] rotate-2 transform overflow-hidden rounded-xl sm:h-[220px] sm:w-[220px] md:h-[250px] md:w-[250px] lg:h-[250px] lg:w-[250px] 2xl:h-[260px] 2xl:w-[260px]'>
                 <Image
-                  src='/block-4.webp'
+                  src='/block-2.webp'
                   alt='Styled Image'
                   layout='fill'
                   objectFit='cover'
@@ -266,7 +266,7 @@ const Home = () => {
                     Metro Valley Projects Private Ltd.
                   </h1>
                   <p className='project-para text-sm sm:text-base'>
-
+                    250kWh
                   </p>
                 </div>
               </Link>

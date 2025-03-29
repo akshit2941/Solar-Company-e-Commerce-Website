@@ -16,13 +16,13 @@ export const Navbar = () => {
   }
 
   return (
-    <nav className='relative z-20 h-24 w-full text-white'>
-      <div className='md:t-2 mt-1 flex h-full w-full items-center justify-between px-4 2xl:px-16'>
+    <nav className='relative z-20 h-40 w-full text-white'>
+      <div className='md:t-2 mt-1 flex h-full w-full items-center justify-between px-1 2xl:px-10'>
         <Image
           src={Logo}
           alt='Logo'
-          width={175}
-          height={75}
+          width={380}
+          height={100}
           className='cursor-pointer'
           priority
         />
@@ -54,7 +54,7 @@ export const Navbar = () => {
           <Link href='/contact'>Contact Us</Link>
         </button>
 
-        <div onClick={handleNav} className='cursor-pointer pl-24 lg:hidden'>
+        <div onClick={handleNav} className='cursor-pointer mr-9 lg:hidden'>
           <CiMenuFries size={25} />
         </div>
       </div>
@@ -67,7 +67,7 @@ export const Navbar = () => {
             <Image
               src='/logo-color.png'
               alt='Logo'
-              width={400}
+              width={1000}
               height={100}
               className='cursor-pointer'
               priority
@@ -75,13 +75,13 @@ export const Navbar = () => {
           </div>
 
           <div className='flex w-full items-center justify-end'>
-            <div className='mr-3 cursor-pointer' onClick={handleNav}>
-              <IoMdClose size={28} />
+            <div className='mr-2 cursor-pointer' onClick={handleNav}>
+              <IoMdClose size={30} />
             </div>
           </div>
         </div>
 
-        <div className='flex'>
+        <div className='flex -mt-16'>
           <ul className='flex flex-col'>
             <li className='navbar-ul-class-menue'>
               <Link href='/home'>Home</Link>

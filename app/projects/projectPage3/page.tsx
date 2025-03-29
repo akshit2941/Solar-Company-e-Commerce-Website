@@ -25,7 +25,7 @@ const ProjectPage3 = () => {
 
         <div className='absolute inset-0 z-10 flex flex-col items-center justify-center'>
           <h2 className='rounded-3xl bg-[#a26630] p-1 px-4 text-xl font-normal text-white duration-300 hover:bg-[#2c3b35]'>
-            400 kWh
+            900 kWh
           </h2>
           <h1 className='mt-8 text-center text-5xl font-semibold text-white md:text-7xl'>
             Bharat Electronics Limited

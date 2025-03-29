@@ -1,5 +1,3 @@
-import AboutPage from '@/app/about/page'
-import Home from '@/app/home/page'
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
@@ -38,7 +36,10 @@ export const Footer = () => {
             <li className='footer-li'>
               <Link href='/services'>Services</Link>
             </li>
-            <li className='footer-li'>Products</li>
+            <li className='footer-li'>
+              <Link href='/products'>Products</Link>
+              {/* Products */}
+            </li>
           </ul>
         </div>
 

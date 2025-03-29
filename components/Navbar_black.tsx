@@ -16,13 +16,13 @@ export const Navbar_black = () => {
     }
 
     return (
-        <nav className='relative z-20 h-24 w-full text-black'>
-            <div className='md:t-2 mt-1 flex h-full w-full items-center justify-between px-4 2xl:px-16'>
+        <nav className='relative z-20 h-40 w-full text-black'>
+            <div className='md:t-2 mt-1 flex h-full w-full items-center justify-between px-1 2xl:px-16'>
                 <Image
                     src='/logo-color.png'
                     alt='Logo'
-                    width={175}
-                    height={75}
+                    width={400}
+                    height={100}
                     className='cursor-pointer mt-4'
                     priority
                 />
@@ -54,7 +54,7 @@ export const Navbar_black = () => {
                     <Link href='/contact'>Contact Us</Link>
                 </button>
 
-                <div onClick={handleNav} className='cursor-pointer pl-24 lg:hidden'>
+                <div onClick={handleNav} className='cursor-pointer mr-5 lg:hidden'>
                     <CiMenuFries size={25} />
                 </div>
             </div>

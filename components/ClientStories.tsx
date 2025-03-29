@@ -13,7 +13,6 @@ type ClientProp = {
 const ClientCard = ({
   avatarSrc,
   name,
-  // role,
   onClick,
   isSelected
 }: ClientProp) => {
@@ -22,9 +21,6 @@ const ClientCard = ({
       onClick={onClick}
       className={`transform cursor-pointer rounded-full border duration-300 hover:border-black hover:bg-[#f6f7f9] ${isSelected ? 'border-black bg-[#f6f7f9]' : 'bg-white'} flex items-center gap-4 p-4 transition-all`}
     >
-      {/* <div className=' -mt-24'>
-                <Image src='/colon.svg' alt='colon' width={35} height={30} className='bg-[#b15d3d] rounded-full p-2' />
-            </div> */}
       <Image
         src={avatarSrc}
         alt='avatar'
@@ -34,22 +30,12 @@ const ClientCard = ({
       />
       <div>
         <h1 className='text-xl font-semibold md:text-2xl'>{name}</h1>
-        {/* <p className='text-sm font-normal text-[#a2672f] md:text-lg'>{role}</p> */}
       </div>
     </div>
   )
 }
 
 export const ClientStories = () => {
-  const [selectedClientStory, setSelectedClientStory] = useState({
-    story:
-      'This energy management system has transformed how I interact with my home. Being able to control lights, appliances, and heating remotely has not only saved energy but also added convenience to my lifestyle.',
-    name: 'David L.',
-    role: 'Environmental Advocate'
-  })
-
-  const [selectedClient, setSelectedClient] = useState('David L.')
-
   const clients = useMemo(
     () => [
       {
@@ -63,7 +49,7 @@ export const ClientStories = () => {
       {
         id: 2,
         avatarSrc: '/avatar.png',
-        name: 'Priyanka Solanki',
+        name: 'Richa Pareek',
         role: 'Sustainable Living Advocate',
         story:
           'The system has not only reduced our energy bills but also taught our family about sustainable living. It’s a win-win!'
@@ -71,7 +57,7 @@ export const ClientStories = () => {
       {
         id: 3,
         avatarSrc: '/avatar.png',
-        name: 'G.S.Infotech Solutions',
+        name: 'Krati Sarin',
         role: 'Head Community Organizer',
         story:
           'Implementing this system in our community has shown significant energy savings and increased awareness about energy conservation.'
@@ -79,6 +65,9 @@ export const ClientStories = () => {
     ],
     []
   )
+
+  const [selectedClientStory, setSelectedClientStory] = useState(clients[0]) // Initialize with the first client
+  const [selectedClient, setSelectedClient] = useState(clients[0].name) // Initialize with the first client's name
 
   const handleClientClick = (client: (typeof clients)[0]) => {
     setSelectedClientStory(client)

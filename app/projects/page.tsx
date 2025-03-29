@@ -30,7 +30,7 @@ const ProjectPage = () => {
         <div className='flex flex-col   gap-4 md:flex-row'>
           <Link href='/projects/projectPage1'>
             <ProjectCard
-              imageUrl='/news1.jpg'
+              imageUrl='/p-1.jpeg'
               title='Holister Medical, Bawal'
               content='300kWh'
             />
@@ -46,7 +46,7 @@ const ProjectPage = () => {
             <ProjectCard
               imageUrl='/project-2.jpg'
               title='Bharat Electronics Limited'
-              content='400kWh'
+              content='900kWh'
             />
           </Link>
         </div>
